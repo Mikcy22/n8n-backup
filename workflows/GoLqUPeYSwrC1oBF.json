@@ -1,0 +1,1434 @@
+{
+  "active": true,
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        []
+      ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "Get items in a folder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get items in a folder": {
+      "main": [
+        [
+          {
+            "node": "Filter1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter1": {
+      "main": [
+        [
+          {
+            "node": "Download a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download a file": {
+      "main": [
+        [
+          {
+            "node": "Upload a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload a file": {
+      "main": [
+        [
+          {
+            "node": "Rename a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter2": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get items in a folder1": {
+      "main": [
+        [
+          {
+            "node": "Filter2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file": {
+      "main": [
+        [
+          {
+            "node": "Buscar ListadoMasasYcontratos2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscar ListadoMasasYcontratos2": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscar ListadoMasasYcontratos1": {
+      "main": [
+        [
+          {
+            "node": "Filter3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter3": {
+      "main": [
+        [
+          {
+            "node": "Get items in a folder2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get items in a folder2": {
+      "main": [
+        [
+          {
+            "node": "Filter4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter4": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "BuscarListMasasN8N1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BuscarListMasasN8N1": {
+      "main": [
+        [
+          {
+            "node": "Get items in a folder1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Delete a file",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Buscar ListadoMasasYcontratos2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscar ListadoMasasYcontratos": {
+      "main": [
+        [
+          {
+            "node": "Filter5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter5": {
+      "main": [
+        [
+          {
+            "node": "Get items in a folder3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get items in a folder3": {
+      "main": [
+        [
+          {
+            "node": "Filter6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter6": {
+      "main": [
+        [
+          {
+            "node": "If2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Buscar ListadoMasasYcontratos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If2": {
+      "main": [
+        [
+          {
+            "node": "BuscarListMasasN8N1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "Buscar ListadoMasasYcontratos3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscar ListadoMasasYcontratos3": {
+      "main": [
+        [
+          {
+            "node": "Filter7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter7": {
+      "main": [
+        [
+          {
+            "node": "Get items in a folder4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get items in a folder4": {
+      "main": [
+        [
+          {
+            "node": "Filter8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter8": {
+      "main": [
+        [
+          {
+            "node": "If3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If3": {
+      "main": [
+        [
+          {
+            "node": "BuscarListMasasN8N1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send a message4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Buscar ListadoMasasYcontratos1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rename a file": {
+      "main": [
+        [
+          {
+            "node": "Send a message5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-10-09T11:36:30.083Z",
+  "id": "GoLqUPeYSwrC1oBF",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "EnvíoCreaciónLotes",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -736,
+        -576
+      ],
+      "id": "af4571fa-c7a6-4382-8aa1-9303759b71f9",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c1837349-2d09-4a31-99ad-9c151fd08c27",
+              "leftValue": "={{ $json.name }}",
+              "rightValue": "INFORMES SAP",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "ecfcaf0d-60f2-4fbe-a4b0-1b8464cf059b",
+              "leftValue": "={{ $json.webUrl }}",
+              "rightValue": "Documents/INFORMES%20SAP",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        2608,
+        -320
+      ],
+      "id": "18f28072-40c3-4ca9-878d-e0602f443e4e",
+      "name": "Filter"
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "folderId": "={{$json.id}}"
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        2816,
+        -320
+      ],
+      "id": "ff6e3bba-b78b-49b0-b1f5-e3de35ba0878",
+      "name": "Get items in a folder",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "3742c1d0-4644-4f13-b0d9-52f709ed1898",
+              "leftValue": "={{$json.name}}",
+              "rightValue": "ListadoMasasYContratos.xlsm",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "29b41fba-a85a-4ccb-abf3-004dd0d0186f",
+              "leftValue": "{{$json.file}}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        3024,
+        -320
+      ],
+      "id": "a5024e18-8c13-4f4b-b67e-bf82b0927caa",
+      "name": "Filter1"
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": "={{$json.id}} "
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        3232,
+        -320
+      ],
+      "id": "f408011e-8c41-40bf-86d9-4cdf034cfecb",
+      "name": "Download a file",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fileName": "=ListMasasN8n.xlsm",
+        "parentId": "01CGHIMH7KHNZG7R4NURF3TNUOITAW7BBX",
+        "binaryData": true
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        3520,
+        -320
+      ],
+      "id": "8050017a-5a73-41b5-8a32-1efd7dc96aa8",
+      "name": "Upload a file",
+      "alwaysOutputData": false,
+      "executeOnce": false,
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "rename",
+        "itemId": "={{ $json.id }}",
+        "newName": "ListMasasN8n.xlsm"
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        3728,
+        -320
+      ],
+      "id": "c27100ce-e145-4508-a2d5-1bcf884e8a69",
+      "name": "Rename a file",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c1837349-2d09-4a31-99ad-9c151fd08c27",
+              "leftValue": "={{ $json.name }}",
+              "rightValue": "ListMasasN8n.xlsm",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "ecfcaf0d-60f2-4fbe-a4b0-1b8464cf059b",
+              "leftValue": "=File",
+              "rightValue": "Documents/RaspPesaje",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        1696,
+        -320
+      ],
+      "id": "02b68b82-1604-448e-9d86-b99442ee005b",
+      "name": "Filter2"
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "folderId": "={{$json.id}}"
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        1520,
+        -320
+      ],
+      "id": "07ad75a0-592f-43f4-b25b-27f477163dfb",
+      "name": "Get items in a folder1",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "fileId": "={{$json.id}}"
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        2176,
+        -144
+      ],
+      "id": "776ad3cc-7f4a-4bbe-a5bf-d31de3397587",
+      "name": "Delete a file",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "operation": "search",
+        "query": "=INFORMES SAP "
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        192,
+        -208
+      ],
+      "id": "081825a6-28cb-4b47-97a6-8f6864946f82",
+      "name": "Buscar ListadoMasasYcontratos1",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "operation": "search",
+        "query": "=INFORMES SAP "
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        2432,
+        -320
+      ],
+      "id": "db2b8f25-5d66-4338-b6c3-9333cd09aa77",
+      "name": "Buscar ListadoMasasYcontratos2",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c1837349-2d09-4a31-99ad-9c151fd08c27",
+              "leftValue": "={{ $json.name }}",
+              "rightValue": "INFORMES SAP",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "ecfcaf0d-60f2-4fbe-a4b0-1b8464cf059b",
+              "leftValue": "={{ $json.webUrl }}",
+              "rightValue": "Documents/INFORMES%20SAP",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        432,
+        -208
+      ],
+      "id": "5d787fb9-7d19-40dd-8449-b7b681889bbe",
+      "name": "Filter3"
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "folderId": "={{$json.id}}"
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        608,
+        -208
+      ],
+      "id": "a46e79de-0493-4e3a-bbc3-c5eac6c0dbd7",
+      "name": "Get items in a folder2",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "3742c1d0-4644-4f13-b0d9-52f709ed1898",
+              "leftValue": "={{$json.name}}",
+              "rightValue": "ListadoMasasYContratos.xlsm",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "29b41fba-a85a-4ccb-abf3-004dd0d0186f",
+              "leftValue": "{{$json.file}}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        784,
+        -208
+      ],
+      "id": "f40e71bb-14d2-4d8e-809b-46fbef64395c",
+      "name": "Filter4",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "7ce1cb85-c5e6-449a-bd08-190626e6b181",
+              "leftValue": "={{ $json.id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "529efd90-37b4-4597-b18c-14f6ce84f7e2",
+              "leftValue": "",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        992,
+        -208
+      ],
+      "id": "f16abe0c-6e69-4aeb-a0d0-da65e2a53f6b",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "toRecipients": "javiparra86@gmail.com",
+        "subject": "Nodo ListMasasN8N",
+        "bodyContent": "1er intento. Se reinicia a las 10 minutos\nListadoMasasYContratos.xlsm\nhttps://interoleopj-my.sharepoint.com/my?id=%2Fpersonal%2Fjavier%5Flogistica%5Finteroleo%5Fcom%2FDocuments%2FINFORMES%20SAP",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 2,
+      "position": [
+        -352,
+        144
+      ],
+      "id": "0fde8568-1ce4-4ebf-a099-87188d542bf7",
+      "name": "Send a message",
+      "webhookId": "fee21f2e-7b42-46e0-87de-268c72828baf",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "ydIgIRhlWf3iUfJ6",
+          "name": "Microsoft Outlook account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "operation": "search",
+        "query": "=RaspPesaje"
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        1280,
+        -320
+      ],
+      "id": "f8e0fdb2-3c18-4ac0-b580-de379f1f96b0",
+      "name": "BuscarListMasasN8N1",
+      "alwaysOutputData": true,
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "e53acb8d-3639-44b7-8296-64ff3030e56c",
+              "leftValue": "={{ $json.id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1872,
+        -320
+      ],
+      "id": "daf38b56-ee21-4645-aee4-a06d8cdb2ca5",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "content": "Busca si existe ListadoMasasyContratos.xlsm",
+        "width": 1520
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -400,
+        -384
+      ],
+      "id": "932be98c-535f-4516-b34d-df976be3d4f2",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "Borra ListMasasN8N",
+        "width": 1008
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1264,
+        -496
+      ],
+      "id": "5cde2447-0864-42f4-b533-9456a4cb9ee6",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "Copia ListadoMasasyContratos.xlsm en ListMasasN8N.xlsm",
+        "width": 1456
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2416,
+        -528
+      ],
+      "id": "acf6dd05-3cab-4276-8fc9-c8ca90c640a8",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -144,
+        144
+      ],
+      "id": "adea75ac-5e6b-4f5e-83d0-78c223de4e5d",
+      "name": "Wait",
+      "webhookId": "9198a2f3-1a47-4530-ab4f-c0e92aadf2ab"
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "operation": "search",
+        "query": "=INFORMES SAP "
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        64,
+        144
+      ],
+      "id": "f5c6be5c-a2d5-4ace-8660-54e33f6788c6",
+      "name": "Buscar ListadoMasasYcontratos",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c1837349-2d09-4a31-99ad-9c151fd08c27",
+              "leftValue": "={{ $json.name }}",
+              "rightValue": "INFORMES SAP",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "ecfcaf0d-60f2-4fbe-a4b0-1b8464cf059b",
+              "leftValue": "={{ $json.webUrl }}",
+              "rightValue": "Documents/INFORMES%20SAP",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        304,
+        144
+      ],
+      "id": "525cae05-c5b7-449c-956e-e2294e3367c0",
+      "name": "Filter5"
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "folderId": "={{$json.id}}"
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        480,
+        144
+      ],
+      "id": "132d3b40-cce6-48bb-9bf9-bab505db28cb",
+      "name": "Get items in a folder3",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "3742c1d0-4644-4f13-b0d9-52f709ed1898",
+              "leftValue": "={{$json.name}}",
+              "rightValue": "ListadoMasasYContratos.xlsm",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "29b41fba-a85a-4ccb-abf3-004dd0d0186f",
+              "leftValue": "{{$json.file}}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        656,
+        144
+      ],
+      "id": "f5e8b616-ad6f-4041-bfad-97e5d14407bc",
+      "name": "Filter6",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "7ce1cb85-c5e6-449a-bd08-190626e6b181",
+              "leftValue": "={{ $json.id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "529efd90-37b4-4597-b18c-14f6ce84f7e2",
+              "leftValue": "",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        864,
+        144
+      ],
+      "id": "d19767c2-793b-465a-953d-7399d5be24f9",
+      "name": "If2"
+    },
+    {
+      "parameters": {
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -368,
+        384
+      ],
+      "id": "22db7038-9747-4abd-9c21-a28b0b9f5709",
+      "name": "Wait1",
+      "webhookId": "9198a2f3-1a47-4530-ab4f-c0e92aadf2ab"
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "operation": "search",
+        "query": "=INFORMES SAP "
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        384
+      ],
+      "id": "645a6202-2750-4d2f-87fe-36112c202ee5",
+      "name": "Buscar ListadoMasasYcontratos3",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c1837349-2d09-4a31-99ad-9c151fd08c27",
+              "leftValue": "={{ $json.name }}",
+              "rightValue": "INFORMES SAP",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "ecfcaf0d-60f2-4fbe-a4b0-1b8464cf059b",
+              "leftValue": "={{ $json.webUrl }}",
+              "rightValue": "Documents/INFORMES%20SAP",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        80,
+        384
+      ],
+      "id": "a2270a5b-9390-4d8c-9662-55cb1c283eed",
+      "name": "Filter7"
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "folderId": "={{$json.id}}"
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        256,
+        384
+      ],
+      "id": "c9fbb686-a67e-48cc-a6de-a2d54bf26241",
+      "name": "Get items in a folder4",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "3742c1d0-4644-4f13-b0d9-52f709ed1898",
+              "leftValue": "={{$json.name}}",
+              "rightValue": "ListadoMasasYContratos.xlsm",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "29b41fba-a85a-4ccb-abf3-004dd0d0186f",
+              "leftValue": "{{$json.file}}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        432,
+        384
+      ],
+      "id": "3d82c68e-0735-46c5-845a-e5b41cec95bb",
+      "name": "Filter8",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "7ce1cb85-c5e6-449a-bd08-190626e6b181",
+              "leftValue": "={{ $json.id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "529efd90-37b4-4597-b18c-14f6ce84f7e2",
+              "leftValue": "",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        640,
+        384
+      ],
+      "id": "302f9d69-7b6d-4cd3-883c-238fef8c6b6c",
+      "name": "If3"
+    },
+    {
+      "parameters": {
+        "toRecipients": "javiparra86@gmail.com",
+        "subject": "Nodo ListMasasN8N",
+        "bodyContent": "2º Intento.\nHay un problema con el archivo ListadoMasasYContratos.xlsm\nhttps://interoleopj-my.sharepoint.com/my?id=%2Fpersonal%2Fjavier%5Flogistica%5Finteroleo%5Fcom%2FDocuments%2FINFORMES%20SAP",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 2,
+      "position": [
+        896,
+        400
+      ],
+      "id": "aa6bbcda-67e4-4fe4-8c33-4df455186519",
+      "name": "Send a message4",
+      "webhookId": "fee21f2e-7b42-46e0-87de-268c72828baf",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "ydIgIRhlWf3iUfJ6",
+          "name": "Microsoft Outlook account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 8
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -592,
+        -192
+      ],
+      "id": "34b96616-1b97-4ad2-b0ad-d5765a0fc27f",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "toRecipients": "javiparra86@gmail.com",
+        "subject": "Nodo ListMasasN8N",
+        "bodyContent": "Se ha creado ListMasasN8N CORRECTAMENTE",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 2,
+      "position": [
+        3968,
+        -320
+      ],
+      "id": "affd4924-eba6-4b90-bd1b-e86fcc529492",
+      "name": "Send a message5",
+      "webhookId": "fee21f2e-7b42-46e0-87de-268c72828baf",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "ydIgIRhlWf3iUfJ6",
+          "name": "Microsoft Outlook account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-10-09T11:36:30.087Z",
+      "updatedAt": "2025-10-09T11:36:30.087Z",
+      "role": "workflow:owner",
+      "workflowId": "GoLqUPeYSwrC1oBF",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": {
+    "node:Schedule Trigger": {
+      "recurrenceRules": [
+        8
+      ]
+    }
+  },
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-10-15T05:56:29.000Z",
+  "versionId": "1f0a875b-c1e4-4404-b3ed-63abd6fa974d"
+}
