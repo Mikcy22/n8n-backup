@@ -1,0 +1,1170 @@
+{
+  "active": false,
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Repo Data",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Repo Data": {
+      "main": [
+        [
+          {
+            "node": "Get a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a file": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "isDiffOrNew",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Create a file",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit a file",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Operation, do nothing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "isDiffOrNew": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a file": {
+      "main": [
+        [
+          {
+            "node": "Return",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit a file": {
+      "main": [
+        [
+          {
+            "node": "Return",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "No Operation, do nothing": {
+      "main": [
+        [
+          {
+            "node": "Return",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-10-15T09:40:50.738Z",
+  "id": "bL2OxKNL1BuHOL2n",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "process-backup",
+  "nodes": [
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -960,
+        192
+      ],
+      "id": "57092e6f-acd2-43da-8801-66a022b51635",
+      "name": "Start"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "343cb6d7-3a7f-43eb-8c0e-71c6b463715f",
+              "name": "repoOwner",
+              "value": "",
+              "type": "string"
+            },
+            {
+              "id": "be8de35d-805b-4d73-9441-07d401e60dd5",
+              "name": "repoName",
+              "value": "n8n-backup",
+              "type": "string"
+            },
+            {
+              "id": "613e19de-6481-408c-83d8-aafc73616e5a",
+              "name": "repoPath",
+              "value": "workflows/",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -720,
+        64
+      ],
+      "id": "c689b80d-7876-40d6-953b-73e732c140a7",
+      "name": "Repo Data"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "file",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "value": "={{ $json.repoOwner }}",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "={{ $json.repoName }}",
+          "mode": "name"
+        },
+        "filePath": "={{ $json.repoPath }}{{ $('Start').item.json.id }}.json",
+        "asBinaryProperty": false,
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -512,
+        64
+      ],
+      "id": "45f70c88-7de9-4a60-a8a4-f14c9322890b",
+      "name": "Get a file",
+      "webhookId": "cc6a2a33-8b62-465a-b321-9212e2490a72",
+      "alwaysOutputData": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "BRaEV0WrVpNS54uY",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "d66f24ca-d326-4a24-a994-5269d13beb76",
+              "leftValue": "={{ $json.content }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "empty",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "92886415-8c78-497f-af28-d4e5a81c3813",
+              "leftValue": "={{ $json.error }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notExists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -304,
+        64
+      ],
+      "id": "68cef78b-fe5f-44f8-b5ce-15240f9de992",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.download_url }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -64,
+        16
+      ],
+      "id": "fdf75257-0403-4809-a7f6-8028f8d5619e",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        192,
+        176
+      ],
+      "id": "259377fd-3172-402e-8d56-08e2b317efa7",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.github_status}}",
+                    "rightValue": "new",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "2665c9e9-7a2c-484e-a124-7a86d7c81c8f"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "New"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "5eab05fb-95de-435e-b00a-b89c60f57e5b",
+                    "leftValue": "={{$json.github_status}}",
+                    "rightValue": "different",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Different"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "06251f57-04b7-4722-a002-84b87a1b4989",
+                    "leftValue": "={{$json.github_status}}",
+                    "rightValue": "same",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Same"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        592,
+        160
+      ],
+      "id": "858a428d-b414-47b4-99d0-3d1593715f15",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "Mikcy22",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "={{ $('Repo Data').item.json.repoName }}",
+          "mode": "name"
+        },
+        "filePath": "={{ $('Repo Data').item.json.repoPath }}{{$('Start').first().json.id}}.json",
+        "fileContent": "={{$('isDiffOrNew').item.json[\"n8n_data_stringy\"]}}",
+        "commitMessage": "={{$('Start').first().json.name}} ({{$json.github_status}})"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        864,
+        -32
+      ],
+      "id": "9aaf89dc-c8b8-44c2-b50d-cb16fbcc0115",
+      "name": "Create a file",
+      "webhookId": "588fe195-b8a6-4b5b-81e6-bf4d47f02e86",
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "BRaEV0WrVpNS54uY",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const orderJsonKeys = (jsonObj) => {\n  const ordered = {};\n  Object.keys(jsonObj).sort().forEach(key => {\n    ordered[key] = jsonObj[key];\n  });\n  return ordered;\n}\n\n// Check if file returned with content\nif (Object.keys($input.all()[0].json).includes(\"content\")) {\n  // Decode base64 content and parse JSON\n  const origWorkflow = JSON.parse(Buffer.from($input.all()[0].json.content, 'base64').toString());\n  const n8nWorkflow = $input.all()[1].json;\n  \n  // Order JSON objects\n  const orderedOriginal = orderJsonKeys(origWorkflow);\n  const orderedActual = orderJsonKeys(n8nWorkflow);\n\n  // Determine difference\n  if (JSON.stringify(orderedOriginal) === JSON.stringify(orderedActual)) {\n    $input.all()[0].json.github_status = \"same\";\n  } else {\n    $input.all()[0].json.github_status = \"different\";\n    $input.all()[0].json.n8n_data_stringy = JSON.stringify(orderedActual, null, 2);\n  }\n  $input.all()[0].json.content_decoded = orderedOriginal;\n// No file returned / new workflow\n} else if (Object.keys($input.all()[0].json).includes(\"data\")) {\n  const origWorkflow = JSON.parse($input.all()[0].json.data);\n  const n8nWorkflow = $input.all()[1].json;\n  \n  // Order JSON objects\n  const orderedOriginal = orderJsonKeys(origWorkflow);\n  const orderedActual = orderJsonKeys(n8nWorkflow);\n\n  // Determine difference\n  if (JSON.stringify(orderedOriginal) === JSON.stringify(orderedActual)) {\n    $input.all()[0].json.github_status = \"same\";\n  } else {\n    $input.all()[0].json.github_status = \"different\";\n    $input.all()[0].json.n8n_data_stringy = JSON.stringify(orderedActual, null, 2);\n  }\n  $input.all()[0].json.content_decoded = orderedOriginal;\n\n} else {\n  // Order JSON object\n  const n8nWorkflow = $input.all()[1].json;\n  const orderedActual = orderJsonKeys(n8nWorkflow);\n  \n  // Proper formatting\n  $input.all()[0].json.github_status = \"new\";\n  $input.all()[0].json.n8n_data_stringy = JSON.stringify(orderedActual, null, 2);\n}\n\n// Return items\nreturn $input.all();"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        400,
+        176
+      ],
+      "id": "da87376a-604b-4105-9af8-b6f38bcd43f0",
+      "name": "isDiffOrNew"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "file",
+        "operation": "edit",
+        "owner": {
+          "__rl": true,
+          "value": "={{ $('Repo Data').item.json.repoOwner }}",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "={{ $('Repo Data').item.json.repoName }}",
+          "mode": "name"
+        },
+        "filePath": "={{ $('Repo Data').item.json.repoPath }}{{$('Start').first().json.id}}.json",
+        "fileContent": "={{$('isDiffOrNew').item.json[\"n8n_data_stringy\"]}}",
+        "commitMessage": "={{$('Start').first().json.name}} ({{ $('Start').item.json.isArchived ? '(Archived)' : $json.github_status }})"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        864,
+        176
+      ],
+      "id": "327e58f0-5f12-42b1-bcf0-533cd267bdc0",
+      "name": "Edit a file",
+      "webhookId": "588fe195-b8a6-4b5b-81e6-bf4d47f02e86",
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "BRaEV0WrVpNS54uY",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        880,
+        384
+      ],
+      "id": "2e008983-0b2a-45fa-8b2d-2113446bb134",
+      "name": "No Operation, do nothing"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5cfc1054-7d76-4582-864c-88e4bfef6ff7",
+              "name": "Done",
+              "value": true,
+              "type": "boolean"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1312,
+        176
+      ],
+      "id": "982763da-77af-49bb-b4c5-28e1447a8687",
+      "name": "Return"
+    }
+  ],
+  "pinData": {
+    "Start": [
+      {
+        "json": {
+          "createdAt": "2025-09-08T09:13:05.983Z",
+          "updatedAt": "2025-10-09T08:15:05.000Z",
+          "id": "62SbG30SICeONTPz",
+          "name": "InterOleo Bot copy 1.3",
+          "active": false,
+          "isArchived": false,
+          "nodes": [
+            {
+              "parameters": {
+                "rules": {
+                  "values": [
+                    {
+                      "conditions": {
+                        "options": {
+                          "caseSensitive": true,
+                          "leftValue": "",
+                          "typeValidation": "strict",
+                          "version": 2
+                        },
+                        "conditions": [
+                          {
+                            "leftValue": "={{ (!!$items(\"Telegram Trigger\")[0].json.message.photo && $items(\"ID con permisos3\")[0].json.autorizados.includes($json.message.chat.id)).toBoolean() }}",
+                            "rightValue": "true",
+                            "operator": {
+                              "type": "boolean",
+                              "operation": "true",
+                              "singleValue": true
+                            },
+                            "id": "07a98717-a3c7-47e8-adfc-17f54e47a217"
+                          }
+                        ],
+                        "combinator": "and"
+                      }
+                    },
+                    {
+                      "conditions": {
+                        "options": {
+                          "caseSensitive": true,
+                          "leftValue": "",
+                          "typeValidation": "strict",
+                          "version": 2
+                        },
+                        "conditions": [
+                          {
+                            "id": "ecb02250-bf17-42da-8407-5d2fb8d58957",
+                            "leftValue": "={{ (!!$items(\"Telegram Trigger\")[0].json.message.text && $items(\"ID con permisos3\")[0].json.autorizados.includes($json.message.chat.id)).toBoolean() }}",
+                            "rightValue": "",
+                            "operator": {
+                              "type": "boolean",
+                              "operation": "true",
+                              "singleValue": true
+                            }
+                          }
+                        ],
+                        "combinator": "and"
+                      }
+                    },
+                    {
+                      "conditions": {
+                        "options": {
+                          "caseSensitive": true,
+                          "leftValue": "",
+                          "typeValidation": "strict",
+                          "version": 2
+                        },
+                        "conditions": [
+                          {
+                            "id": "6e8a4cdf-42ab-4339-aacd-e9a3f4218de7",
+                            "leftValue": "={{ (!!$items(\"Telegram Trigger\")[0].json.message.document && $items(\"ID con permisos3\")[0].json.autorizados.includes($json.message.chat.id)).toBoolean() }}",
+                            "rightValue": "",
+                            "operator": {
+                              "type": "boolean",
+                              "operation": "true",
+                              "singleValue": true
+                            }
+                          }
+                        ],
+                        "combinator": "and"
+                      }
+                    }
+                  ]
+                },
+                "options": {}
+              },
+              "type": "n8n-nodes-base.switch",
+              "typeVersion": 3.2,
+              "position": [
+                80,
+                -816
+              ],
+              "id": "24b06f55-09a6-47f2-b71e-8f533707d9c8",
+              "name": "Switch2"
+            },
+            {
+              "parameters": {
+                "resource": "image",
+                "operation": "analyze",
+                "modelId": {
+                  "__rl": true,
+                  "value": "chatgpt-4o-latest",
+                  "mode": "list",
+                  "cachedResultName": "CHATGPT-4O-LATEST"
+                },
+                "text": "Eres un asistente administrativo experto en reconocimiento óptico de caracteres (OCR). Tu tarea es extraer información clave de una imagen que contiene etiquetas adheridas a botellas de aceite. Cada etiqueta incluye los siguientes campos:\n\n\t•\tREF.\n\nInstrucciones específicas:\n\t1.\tExtraer únicamente la información del campo REF. para cada botella visible en la imagen.\n\t2.\tFormato de salida: Organiza la información en una tabla, donde cada fila represente una muestra y las columnas correspondan a los campos mencionados anteriormente.\n\t3.\tPrecisión y revisión: Si el OCR no puede extraer algún dato o hay baja confianza en la extracción, indica “No legible” en ese campo. Además, realiza una revisión visual adicional de la imagen para corregir o confirmar los datos extraídos si la calidad lo permite.\n\t4.\tContexto adicional: Ten en cuenta que las etiquetas están adheridas a botellas de aceite y pueden presentar curvaturas, zonas desenfocadas, textos parcialmente ocultos por otras botellas, o reflejos que dificulten la lectura. Ajusta el reconocimiento teniendo en cuenta estas distorsiones.\n\t5.\tReconocimiento contextual: Si el texto está parcialmente cubierto o borroso, intenta deducir el contenido usando el formato esperado del campo (por ejemplo, REF. tiene el formato \"25-XXXX\", siendo XXXX un número de 4 cifras).\n\t6.\tOrden de procesamiento: Procesa de izquierda a derecha visualmente. Si una botella muestra más de una etiqueta, procesa solo la etiqueta visible más completa.\n\t7.\tSin repeticiones: Asegúrate de que cada valor REF. se registre una sola vez, incluso si aparece parcialmente repetido en la imagen por la perspectiva.\n\t8.\tNo incluyas ninguna explicación adicional, comentarios, advertencias, ni encabezados. Solo muestra la tabla limpia como salida.\n\nImportante: Mantén una actitud profesional y enfocada en la precisión de los datos. Aplica sentido lógico cuando el OCR automático no sea suficiente.",
+                "inputType": "base64",
+                "options": {
+                  "detail": "auto"
+                }
+              },
+              "type": "@n8n/n8n-nodes-langchain.openAi",
+              "typeVersion": 1.8,
+              "position": [
+                672,
+                -864
+              ],
+              "id": "5a90ecea-0108-43fd-a948-a14703fb7d47",
+              "name": "OpenAI1",
+              "alwaysOutputData": true,
+              "credentials": {
+                "openAiApi": {
+                  "id": "p8ABJFUF9JXWABZs",
+                  "name": "n8n agent wsp"
+                }
+              }
+            },
+            {
+              "parameters": {
+                "jsCode": "const texto = $('OpenAI1').first().json.content;\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+              },
+              "type": "n8n-nodes-base.code",
+              "typeVersion": 2,
+              "position": [
+                1248,
+                -864
+              ],
+              "id": "43889497-83f2-4b19-9386-0c4380365d58",
+              "name": "Code"
+            },
+            {
+              "parameters": {
+                "jsCode": "const excelData = $(\"Microsoft Excel 3656\").all();\n\nconst references = $input.first().json.referencias;\nconst filteredData = excelData.filter((item) =>\n  references.includes(item?.json[\"REF.\"]),\n);\nreturn filteredData;\n"
+              },
+              "type": "n8n-nodes-base.code",
+              "typeVersion": 2,
+              "position": [
+                1632,
+                -864
+              ],
+              "id": "e9f52e2a-746c-4970-844d-081c91edff35",
+              "name": "Code5",
+              "alwaysOutputData": true
+            },
+            {
+              "parameters": {
+                "chatId": "={{ $('Telegram Trigger').all()[0].json.message.from.id }}\n",
+                "text": "=Los datos son:\nNumero REF: {{ $json['REF.'] }}\nLOTE: {{ $json.LOTE }}\nClasific. Bodega:{{ $json['Clas Bod'] }}\nCata:{{ $json.CATA || \"Pendiente de carga\"}}\nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }}\nObservaciones: {{ $json.OBSERVACIONES }}\nCorredor:{{ $json.CORREDOR }}\nCliente:{{ $json.CLIENTE || 'Sin cliente' }}\nQTY.DISP:{{ $json['QTY.DISP'] }}\nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }}\nFecha de envio:{{ $json['Fecha Envío'] }}\nAcidez: {{ $json.ACIDEZ }}\nEtilicos:{{ $json.ETILICOS }}\nFecha de cata:{{ $json['FECHA C'] || 'Sin fecha de cata' }}\n",
+                "additionalFields": {
+                  "appendAttribution": false,
+                  "parse_mode": "HTML"
+                },
+                "path": "77d59e2f-fae6-438b-9682-d9d0d0e360e7"
+              },
+              "type": "n8n-nodes-base.telegram",
+              "typeVersion": 1.2,
+              "position": [
+                1952,
+                -864
+              ],
+              "id": "46ab80a3-4fbc-4a0f-a2f2-a00111a361f2",
+              "name": "Telegram10",
+              "webhookId": "77d59e2f-fae6-438b-9682-d9d0d0e360e7",
+              "credentials": {
+                "telegramApi": {
+                  "id": "ktaJczNVT9r8QZ4A",
+                  "name": "Telegram account"
+                }
+              }
+            },
+            {
+              "parameters": {
+                "chatId": "={{ $('Telegram Trigger').all()[0].json.message.from.id }}",
+                "text": "=Los datos son:\nNumero REF: {{ $json['REF.'] }}\nLOTE: {{ $json.LOTE }}\nClasific. Bodega:{{ $json['Clas Bod'] }}\nCata:{{ $json.CATA || \"Pendiente de carga\"}}\nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }}\nObservaciones: {{ $json.OBSERVACIONES }}\nCorredor:{{ $json.CORREDOR }}\nCliente:{{ $json.CLIENTE || 'Sin cliente' }}\nQTY.DISP:{{ $json['QTY.DISP'] }}\nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }}\nFecha de envio:{{ $json['Fecha Envío'] }}\nAcidez: {{ $json.ACIDEZ }}\nEtilicos:{{ $json.ETILICOS }}\nFecha de cata:{{ $json['FECHA C'] || 'Sin fecha de cata' }}\n",
+                "additionalFields": {
+                  "appendAttribution": false,
+                  "disable_notification": false,
+                  "disable_web_page_preview": false,
+                  "parse_mode": "HTML"
+                },
+                "path": "ac4425d5-9c9d-4209-a0f9-d6834165c355"
+              },
+              "type": "n8n-nodes-base.telegram",
+              "typeVersion": 1.2,
+              "position": [
+                1872,
+                -544
+              ],
+              "id": "1b7e0add-96e3-4774-807a-84a65bfa389a",
+              "name": "Telegram11",
+              "webhookId": "ac4425d5-9c9d-4209-a0f9-d6834165c355",
+              "credentials": {
+                "telegramApi": {
+                  "id": "ktaJczNVT9r8QZ4A",
+                  "name": "Telegram account"
+                }
+              }
+            },
+            {
+              "parameters": {
+                "jsCode": "const excelData = $(\"Microsoft Excel 3655\").all();\n\nconst references = $input.all()[0]?.json?.referencias;\n\nconst filteredData = excelData.filter((item) =>\n  references.includes(item?.json[\"REF.\"]),\n);\nreturn filteredData;\n"
+              },
+              "type": "n8n-nodes-base.code",
+              "typeVersion": 2,
+              "position": [
+                1440,
+                -544
+              ],
+              "id": "096a4fd9-0ec9-47fc-aa47-26ba096005be",
+              "name": "Code11",
+              "alwaysOutputData": true
+            },
+            {
+              "parameters": {
+                "jsCode": "const texto = $('Telegram Trigger').first().json.message.text;\n\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+              },
+              "type": "n8n-nodes-base.code",
+              "typeVersion": 2,
+              "position": [
+                1056,
+                -544
+              ],
+              "id": "ef4c52e2-8fdf-4bed-9dd3-b3b638d65f2b",
+              "name": "Code12"
+            },
+            {
+              "parameters": {
+                "resource": "worksheet",
+                "operation": "readRows",
+                "workbook": {
+                  "__rl": true,
+                  "value": "01CGHIMH2R6WSIIAQX2RCKN7J2Z6IWTKVD",
+                  "mode": "list",
+                  "cachedResultName": "Informe Gestión de muestras",
+                  "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B84A4F551-1702-44D4-A6FD-3ACF9169AAA3%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+                },
+                "worksheet": {
+                  "__rl": true,
+                  "value": "{00000000-0001-0000-0000-000000000000}",
+                  "mode": "list",
+                  "cachedResultName": "Sheet1",
+                  "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BFF224EC9-9AC7-4837-B0B9-BEA697CE206B%7D&file=TeleListadoMuestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+                },
+                "useRange": true,
+                "range": "A1:O20000",
+                "options": {}
+              },
+              "type": "n8n-nodes-base.microsoftExcel",
+              "typeVersion": 2.1,
+              "position": [
+                928,
+                -864
+              ],
+              "id": "f0a4dec8-f053-45d8-ac24-b4c2778a34f2",
+              "name": "Microsoft Excel 3656",
+              "credentials": {
+                "microsoftExcelOAuth2Api": {
+                  "id": "t3fnVjLzsPpg77lr",
+                  "name": "Microsoft Excel account"
+                }
+              }
+            },
+            {
+              "parameters": {
+                "jsCode": "// === ACCESO SEGURO AL PRIMER ITEM ===\nconst item = $input.first();\n\n// === VALIDACIÓN ===\nif (!item.binary?.data?.data) {\n  throw new Error(\"⚠️ No se recibió imagen binaria válida\");\n}\n\n// === FUNCIONES AUXILIARES ===\n// No tenemos Buffer ni Sharp, pero podemos simular conversión básica\n// Si tu entorno tiene Node.js extendido, puedes usar Sharp o Jimp para realzar la calidad\n\n// === SIMULAMOS MEJORA: Cambiamos mimeType a PNG (mejor para OCR) ===\nconst nuevoBinario = { ...item.binary };\nnuevoBinario.data = { ...item.binary.data };\n\n// Aquí normalmente deberías procesar la imagen con Sharp o una API externa.\n// En este ejemplo asumimos que ya es buena y simplemente la marcamos como PNG.\nnuevoBinario.data.mimeType = 'image/png';\nnuevoBinario.data.fileName = 'mejorada.png';\n\n// === RETORNAMOS LA NUEVA IMAGEN CON FORMATO PNG ===\nreturn [\n  {\n    binary: nuevoBinario,\n    json: item.json,\n  }\n];\n"
+              },
+              "type": "n8n-nodes-base.code",
+              "typeVersion": 2,
+              "position": [
+                416,
+                -864
+              ],
+              "id": "faaaad51-7859-4d41-9cd1-40083fac6c99",
+              "name": "Code2"
+            },
+            {
+              "parameters": {
+                "updates": [
+                  "message",
+                  "*"
+                ],
+                "additionalFields": {
+                  "download": true
+                },
+                "path": "87bb6846-8a87-4e17-8b13-b795c67eb7d8"
+              },
+              "type": "n8n-nodes-base.telegramTrigger",
+              "typeVersion": 1.1,
+              "position": [
+                -944,
+                -1264
+              ],
+              "id": "7e606497-78d7-44cf-9fcf-c8da93f585a5",
+              "name": "Telegram Trigger",
+              "webhookId": "87bb6846-8a87-4e17-8b13-b795c67eb7d8",
+              "credentials": {
+                "telegramApi": {
+                  "id": "ktaJczNVT9r8QZ4A",
+                  "name": "Telegram account"
+                }
+              }
+            },
+            {
+              "parameters": {
+                "conditions": {
+                  "options": {
+                    "caseSensitive": true,
+                    "leftValue": "",
+                    "typeValidation": "strict",
+                    "version": 2
+                  },
+                  "conditions": [
+                    {
+                      "id": "7e2f81c9-d78f-419a-ab53-7e59f2e00475",
+                      "leftValue": "={{ $json.autorizados }}",
+                      "rightValue": "={{ $(\"Telegram Trigger\").item.json.message.from.id }}",
+                      "operator": {
+                        "type": "array",
+                        "operation": "contains",
+                        "rightType": "any"
+                      }
+                    }
+                  ],
+                  "combinator": "and"
+                },
+                "options": {}
+              },
+              "type": "n8n-nodes-base.if",
+              "typeVersion": 2.2,
+              "position": [
+                -608,
+                -720
+              ],
+              "id": "a3934964-4484-43fa-911b-779e402ea455",
+              "name": "If2"
+            },
+            {
+              "parameters": {
+                "mode": "raw",
+                "jsonOutput": "={\n  \"autorizados\": [\n   702261042,\n    273338613,\n    7773756172,\n    6735037156,\n1745267799\n  ]\n}\n",
+                "options": {}
+              },
+              "type": "n8n-nodes-base.set",
+              "typeVersion": 3.4,
+              "position": [
+                -1008,
+                -720
+              ],
+              "id": "7ad816e5-9351-479d-9e91-3d3a7a62c0db",
+              "name": "ID con permisos3"
+            },
+            {
+              "parameters": {
+                "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+                "text": "=No tienes permiso de uso para el BOT. Por favor contacta con el siguiente número:\n+34 607 37 38 21\n\nTu id: {{ $('Telegram Trigger').item.json.message.chat.id }}",
+                "additionalFields": {},
+                "path": "bb81a045-1c50-4ae6-95da-43e39b6b3133"
+              },
+              "type": "n8n-nodes-base.telegram",
+              "typeVersion": 1.2,
+              "position": [
+                -160,
+                -528
+              ],
+              "id": "7f800bd0-70d1-4435-ab06-ce3c40f9cab1",
+              "name": "ID sin permiso2",
+              "webhookId": "bb81a045-1c50-4ae6-95da-43e39b6b3133",
+              "credentials": {
+                "telegramApi": {
+                  "id": "ktaJczNVT9r8QZ4A",
+                  "name": "Telegram account"
+                }
+              }
+            },
+            {
+              "parameters": {
+                "resource": "worksheet",
+                "operation": "readRows",
+                "workbook": {
+                  "__rl": true,
+                  "value": "01CGHIMH2R6WSIIAQX2RCKN7J2Z6IWTKVD",
+                  "mode": "list",
+                  "cachedResultName": "Informe Gestión de muestras",
+                  "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B84A4F551-1702-44D4-A6FD-3ACF9169AAA3%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+                },
+                "worksheet": {
+                  "__rl": true,
+                  "value": "{00000000-0001-0000-0000-000000000000}",
+                  "mode": "list",
+                  "cachedResultName": "Sheet1",
+                  "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BFF224EC9-9AC7-4837-B0B9-BEA697CE206B%7D&file=TeleListadoMuestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+                },
+                "useRange": true,
+                "range": "A1:O20000",
+                "options": {}
+              },
+              "type": "n8n-nodes-base.microsoftExcel",
+              "typeVersion": 2.1,
+              "position": [
+                400,
+                -544
+              ],
+              "id": "2906fe7f-a79d-4231-a21c-a30dbd130af9",
+              "name": "Microsoft Excel 3655",
+              "credentials": {
+                "microsoftExcelOAuth2Api": {
+                  "id": "t3fnVjLzsPpg77lr",
+                  "name": "Microsoft Excel account"
+                }
+              }
+            },
+            {
+              "parameters": {},
+              "type": "n8n-nodes-base.merge",
+              "typeVersion": 3.2,
+              "position": [
+                -160,
+                -800
+              ],
+              "id": "fea5a01c-73ad-4688-9444-0208a13e0a9a",
+              "name": "Merge"
+            }
+          ],
+          "connections": {
+            "Switch2": {
+              "main": [
+                [
+                  {
+                    "node": "Code2",
+                    "type": "main",
+                    "index": 0
+                  }
+                ],
+                [
+                  {
+                    "node": "Microsoft Excel 3655",
+                    "type": "main",
+                    "index": 0
+                  }
+                ],
+                [
+                  {
+                    "node": "Code2",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "OpenAI1": {
+              "main": [
+                [
+                  {
+                    "node": "Microsoft Excel 3656",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "Code": {
+              "main": [
+                [
+                  {
+                    "node": "Code5",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "Code5": {
+              "main": [
+                [
+                  {
+                    "node": "Telegram10",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "Code11": {
+              "main": [
+                [
+                  {
+                    "node": "Telegram11",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "Code12": {
+              "main": [
+                [
+                  {
+                    "node": "Code11",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "Microsoft Excel 3656": {
+              "main": [
+                [
+                  {
+                    "node": "Code",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "Code2": {
+              "main": [
+                [
+                  {
+                    "node": "OpenAI1",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "Telegram Trigger": {
+              "main": [
+                [
+                  {
+                    "node": "ID con permisos3",
+                    "type": "main",
+                    "index": 0
+                  },
+                  {
+                    "node": "Merge",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "If2": {
+              "main": [
+                [
+                  {
+                    "node": "Merge",
+                    "type": "main",
+                    "index": 1
+                  }
+                ],
+                [
+                  {
+                    "node": "ID sin permiso2",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "ID con permisos3": {
+              "main": [
+                [
+                  {
+                    "node": "If2",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "Microsoft Excel 3655": {
+              "main": [
+                [
+                  {
+                    "node": "Code12",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "Merge": {
+              "main": [
+                [
+                  {
+                    "node": "Switch2",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            }
+          },
+          "settings": {
+            "executionOrder": "v1"
+          },
+          "staticData": null,
+          "meta": {
+            "templateId": "PT1i+zU92Ii5O2XCObkhfHJR5h9rNJTpiCIkYJk9jHU=",
+            "templateCredsSetupCompleted": true
+          },
+          "pinData": {},
+          "versionId": "90956681-8071-4edd-8410-2fcf8440673f",
+          "triggerCount": 1,
+          "shared": [
+            {
+              "createdAt": "2025-09-08T09:13:05.986Z",
+              "updatedAt": "2025-09-08T09:13:05.986Z",
+              "role": "workflow:owner",
+              "workflowId": "62SbG30SICeONTPz",
+              "projectId": "OXbhDgBzx3ttiAxZ"
+            }
+          ],
+          "tags": []
+        }
+      }
+    ]
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-10-15T09:40:50.740Z",
+      "updatedAt": "2025-10-15T09:40:50.740Z",
+      "role": "workflow:owner",
+      "workflowId": "bL2OxKNL1BuHOL2n",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-10-15T10:07:10.000Z",
+  "versionId": "5b070d21-5c50-4622-abd4-ad734eaaf694"
+}
