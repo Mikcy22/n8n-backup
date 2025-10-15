@@ -1,0 +1,441 @@
+{
+  "active": true,
+  "connections": {
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "muestra",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replace Me": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3651",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Replace Me",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "muestra": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request2": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 365",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code2": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 365": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3651": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-04-07T11:11:14.771Z",
+  "id": "N8XKymW5iBiPfJ3L",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "MuestrasAGQ DATOS",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {
+          "reset": false
+        }
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -96,
+        -464
+      ],
+      "id": "af42ae66-917f-4ff1-931d-03983c0498e7",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "name": "Replace Me",
+      "typeVersion": 1,
+      "position": [
+        1760,
+        -448
+      ],
+      "id": "c22f8778-66ee-4d7b-8e04-2cb683fee931"
+    },
+    {
+      "parameters": {
+        "jsCode": "const parametros = $json.results;\nconst muestra = items[0].json;\n\n// Lista exacta de parámetros a incluir (en orden)\nconst columnas = [\n  \"GRADO DE ACIDEZ\",\n  \"ÍNDICE DE PERÓXIDOS\",\n  \"K270\",\n  \"K232\",\n  \"DELTA K\",\n  \"HUMEDAD\",\n  \"IMPUREZAS\",\n  \"CERAS TOTALES\",\n  \"ESTERES ETÍLICOS\",\n  \"PALMITATO ETÍLICO\",\n  \"OLEATO ETÍLICO\",\n  \"COLESTEROL\",\n  \"BRASICASTEROL\",\n  \"CAMPESTEROL\",\n  \"ESTIGMASTEROL\",\n  \"BETA-SITOSTEROL APARENTE\",\n  \"DELTA-7-ESTIGMASTENOL\",\n  \"ERITRODIOL + UVAOL\",\n  \"ESTEROLES TOTALES\",\n  \"C22:0 - ÁCIDO ERÚCICO\",\n  \"VALORACIÓN ORGANOLÉPTICA\",\n  \"MEDIANA DEL FRUTADO\",\n  \"MEDIANANDEL DEFECTO\",\n  \"DEFECTO MAYORITARIO\",\n  \"MEDIANA DE AMARGO\",\n  \"MEDIANA DE PICANTE\"\n];\n\n// Inicializar la fila con datos base de la muestra (puedes añadir más si quieres)\nconst fila = {\n  \"REF. FISICOQUIMICO\":  $('Loop Over Items').first().json.sample_code|| '',\n  \"FECHA REPECCION FÍSICO QUÍMICO\":$('Loop Over Items').first().json.reception_date|| '',\n  \"FECHA FIN ANALISIS FÍSICO QUÍMICO\":$('Loop Over Items').first().json.end_date || '',\n  \"FECHA MUESTREO ANÁLISIS FÍSICO QUÍMICO\":$('Loop Over Items').first().json.sampling_date|| '',\n  \"ESTADO\":$('Loop Over Items').first().json.status\n};\n\n// Crear un índice rápido de parámetros devueltos por la API\nconst mapaParametros = {};\nfor (const param of parametros) {\n  const nombre = param.parameter?.trim().toUpperCase();\n  const valor = param.value?.result_display || '';\n  if (nombre) {\n    mapaParametros[nombre] = valor;\n  }\n}\n\n// Rellenar cada columna esperada, dejando en blanco si no está en los resultados\nfor (const columna of columnas) {\n  fila[columna] = mapaParametros[columna] || '';\n}\n\nreturn [{ json: fila }];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        448,
+        -448
+      ],
+      "id": "b9e3d940-c789-4a32-a410-87e16475661d",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "amount": 3
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1424,
+        -448
+      ],
+      "id": "bef30094-c2de-49a9-af36-6ec2d4acf534",
+      "name": "Wait",
+      "webhookId": "1661d9ba-1ba6-4607-bc46-0800e8f516a7"
+    },
+    {
+      "parameters": {
+        "url": "=https://external.besafer.info/api/sample_parameter/{{ $json.sample_code }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('HTTP Request').item.json.access }}"
+            },
+            {
+              "name": "company",
+              "value": "={{ $('HTTP Request1').item.json.results[0].code }}"
+            },
+            {
+              "name": "address",
+              "value": "={{ $('HTTP Request1').item.json.results[0].addresses[0].address }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        160,
+        -448
+      ],
+      "id": "15259d35-8e47-420d-a8e0-41e82cc57349",
+      "name": "muestra"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 5
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1904,
+        -464
+      ],
+      "id": "b4279494-25b9-43ca-9b33-c05d46c984fc",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://external.besafer.info/api/authorization/grant",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"email\": \"logistica.interoleo@gmail.com\",\n  \"password\": \"agq2025\"\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1664,
+        -464
+      ],
+      "id": "3612b3f3-ec88-4ce4-92a3-913a6d8ecb09",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "url": "https://external.besafer.info/api/company/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$json[\"access\"]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1408,
+        -464
+      ],
+      "id": "93e90f39-7cd2-4639-9ef0-18c628c46722",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": {
+        "url": "https://external.besafer.info/api/sample/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('HTTP Request').item.json.access }}"
+            },
+            {
+              "name": "company",
+              "value": "={{ $json.results[0].code }}"
+            },
+            {
+              "name": "address",
+              "value": "={{ $json.results[0].addresses[0].address }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1120,
+        -464
+      ],
+      "id": "76f1fe27-afa6-4562-9201-93736e02ee67",
+      "name": "HTTP Request2"
+    },
+    {
+      "parameters": {
+        "jsCode": "const BASE_URL = 'https://external.besafer.info/api/sample/?limit=100&offset=0';\nlet nextUrl = BASE_URL;\nlet allSamples = [];\n\nconst token =$('HTTP Request').first().json.access;\nconst company =$('HTTP Request1').first().json.results[0].code ;\nconst address =\"001\";\n\nwhile (nextUrl) {\n  const response = await this.helpers.httpRequest({\n    method: 'GET',\n    url: nextUrl,\n    headers: {\n      Authorization: `Bearer ${token}`,\n      company,\n      address,\n    },\n    json: true,\n  });\n\n  allSamples.push(...response.results);\n  nextUrl = response.next;\n}\n\n// Devuelve cada muestra como un item individual\nreturn allSamples.map(sample => ({\n  json: {\n    ...sample,\n    token,\n    company,\n    address\n  }\n}));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -368,
+        -464
+      ],
+      "id": "cf20bdaa-81e0-4e0c-aade-51a40a215e70",
+      "name": "Code2"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "clear",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH7U76LRJFXMIBCKFBBALLHVWANR",
+          "mode": "list",
+          "cachedResultName": "MuestrasAGQ",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1497FFF4-EC96-4440-A284-205ACF5B01B1%7D&file=MuestrasAGQ.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{D2F522E4-C549-4BE0-AB9D-BF80E0B8D025}",
+          "mode": "list",
+          "cachedResultName": "n8n",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1497FFF4-EC96-4440-A284-205ACF5B01B1%7D&file=MuestrasAGQ.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=n8n!A1"
+        },
+        "useRange": true,
+        "range": "a2:ae12000"
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        -784,
+        -464
+      ],
+      "id": "0049330f-5f2d-4a45-8ae2-05dddbd2c4b2",
+      "name": "Microsoft Excel 365",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "append",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH7U76LRJFXMIBCKFBBALLHVWANR",
+          "mode": "list",
+          "cachedResultName": "MuestrasAGQ",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1497FFF4-EC96-4440-A284-205ACF5B01B1%7D&file=MuestrasAGQ.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{D2F522E4-C549-4BE0-AB9D-BF80E0B8D025}",
+          "mode": "list",
+          "cachedResultName": "n8n",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1497FFF4-EC96-4440-A284-205ACF5B01B1%7D&file=MuestrasAGQ.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=n8n!A1"
+        },
+        "dataMode": "autoMap",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        848,
+        -448
+      ],
+      "id": "6a2686fe-5ad7-4889-8b44-538af447606f",
+      "name": "Microsoft Excel 3651",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-04-07T11:11:14.774Z",
+      "updatedAt": "2025-04-07T11:11:14.774Z",
+      "role": "workflow:owner",
+      "workflowId": "N8XKymW5iBiPfJ3L",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": {
+    "node:Schedule Trigger": {
+      "recurrenceRules": []
+    },
+    "node:Schedule Trigger1": {
+      "recurrenceRules": []
+    }
+  },
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-10-10T09:42:14.000Z",
+  "versionId": "eb9f4f17-0728-4675-9030-29d0d6bcd12b"
+}
