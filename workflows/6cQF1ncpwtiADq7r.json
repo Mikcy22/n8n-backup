@@ -1,0 +1,602 @@
+{
+  "active": false,
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "OpenAI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3656",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3656": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code2": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respond to Webhook": {
+      "main": [
+        []
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Code3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Microsoft Excel 3651",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code3": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 365",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code6": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 365": {
+      "main": [
+        [
+          {
+            "node": "Code6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code7": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code4": {
+      "main": [
+        [
+          {
+            "node": "Code7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3651": {
+      "main": [
+        [
+          {
+            "node": "Code4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-04-08T08:08:21.515Z",
+  "id": "6cQF1ncpwtiADq7r",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "MUESTRASWEB",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "recibir-foto",
+        "responseMode": "lastNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "id": "e7733ed9-ed3b-4a11-bfeb-f52bdbf81f63",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -1344,
+        -944
+      ],
+      "webhookId": "6db92ab0-dc9f-487e-b2d0-45ef4ae228d2"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "chatgpt-4o-latest",
+          "mode": "list",
+          "cachedResultName": "CHATGPT-4O-LATEST"
+        },
+        "text": "Eres un asistente administrativo experto en reconocimiento óptico de caracteres (OCR). Tu tarea es extraer información clave de una imagen que contiene etiquetas adheridas a botellas de aceite. Cada etiqueta incluye los siguientes campos:\n\n\t•\tREF.\n\nInstrucciones específicas:\n\t1.\tExtraer únicamente la información del campo REF. para cada botella visible en la imagen.\n\t2.\tFormato de salida: Organiza la información en una tabla, donde cada fila represente una muestra y las columnas correspondan a los campos mencionados anteriormente.\n\t3.\tPrecisión y revisión: Si el OCR no puede extraer algún dato o hay baja confianza en la extracción, indica “No legible” en ese campo. Además, realiza una revisión visual adicional de la imagen para corregir o confirmar los datos extraídos si la calidad lo permite.\n\t4.\tContexto adicional: Ten en cuenta que las etiquetas están adheridas a botellas de aceite y pueden presentar curvaturas, zonas desenfocadas, textos parcialmente ocultos por otras botellas, o reflejos que dificulten la lectura. Ajusta el reconocimiento teniendo en cuenta estas distorsiones.\n\t5.\tReconocimiento contextual: Si el texto está parcialmente cubierto o borroso, intenta deducir el contenido usando el formato esperado del campo (por ejemplo, REF. tiene el formato \"25-XXXX\", siendo XXXX un número de 4 cifras).\n\t6.\tOrden de procesamiento: Procesa de izquierda a derecha visualmente. Si una botella muestra más de una etiqueta, procesa solo la etiqueta visible más completa.\n\t7.\tSin repeticiones: Asegúrate de que cada valor REF. se registre una sola vez, incluso si aparece parcialmente repetido en la imagen por la perspectiva.\n\t8.\tNo incluyas ninguna explicación adicional, comentarios, advertencias, ni encabezados. Solo muestra la tabla limpia como salida.\n\nImportante: Mantén una actitud profesional y enfocada en la precisión de los datos. Aplica sentido lógico cuando el OCR automático no sea suficiente.",
+        "inputType": "base64",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        -144,
+        -656
+      ],
+      "id": "5752da49-449a-4db1-9879-52fe4433894e",
+      "name": "OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "p8ABJFUF9JXWABZs",
+          "name": "n8n agent wsp"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  return {\n    binary: {\n      data: item.binary?.imagen || item.binary?.data || item.binary?.file\n    },\n    json: item.json\n  };\n});\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -400,
+        -656
+      ],
+      "id": "32d833fc-2105-4c82-84af-8c75d690ee06",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json.content }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        912,
+        -656
+      ],
+      "id": "8196a67b-5277-48a8-8963-ff5c91ee607d",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "const input = $input.first().json.content;\n\n// Normaliza saltos de línea tipo \"\\\\n\" a reales\nconst normalizedInput = input.replace(/\\\\n/g, '\\n');\nconst lines = normalizedInput.trim().split('\\n');\n\n// Obtener cabeceras\nconst headers = lines[0]\n  .split('|')\n  .map(h => h.trim())\n  .filter(Boolean);\n\n// Saltar línea de separación\nconst dataLines = lines.slice(2);\n\n// Obtener todos los valores como array plano\nconst refs = dataLines.map(line => {\n  const values = line\n    .split('|')\n    .map(v => v.trim())\n    .filter(Boolean);\n\n  return values[0]; // Solo la primera columna (REF)\n});\n\n// Devolver como único objeto JSON\nreturn [{\n  json: {\n    refs\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        48,
+        -656
+      ],
+      "id": "033cf050-917a-49c2-a6b1-96ffa98a6750",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "jsCode": "const referencias = $input.first().json.referencias;\nconst excelData = $(\"Microsoft Excel 3656\").all().map(item => item.json);\n\nconst columnsToKeep = [2, 4, 6, 7, 9, 11, 12, 14, 16, 19, 22, 23, 24, 25, 26];\n\nconst result = referencias\n  .map(ref => {\n    const rowData = excelData.find(row => row[\"Column6\"] === ref);\n    if (!rowData) return null;\n\n    const cleanedRow = Object.fromEntries(\n      columnsToKeep.map(colNum => {\n        const key = `Column${colNum}`;\n        const value = Object.prototype.hasOwnProperty.call(rowData, key)\n          ? rowData[key]\n          : \"\";\n        return [key, value];\n      })\n    );\n\n    return cleanedRow;\n  })\n  .filter(Boolean);\n\n// 🔁 Agrupamos todo en un solo objeto bajo la clave \"datos\"\nreturn [{\n  json: {\n    datos: result\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        704,
+        -656
+      ],
+      "id": "a08a931a-306e-45ca-823d-a5d3b659c666",
+      "name": "Code5",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHZ2TNISB733WRB3NMVUYV77ME7C",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B20519B3A-7BFF-43B4-B6B2-B4C57FF613E2%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B20519B3A-7BFF-43B4-B6B2-B4C57FF613E2%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O25000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        288,
+        -656
+      ],
+      "id": "eefad8fa-b61c-4734-9f3e-0f11fc5985c2",
+      "name": "Microsoft Excel 3656",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const texto = $('OpenAI').first().json.content;\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        -656
+      ],
+      "id": "765d23b6-5e39-457a-8ad7-1e66c9b8ab77",
+      "name": "Code2"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.body.mensaje }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEmpty",
+                      "singleValue": true
+                    },
+                    "id": "d2e09422-49a3-4b4a-90b7-6aa02cbc837a"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "541ec34b-6b65-4321-a120-afe617540a6c",
+                    "leftValue": "={{ $json.body.rango }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "exists",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "b6987b3f-f839-4f59-aefb-5b4e616fe684",
+                    "leftValue": "",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -976,
+        -944
+      ],
+      "id": "aa029d98-7647-4a81-b2d2-888f25d47059",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obtener el mensaje del input\nconst mensaje = $input.first().json.body.mensaje;\n\n// Expresión regular: XX-XXX o XX-XXXX (solo dígitos)\nconst regex = /\\b\\d{2}-\\d{3,4}\\b/g;\n\n// Buscar todos los matches\nconst referencias = mensaje.match(regex) || [];\n\n// Devolver resultado como salida del nodo\nreturn [{\n  json: {\n    referencias\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -400,
+        -1104
+      ],
+      "id": "290e7f41-3bec-4aad-9ccb-ebb2ed90bf40",
+      "name": "Code3"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHZ2TNISB733WRB3NMVUYV77ME7C",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B20519B3A-7BFF-43B4-B6B2-B4C57FF613E2%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B20519B3A-7BFF-43B4-B6B2-B4C57FF613E2%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O25000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        -144,
+        -1104
+      ],
+      "id": "fd849668-8d0e-48d1-bb5d-45446a8e05d2",
+      "name": "Microsoft Excel 365",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json.content }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        880,
+        -1104
+      ],
+      "id": "0a426c3e-aefb-4d63-bbcf-027c901d2c20",
+      "name": "Respond to Webhook1"
+    },
+    {
+      "parameters": {
+        "jsCode": "const referencias =$('Code3').first().json.referencias;\nconst excelData = $(\"Microsoft Excel 365\").all().map(item => item.json);\n\nconst columnsToKeep = [2, 4, 6, 7, 9, 11, 12, 14, 16, 19, 22, 23, 24, 25, 26];\n\nconst result = referencias\n  .map(ref => {\n    const rowData = excelData.find(row => row[\"Column6\"] === ref);\n    if (!rowData) return null;\n\n    const cleanedRow = Object.fromEntries(\n      columnsToKeep.map(colNum => {\n        const key = `Column${colNum}`;\n        const value = Object.prototype.hasOwnProperty.call(rowData, key)\n          ? rowData[key]\n          : \"\";\n        return [key, value];\n      })\n    );\n\n    return cleanedRow;\n  })\n  .filter(Boolean);\n\n// 🔁 Agrupamos todo en un solo objeto bajo la clave \"datos\"\nreturn [{\n  json: {\n    datos: result\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        288,
+        -1104
+      ],
+      "id": "45f61986-cd4b-46b8-8bed-4b5becf8f256",
+      "name": "Code6",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const referencias = $input.first().json.referencias;\nconst excelData = $(\"Microsoft Excel 3651\").all().map(item => item.json);\n\nconst columnsToKeep = [2, 4, 6, 7, 9, 11, 12, 14, 16, 19, 22, 23, 24, 25, 26];\n\nconst result = referencias.map(ref => {\n  const row = excelData.find(r => r[\"Column6\"] === ref);\n  if (!row) return null;\n\n  const cleaned = {};\n  columnsToKeep.forEach(num => {\n    const key = `Column${num}`;\n    cleaned[key] = row[key] ?? \"\";\n  });\n\n  return cleaned;\n}).filter(Boolean);\n\nreturn [{\n  json: {\n    datos: result\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        208,
+        -896
+      ],
+      "id": "5935ab11-1647-4e0c-8f87-efe69be0a8a8",
+      "name": "Code7",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json.content }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        880,
+        -896
+      ],
+      "id": "c961fdfb-1c46-4b40-9c6c-ccd6ae6b8823",
+      "name": "Respond to Webhook2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Captura el texto desde el webhook u otro nodo\nconst texto = $('Switch').first().json.body.rango || \"\";\n\n// 🟢 Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// 🟢 Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// 🧹 Unir y limpiar duplicados\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\n// ✅ Devolver el array como propiedad de un objeto\nreturn [{\n  json: {\n    referencias\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -144,
+        -896
+      ],
+      "id": "ddfa2cee-d5ec-4439-907c-3bb4e4d22e07",
+      "name": "Code4"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHZ2TNISB733WRB3NMVUYV77ME7C",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B20519B3A-7BFF-43B4-B6B2-B4C57FF613E2%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B20519B3A-7BFF-43B4-B6B2-B4C57FF613E2%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O25000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        -400,
+        -896
+      ],
+      "id": "cf419002-f4fc-4d51-9592-949ccb516cd5",
+      "name": "Microsoft Excel 3651",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-04-08T08:08:21.520Z",
+      "updatedAt": "2025-04-08T08:08:21.520Z",
+      "role": "workflow:owner",
+      "workflowId": "6cQF1ncpwtiADq7r",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-10-09T08:15:08.000Z",
+  "versionId": "00ed9a33-fd04-454c-aa66-3c198d10b7f4"
+}
