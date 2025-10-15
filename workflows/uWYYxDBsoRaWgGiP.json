@@ -1,0 +1,89 @@
+{
+  "active": false,
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Telegram10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-05-22T09:48:50.840Z",
+  "id": "uWYYxDBsoRaWgGiP",
+  "isArchived": true,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "InterOleo Bot (May 22 at 09:32:36)",
+  "nodes": [
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').all()[0].json.message.from.id }}\n",
+        "text": "=BOT EN MANTENIMIENTO",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -860,
+        -480
+      ],
+      "id": "b50091cc-8a64-434e-aa37-dea69e837371",
+      "name": "Telegram10",
+      "webhookId": "eac5d186-3b2e-4a7a-93b5-4fa6d9b5935f",
+      "credentials": {
+        "telegramApi": {
+          "id": "ktaJczNVT9r8QZ4A",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "updates": [
+          "message",
+          "*"
+        ],
+        "additionalFields": {
+          "download": true
+        }
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -1300,
+        -480
+      ],
+      "id": "20076c21-6a64-437c-8830-0596b41e2b4f",
+      "name": "Telegram Trigger",
+      "webhookId": "533e336d-4188-4e73-988d-dd35b226ce7c",
+      "credentials": {
+        "telegramApi": {
+          "id": "ktaJczNVT9r8QZ4A",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "settings": {},
+  "shared": [
+    {
+      "createdAt": "2025-05-22T09:48:50.844Z",
+      "updatedAt": "2025-05-22T09:48:50.844Z",
+      "role": "workflow:owner",
+      "workflowId": "uWYYxDBsoRaWgGiP",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-09-01T07:29:58.000Z",
+  "versionId": "e085a075-6a12-498d-a886-6ebada4da6ca"
+}
