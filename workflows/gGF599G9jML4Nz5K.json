@@ -1,0 +1,140 @@
+{
+  "active": false,
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "token y verificacion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "token y verificacion": {
+      "main": [
+        [
+          {
+            "node": "paginacion y muestras",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "paginacion y muestras": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-10-03T11:42:26.279Z",
+  "id": "gGF599G9jML4Nz5K",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "AGQv2",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -208,
+        -160
+      ],
+      "id": "ab92e868-3a60-4bbd-b076-8f756c70deee",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Run Once for All Items ===\nconst data = $input.first().json.results || [];\nreturn data.map(r => ({ json: r }));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        -160
+      ],
+      "id": "a2f874a4-a076-4f5c-9022-6814f8c28c1b",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://external.besafer.info/api/authorization/grant",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{ \"email\": \"logistica.interoleo@gmail.com\", \"password\": \"agq2025\" }\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        0,
+        -160
+      ],
+      "id": "d3a85172-5a24-4dc7-abc9-ca05db017bdc",
+      "name": "token y verificacion"
+    },
+    {
+      "parameters": {
+        "url": "https://external.besafer.info/api/sample/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.access }}"
+            },
+            {
+              "name": "company",
+              "value": "ES20-00039938"
+            },
+            {
+              "name": "address",
+              "value": "001"
+            }
+          ]
+        },
+        "options": {
+          "pagination": {}
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        208,
+        -160
+      ],
+      "id": "9034894c-a06e-4c08-9253-708286c3799f",
+      "name": "paginacion y muestras"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-10-03T11:42:26.284Z",
+      "updatedAt": "2025-10-03T11:42:26.284Z",
+      "role": "workflow:owner",
+      "workflowId": "gGF599G9jML4Nz5K",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-10-10T09:41:16.000Z",
+  "versionId": "f6825870-af36-42e0-81d4-7a4e6d9ff41a"
+}
