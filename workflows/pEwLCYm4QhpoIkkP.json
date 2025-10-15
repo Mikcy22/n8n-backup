@@ -1,0 +1,1104 @@
+{
+  "active": true,
+  "connections": {
+    "Microsoft Outlook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Extract from File1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Upload a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File1": {
+      "main": [
+        [
+          {
+            "node": "Message a model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Message a model": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code3": {
+      "main": [
+        [
+          {
+            "node": "Code4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code4": {
+      "main": [
+        [
+          {
+            "node": "Append rows to table",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload a file": {
+      "main": [
+        []
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Append rows to table1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replace Me": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append rows to table": {
+      "main": [
+        [
+          {
+            "node": "Replace Me",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append rows to table1": {
+      "main": [
+        [
+          {
+            "node": "Replace Me",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-09-30T09:42:43.042Z",
+  "id": "pEwLCYm4QhpoIkkP",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "MuestrasPorCorreo",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "filters": {
+          "foldersToInclude": [
+            "AAMkAGM3Njg1YTAyLWMwYTctNDBiNS04Y2YzLTA1MDAxZTU3NjczMgAuAAAAAAD8kF7RQbf7RpxhOvjlDEvjAQBM9oGyBH_wToGdOj9zrmc9AAJiw_fuAAA="
+          ]
+        },
+        "options": {
+          "downloadAttachments": true
+        }
+      },
+      "type": "n8n-nodes-base.microsoftOutlookTrigger",
+      "typeVersion": 1,
+      "position": [
+        -912,
+        -416
+      ],
+      "id": "af1e9f34-418e-412a-9d15-4016de53dd11",
+      "name": "Microsoft Outlook Trigger",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "ydIgIRhlWf3iUfJ6",
+          "name": "Microsoft Outlook account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2U4B6TREEJPNDLOOYHAPY4MHWX",
+          "mode": "list",
+          "cachedResultName": "Pruebas Muestras Correo",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B387DE054-8990-467B-B73B-0703F1C61ED7%7D&file=Pruebas%20Muestras%20Correo.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "HojaTABLALABTELLORESULTADOS",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B387DE054-8990-467B-B73B-0703F1C61ED7%7D&file=Pruebas%20Muestras%20Correo.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=HojaTABLALABTELLORESULTADOS!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{AC857C68-E7C3-4DF6-BBDE-1645220A146B}",
+          "mode": "list",
+          "cachedResultName": "TABLALABTELLORESULTADOS",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B387DE054-8990-467B-B73B-0703F1C61ED7%7D&file=Pruebas%20Muestras%20Correo.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=HojaTABLALABTELLORESULTADOS!A1:CE6"
+        },
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "numero_informe",
+              "fieldValue": "={{ $json.numero_informe }}"
+            },
+            {
+              "column": "referencia_laboratorio",
+              "fieldValue": "={{ $json.referencia_laboratorio }}"
+            },
+            {
+              "column": "fecha_recepcion",
+              "fieldValue": "={{ $json.fecha_recepcion }}"
+            },
+            {
+              "column": "fecha_fin_analisis",
+              "fieldValue": "={{ $json.fecha_fin_analisis }}"
+            },
+            {
+              "column": "fecha_emision",
+              "fieldValue": "={{ $json.fecha_emision }}"
+            },
+            {
+              "column": "matriz_a_ensayar",
+              "fieldValue": "={{ $json.matriz_a_ensayar }}"
+            },
+            {
+              "column": "referencia_muestra",
+              "fieldValue": "={{ $json.referencia_muestra }}"
+            },
+            {
+              "column": "tipo_de_envase",
+              "fieldValue": "={{ $json.tipo_de_envase || $json.tipo_envase }}"
+            },
+            {
+              "column": "cantidad",
+              "fieldValue": "={{ $json.cantidad }}"
+            },
+            {
+              "column": "Acidez",
+              "fieldValue": "={{ $json.Acidez }}"
+            },
+            {
+              "column": "Acidez unidad",
+              "fieldValue": "={{ $json['Acidez unidad'] }}"
+            },
+            {
+              "column": "Acidez limites",
+              "fieldValue": "={{ $json['Acidez limites'] }}"
+            },
+            {
+              "column": "Acidez procedimiento",
+              "fieldValue": "={{ $json['Acidez procedimiento'] }}"
+            },
+            {
+              "column": "K 270",
+              "fieldValue": "={{ $json['K 270'] }}"
+            },
+            {
+              "column": "K 270 unidad",
+              "fieldValue": "={{ $json['K 270 unidad'] }}"
+            },
+            {
+              "column": "K 270 limites",
+              "fieldValue": "={{ $json['K 270 limites'] }}"
+            },
+            {
+              "column": "K 270 procedimiento",
+              "fieldValue": "={{ $json['K 270 procedimiento'] }}"
+            },
+            {
+              "column": "K 232",
+              "fieldValue": "={{ $json['K 232'] }}"
+            },
+            {
+              "column": "K 232 unidad",
+              "fieldValue": "={{ $json['K 232 unidad'] }}"
+            },
+            {
+              "column": "K 232 limites",
+              "fieldValue": "={{ $json['K 232 limites'] }}"
+            },
+            {
+              "column": "K 232 procedimiento",
+              "fieldValue": "={{ $json['K 232 procedimiento'] }}"
+            },
+            {
+              "column": "K",
+              "fieldValue": "={{ $json['ΔK'] || $json['K'] }}"
+            },
+            {
+              "column": "K unidad",
+              "fieldValue": "={{ $json['ΔK unidad'] || $json['K unidad'] }}"
+            },
+            {
+              "column": "K limites",
+              "fieldValue": "={{ $json['ΔK limites'] || $json['K limites'] }}"
+            },
+            {
+              "column": "K procedimiento",
+              "fieldValue": "={{ $json['ΔK procedimiento'] || $json['K procedimiento'] }}"
+            },
+            {
+              "column": "Humedad y materias volatiles",
+              "fieldValue": "={{ $json['Humedad y materias volatiles'] || $json['Humedad y materias volátiles'] }}"
+            },
+            {
+              "column": "Humedad y materias volatiles unidad",
+              "fieldValue": "={{ $json['Humedad y materias volatiles unidad'] || $json['Humedad y materias volátiles unidad'] }}"
+            },
+            {
+              "column": "Humedad y materias volatiles limites",
+              "fieldValue": "={{ $json['Humedad y materias volatiles limites']  || $json['Humedad y materias volátiles limites'] }}"
+            },
+            {
+              "column": "Humedad y materias volatiles procedimiento",
+              "fieldValue": "={{ $json['Humedad y materias volatiles procedimiento'] || $json['Humedad y materias volátiles procedimiento'] }}"
+            },
+            {
+              "column": "Impurezas (Eter de petroleo)",
+              "fieldValue": "={{ $json['Impurezas (Éter de petroleo)'] ||\n$json['Impurezas (Éter de petróleo)']\n}}"
+            },
+            {
+              "column": "Impurezas (Eter de petroleo) unidad",
+              "fieldValue": "={{ $json['Impurezas (Éter de petroleo) unidad']  ||\n$json['Impurezas (Éter de petróleo) unidad']}}"
+            },
+            {
+              "column": "Impurezas (Eter de petroleo) limites",
+              "fieldValue": "={{ $json['Impurezas (Éter de petroleo) limites'] ||\n$json['Impurezas (Éter de petróleo) limites'] }}"
+            },
+            {
+              "column": "Impurezas (Eter de petroleo) procedimiento",
+              "fieldValue": "={{ $json['Impurezas (Éter de petroleo) procedimiento'] \n ||\n$json['Impurezas (Éter de petróleo) procedimiento']\n}}"
+            },
+            {
+              "column": "Esteres etilicos",
+              "fieldValue": "={{ $json['Esteres etilicos'] \n||\n$json['Ésteres etílicos'] \n}}"
+            },
+            {
+              "column": "Esteres etilicos unidad",
+              "fieldValue": "={{ $json['Esteres etilicos unidad'] ||\n$json['Ésteres etílicos unidad'] \n}}"
+            },
+            {
+              "column": "Esteres etilicos limites",
+              "fieldValue": "={{ $json['Esteres etilicos limites'] ||\n$json['Ésteres etílicos limites'] \n}}"
+            },
+            {
+              "column": "Esteres etilicos procedimiento",
+              "fieldValue": "={{ $json['Esteres etilicos procedimiento'] ||\n$json['Ésteres etílicos procedimiento'] \n}}"
+            },
+            {
+              "column": "URL PDF",
+              "fieldValue": "="
+            },
+            {
+              "column": "C40 + C42 + C44 + C462",
+              "fieldValue": "={{ $json['C40 + C42 + C44 + C46'] }}"
+            },
+            {
+              "column": "C40 + C42 + C44 + C46 unidad",
+              "fieldValue": "={{ $json['C40 + C42 + C44 + C46 unidad'] }}"
+            },
+            {
+              "column": "C40 + C42 + C44 + C46 limites",
+              "fieldValue": "={{ $json['C40 + C42 + C44 + C46 limites'] }}"
+            },
+            {
+              "column": "C40 + C42 + C44 + C46 procedimiento",
+              "fieldValue": "={{ $json['C40 + C42 + C44 + C46 procedimiento'] }}"
+            },
+            {
+              "column": "C42 + C44 + C4",
+              "fieldValue": "={{ $json['C42 + C44 + C46'] }}"
+            },
+            {
+              "column": "C42 + C44 + C46 unidad",
+              "fieldValue": "={{ $json['C42 + C44 + C46 unidad'] }}"
+            },
+            {
+              "column": "C42 + C44 + C46 limites",
+              "fieldValue": "={{ $json['C42 + C44 + C46 limites'] }}"
+            },
+            {
+              "column": "C42 + C44 + C46 procedimiento",
+              "fieldValue": "={{ $json['C42 + C44 + C46 procedimiento'] }}"
+            },
+            {
+              "column": "Contenido total de esteroles",
+              "fieldValue": "={{ $json['Contenido total de esteroles'] }}"
+            },
+            {
+              "column": "Contenido total de esteroles limites",
+              "fieldValue": "={{ $json['Contenido total de esteroles limites'] }}"
+            },
+            {
+              "column": "Contenido total de esteroles procedimiento",
+              "fieldValue": "={{ $json['Contenido total de esteroles procedimiento'] }}"
+            },
+            {
+              "column": "Colesterol",
+              "fieldValue": "={{ $json.Colesterol }}"
+            },
+            {
+              "column": "Colesterol unidad",
+              "fieldValue": "={{ $json['Colesterol unidad'] }}"
+            },
+            {
+              "column": "Colesterol limites",
+              "fieldValue": "={{ $json['Colesterol limites'] }}"
+            },
+            {
+              "column": "Colesterol procedimiento",
+              "fieldValue": "={{ $json['Colesterol procedimiento'] }}"
+            },
+            {
+              "column": "Brasicasterol",
+              "fieldValue": "={{ $json.Brasicasterol }}"
+            },
+            {
+              "column": "Brasicasterol unidad",
+              "fieldValue": "={{ $json['Brasicasterol unidad'] }}"
+            },
+            {
+              "column": "Brasicasterol limites",
+              "fieldValue": "={{ $json['Brasicasterol limites'] }}"
+            },
+            {
+              "column": "Brasicasterol procedimiento",
+              "fieldValue": "={{ $json['Brasicasterol procedimiento'] }}"
+            },
+            {
+              "column": "Campesterol",
+              "fieldValue": "={{ $json.Campesterol }}"
+            },
+            {
+              "column": "Campesterol unidad",
+              "fieldValue": "={{ $json['Campesterol unidad'] }}"
+            },
+            {
+              "column": "Campesterol limites",
+              "fieldValue": "={{ $json['Campesterol limites'] }}"
+            },
+            {
+              "column": "Campesterol procedimiento",
+              "fieldValue": "={{ $json['Campesterol procedimiento'] }}"
+            },
+            {
+              "column": "Estigmasterol",
+              "fieldValue": "={{ $json.Estigmasterol }}"
+            },
+            {
+              "column": "Estigmasterol unidad",
+              "fieldValue": "={{ $json['Estigmasterol unidad'] }}"
+            },
+            {
+              "column": "Estigmasterol limites",
+              "fieldValue": "={{ $json['Estigmasterol limites'] }}"
+            },
+            {
+              "column": "Estigmasterol procedimiento",
+              "fieldValue": "={{ $json['Estigmasterol procedimiento'] }}"
+            },
+            {
+              "column": "β-sitosterol (aparente)",
+              "fieldValue": "={{ $json['³-sitosterol (aparente)'] }}"
+            },
+            {
+              "column": "β-sitosterol (aparente) unidad",
+              "fieldValue": "={{ $json['³-sitosterol (aparente) unidad'] }}"
+            },
+            {
+              "column": "β-sitosterol (aparente) limites",
+              "fieldValue": "={{ $json['³-sitosterol (aparente) limites'] }}"
+            },
+            {
+              "column": "β-sitosterol (aparente) procedimiento",
+              "fieldValue": "={{ $json['³-sitosterol (aparente) procedimiento'] }}"
+            },
+            {
+              "column": "Δ-7-Estigmastenol",
+              "fieldValue": "={{ $json['-7-Estigmastenol'] }}"
+            },
+            {
+              "column": "Δ-7-Estigmastenol unidad",
+              "fieldValue": "={{ $json['-7-Estigmastenol unidad'] }}"
+            },
+            {
+              "column": "Δ-7-Estigmastenol limites",
+              "fieldValue": "={{ $json['-7-Estigmastenol limites'] }}"
+            },
+            {
+              "column": "Δ-7-Estigmastenol procedimiento",
+              "fieldValue": "={{ $json['-7-Estigmastenol procedimiento'] }}"
+            },
+            {
+              "column": "Eritrodiol + Uvaol",
+              "fieldValue": "={{ $json['Eritrodiol + Uvaol'] }}"
+            },
+            {
+              "column": "Eritrodiol + Uvaol unidad",
+              "fieldValue": "={{ $json['Eritrodiol + Uvaol unidad'] }}"
+            },
+            {
+              "column": "Eritrodiol + Uvaol limites",
+              "fieldValue": "={{ $json['Eritrodiol + Uvaol limites'] }}"
+            },
+            {
+              "column": "Eritrodiol + Uvaol procedimiento",
+              "fieldValue": "={{ $json['Eritrodiol + Uvaol procedimiento'] }}"
+            },
+            {
+              "column": "Estabilidad ancimat a 120 ºC",
+              "fieldValue": "={{ $json['Estabilidad rancimat a 120 ºC'] }}"
+            },
+            {
+              "column": "Estabilidad rancimat a 120 ºC unidad",
+              "fieldValue": "={{ $json['Estabilidad rancimat a 120 ºC unidad'] }}"
+            },
+            {
+              "column": "Estabilidad rancimat a 120 ºC limite",
+              "fieldValue": "={{ $json['Estabilidad rancimat a 120 ºC limites'] }}"
+            },
+            {
+              "column": "Estabilidad rancimat a 120 ºC procedimiento",
+              "fieldValue": "={{ $json['Estabilidad rancimat a 120 ºC procedimiento'] }}"
+            },
+            {
+              "column": "Indice de peróxidos",
+              "fieldValue": "={{ $json['Indice de peróxidos'] }}"
+            },
+            {
+              "column": "Indice de peróxidos unidad",
+              "fieldValue": "={{ $json['Indice de peróxidos unidad'] }}"
+            },
+            {
+              "column": "Indice de peróxidos limites",
+              "fieldValue": "={{ $json['Indice de peróxidos limites'] }}"
+            },
+            {
+              "column": "Indice de peróxidos procedimiento",
+              "fieldValue": "={{ $json['Indice de peróxidos procedimiento'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        3216,
+        -416
+      ],
+      "id": "a993b64e-2a30-4745-a160-3121cc78c3a5",
+      "name": "Append rows to table",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.cloudmersive.com/convert/pdf/to/txt",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Apikey",
+              "value": "81a7d163-0458-40ef-9854-1e247b4b2bea"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "binaryData",
+        "inputDataFieldName": "data",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file",
+              "outputPropertyName": "salida.txt"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1216,
+        -432
+      ],
+      "id": "59dccb80-d3ef-4164-a923-617c0ab855bc",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "chatgpt-4o-latest",
+          "mode": "list",
+          "cachedResultName": "CHATGPT-4O-LATEST"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=Eres un extractor de datos estricto. \nDebes leer el texto y devolver SOLO un JSON válido. \nNo devuelvas explicaciones ni texto adicional, solo el JSON.\n\nREGLAS:\n- Cada campo identificado debe convertirse en una entrada JSON: {\"nombre_campo\": \"valor\"}.\n- Normaliza los nombres de campos a snake_case sin acentos ni espacios.\n- Si el valor no existe, usa null.\n- Extrae todos los datos: cliente, dirección, cp, ciudad, provincia, número de informe, referencia laboratorio, fechas, matriz a ensayar, referencia de muestra, tipo de envase, cantidad, resultados de análisis (como array de objetos con columnas), observaciones (array), laboratorio emisor, páginas (array con total).\n- Convierte fechas dd/mm/yyyy a yyyy-mm-dd.\n\nSALIDA: \nUn objeto JSON con todos los campos detectados.\n\nTexto a procesar:\n```\n{{ $json.data }}\n```"
+            }
+          ]
+        },
+        "simplify": false,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        1904,
+        -432
+      ],
+      "id": "9c1a29fd-7783-4959-885d-25b49d3ddf34",
+      "name": "Message a model",
+      "credentials": {
+        "openAiApi": {
+          "id": "p8ABJFUF9JXWABZs",
+          "name": "n8n agent wsp"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "text",
+        "binaryPropertyName": "salida.txt",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        1664,
+        -432
+      ],
+      "id": "aaeedba7-91b1-4904-9aa8-cff082485922",
+      "name": "Extract from File1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// === 1) Leer y parsear la salida del GPT (string -> objeto) ===\nlet raw = $input.first().json?.choices?.[0]?.message?.content ?? \"\";\nraw = raw.replace(/^```json/i, \"\").replace(/^```/, \"\").replace(/```$/, \"\").trim();\n\nlet data;\ntry {\n  data = JSON.parse(raw);\n} catch (e) {\n  return [{ json: { error: \"No es JSON válido\", raw } }];\n}\n\n// === 2) Configuración: cortar ANTES de OBSERVACIONES (después de usarlas) ===\nconst CUT_BEFORE_OBSERVACIONES = true;\n\n// Claves a eliminar cuando cortamos antes de OBSERVACIONES\nconst DROP_KEYS = [\n  \"observaciones\",\n  \"paginas\", \"páginas\", \"paginas_total\", \"páginas_total\",\n  \"laboratorio_emisor\", \"laboratorio_emisor_nombre\", \"laboratorio\"\n];\n\n// === 3) Utilidades generales ===\nconst items = [];\n\nfunction pushKV(key, val) {\n  const obj = {};\n  obj[String(key)] = val; // clave dinámica con espacios\n  items.push({ json: obj });\n}\n\nconst cleanSpaces = (s) => String(s ?? \"\").replace(/\\s+/g, \" \").trim();\nconst normKey = (s) =>\n  cleanSpaces(s)\n    .normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g, \"\")\n    .toLowerCase();\n\nconst isResultadosKey = (k) => /resultados.*analisis/i.test(k);\n\n// === 4) Recolectar observaciones del JSON ORIGINAL (antes de podar) ===\nfunction collectObservations(obj, acc = []) {\n  if (Array.isArray(obj)) {\n    for (const v of obj) collectObservations(v, acc);\n  } else if (obj && typeof obj === \"object\") {\n    for (const [k, v] of Object.entries(obj)) {\n      if (/^observaciones$/i.test(k) && Array.isArray(v)) {\n        for (const line of v) if (line != null) acc.push(String(line));\n      } else {\n        collectObservations(v, acc);\n      }\n    }\n  }\n  return acc;\n}\nconst OBS = collectObservations(data);\n\n// Dado el nombre de la determinación, busca en observaciones una línea que la mencione\n// y extrae \"número + unidad\" para sustituir el resultado.\nfunction findObsValueFor(detLabel) {\n  const needle = normKey(detLabel);\n  for (const line of OBS) {\n    const lineNorm = normKey(line);\n    if (lineNorm.includes(needle)) {\n      // Extrae \"número (opcional decimal) + (unidad opcional)\"\n      // Ej: \"3 mg/kg\", \"0.05 %\", \"5,5 meq O2/kg\", \"0,14\", etc.\n      const m = line.match(/-?\\d+(?:[.,]\\d+)?(?:\\s*(?:%|ppm|mg\\/kg|g\\/100g|meq\\s*o[₂2]\\/kg|[a-zA-Z/%₂₀₁₂₃O2.-]+))?/i);\n      if (m) return m[0].trim();\n      return line.trim(); // fallback: la línea entera\n    }\n  }\n  return null;\n}\n\n// === 5) Podar claves posteriores a OBSERVACIONES si procede ===\nfunction pruneAfterObservaciones(obj) {\n  if (Array.isArray(obj)) {\n    obj.forEach(pruneAfterObservaciones);\n    return obj;\n  }\n  if (obj && typeof obj === \"object\") {\n    for (const k of Object.keys(obj)) {\n      const kn = k.toLowerCase();\n      if (DROP_KEYS.includes(kn)) {\n        delete obj[k];\n      } else if (typeof obj[k] === \"object\" && obj[k] !== null) {\n        pruneAfterObservaciones(obj[k]);\n      }\n    }\n  }\n  return obj;\n}\n\n// Hacemos copia de trabajo y, si se pide, la podamos (después de haber recogido OBS)\nlet work = JSON.parse(JSON.stringify(data));\nif (CUT_BEFORE_OBSERVACIONES) {\n  work = pruneAfterObservaciones(work);\n}\n\n// === 6) Aplanado con tratamiento especial para resultados_analisis ===\nfunction flatten(obj, prefix = \"\") {\n  if (Array.isArray(obj)) {\n    // Caso especial: resultados_analisis -> claves humanas tipo \"K 270\", \"K 270 unidad\", etc.\n    if (isResultadosKey(prefix)) {\n      obj.forEach((row, idx) => {\n        if (row && typeof row === \"object\") {\n          const detRaw = cleanSpaces(row.determinacion ?? row[\"determinación\"] ?? row.det ?? `fila ${idx + 1}`);\n          for (const [colK, colV] of Object.entries(row)) {\n            const colName = cleanSpaces(colK);\n            if (/^determinaci[oó]n?$|^det$/i.test(colName)) continue;\n\n            let valor = colV;\n            if (/^resultado$/i.test(colName) && typeof valor === \"string\" && /[<>]/.test(valor)) {\n              const repl = findObsValueFor(detRaw);\n              if (repl) valor = repl;\n            }\n\n            if (/^resultado$/i.test(colName)) {\n              pushKV(detRaw, valor); // \"K 270\": 0.14  (o valor de observación)\n            } else {\n              pushKV(`${detRaw} ${colName.toLowerCase()}`, valor); // \"K 270 unidad\": \"-\"\n            }\n          }\n        } else {\n          pushKV(`${prefix}[${idx}]`, row);\n        }\n      });\n      return;\n    }\n\n    // Arrays normales\n    obj.forEach((v, i) => {\n      if (typeof v === \"object\" && v !== null) {\n        flatten(v, `${prefix}[${i}]`);\n      } else {\n        pushKV(`${prefix}[${i}]`, v);\n      }\n    });\n    return;\n  }\n\n  if (typeof obj === \"object\" && obj !== null) {\n    for (const [k, v] of Object.entries(obj)) {\n      const key = prefix ? `${prefix}_${k}` : k;\n      if (Array.isArray(v) && isResultadosKey(k)) {\n        flatten(v, k);\n      } else if (typeof v === \"object\" && v !== null) {\n        flatten(v, key);\n      } else {\n        pushKV(key, v);\n      }\n    }\n    return;\n  }\n\n  // Primitivo\n  pushKV(prefix, obj);\n}\n\n// === 7) Ejecutar y devolver ===\nflatten(work);\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2560,
+        -416
+      ],
+      "id": "8dcf22f4-b0c9-4e86-85f0-b9110c7b3d14",
+      "name": "Code3"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.from }}",
+                    "rightValue": "@laboratoriotello.com",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "5cd2c906-03d9-4e5c-ac0b-f71f7ffe3c87"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "1c8a38df-c84b-4be0-97d6-f5c58db53bd9",
+                    "leftValue": "={{ $json.from }}",
+                    "rightValue": "sedeno2002@gmail.com",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "46f7fe27-5d66-4a39-a66a-9b07159ec788",
+                    "leftValue": "={{ $json.from }}",
+                    "rightValue": "@tentamus.com",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -544,
+        -416
+      ],
+      "id": "68f0923c-2586-492a-af39-fdccb0d0f9aa",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Combina todos los items { \"clave\": valor } en un único item\nconst all = $input.all();      // todos los items de la salida anterior\nconst row = {};\n\nfor (const it of all) {\n  for (const [k, v] of Object.entries(it.json || {})) {\n    // si hay duplicados, el último gana; cambia si prefieres conservar el primero\n    row[k] = v;\n  }\n}\n\nreturn [{ json: row }];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2848,
+        -416
+      ],
+      "id": "6f78f836-e538-459b-8f49-60d9f8ea4075",
+      "name": "Code4"
+    },
+    {
+      "parameters": {
+        "parentId": "01CGHIMH3XPLXKMRPLUFBYDMVNELUU2QZ6",
+        "binaryData": true
+      },
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        1632,
+        -640
+      ],
+      "id": "255a4550-339c-4a5e-919c-595eb51a1523",
+      "name": "Upload a file",
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.choices[0].message.content }}",
+                    "rightValue": "sensorial",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "0a324b69-dfd3-41c5-9957-66954c9897fd"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7342e02b-fcc0-44bc-a786-29c03b588852",
+                    "leftValue": "={{ $('Extract from File1').item.json.data }}",
+                    "rightValue": "Informe de Ensayo",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        2256,
+        -432
+      ],
+      "id": "ed3d66b3-83cc-4068-913a-25fa21eda579",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// === 1) Leer y parsear la salida del GPT (string -> objeto) ===\nlet raw = $input.first().json?.choices?.[0]?.message?.content ?? \"\";\nraw = raw.replace(/^```json/i, \"\").replace(/^```/, \"\").replace(/```$/, \"\").trim();\n\nlet data;\ntry {\n  data = JSON.parse(raw);\n} catch (e) {\n  return [{ json: { error: \"No es JSON válido\", raw } }];\n}\n\n// === 2) Configuración: cortar ANTES de OBSERVACIONES (después de usarlas) ===\nconst CUT_BEFORE_OBSERVACIONES = true;\n\n// Claves a eliminar cuando cortamos antes de OBSERVACIONES\nconst DROP_KEYS = [\n  \"observaciones\",\n  \"paginas\", \"páginas\", \"paginas_total\", \"páginas_total\",\n  \"laboratorio_emisor\", \"laboratorio_emisor_nombre\", \"laboratorio\"\n];\n\n// === 3) Utilidades generales ===\nconst items = [];\n\nfunction pushKV(key, val) {\n  const obj = {};\n  obj[String(key)] = val; // clave dinámica con espacios\n  items.push({ json: obj });\n}\n\nconst cleanSpaces = (s) => String(s ?? \"\").replace(/\\s+/g, \" \").trim();\nconst normKey = (s) =>\n  cleanSpaces(s)\n    .normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g, \"\")\n    .toLowerCase();\n\nconst isResultadosKey = (k) => /resultados.*analisis/i.test(k);\n\n// === 4) Recolectar observaciones del JSON ORIGINAL (antes de podar) ===\nfunction collectObservations(obj, acc = []) {\n  if (Array.isArray(obj)) {\n    for (const v of obj) collectObservations(v, acc);\n  } else if (obj && typeof obj === \"object\") {\n    for (const [k, v] of Object.entries(obj)) {\n      if (/^observaciones$/i.test(k) && Array.isArray(v)) {\n        for (const line of v) if (line != null) acc.push(String(line));\n      } else {\n        collectObservations(v, acc);\n      }\n    }\n  }\n  return acc;\n}\nconst OBS = collectObservations(data);\n\n// Dado el nombre de la determinación, busca en observaciones una línea que la mencione\n// y extrae \"número + unidad\" para sustituir el resultado.\nfunction findObsValueFor(detLabel) {\n  const needle = normKey(detLabel);\n  for (const line of OBS) {\n    const lineNorm = normKey(line);\n    if (lineNorm.includes(needle)) {\n      // Extrae \"número (opcional decimal) + (unidad opcional)\"\n      // Ej: \"3 mg/kg\", \"0.05 %\", \"5,5 meq O2/kg\", \"0,14\", etc.\n      const m = line.match(/-?\\d+(?:[.,]\\d+)?(?:\\s*(?:%|ppm|mg\\/kg|g\\/100g|meq\\s*o[₂2]\\/kg|[a-zA-Z/%₂₀₁₂₃O2.-]+))?/i);\n      if (m) return m[0].trim();\n      return line.trim(); // fallback: la línea entera\n    }\n  }\n  return null;\n}\n\n// === 5) Podar claves posteriores a OBSERVACIONES si procede ===\nfunction pruneAfterObservaciones(obj) {\n  if (Array.isArray(obj)) {\n    obj.forEach(pruneAfterObservaciones);\n    return obj;\n  }\n  if (obj && typeof obj === \"object\") {\n    for (const k of Object.keys(obj)) {\n      const kn = k.toLowerCase();\n      if (DROP_KEYS.includes(kn)) {\n        delete obj[k];\n      } else if (typeof obj[k] === \"object\" && obj[k] !== null) {\n        pruneAfterObservaciones(obj[k]);\n      }\n    }\n  }\n  return obj;\n}\n\n// Hacemos copia de trabajo y, si se pide, la podamos (después de haber recogido OBS)\nlet work = JSON.parse(JSON.stringify(data));\nif (CUT_BEFORE_OBSERVACIONES) {\n  work = pruneAfterObservaciones(work);\n}\n\n// === 6) Aplanado con tratamiento especial para resultados_analisis ===\nfunction flatten(obj, prefix = \"\") {\n  if (Array.isArray(obj)) {\n    // Caso especial: resultados_analisis -> claves humanas tipo \"K 270\", \"K 270 unidad\", etc.\n    if (isResultadosKey(prefix)) {\n      obj.forEach((row, idx) => {\n        if (row && typeof row === \"object\") {\n          const detRaw = cleanSpaces(row.determinacion ?? row[\"determinación\"] ?? row.det ?? `fila ${idx + 1}`);\n          for (const [colK, colV] of Object.entries(row)) {\n            const colName = cleanSpaces(colK);\n            if (/^determinaci[oó]n?$|^det$/i.test(colName)) continue;\n\n            let valor = colV;\n            if (/^resultado$/i.test(colName) && typeof valor === \"string\" && /[<>]/.test(valor)) {\n              const repl = findObsValueFor(detRaw);\n              if (repl) valor = repl;\n            }\n\n            if (/^resultado$/i.test(colName)) {\n              pushKV(detRaw, valor); // \"K 270\": 0.14  (o valor de observación)\n            } else {\n              pushKV(`${detRaw} ${colName.toLowerCase()}`, valor); // \"K 270 unidad\": \"-\"\n            }\n          }\n        } else {\n          pushKV(`${prefix}[${idx}]`, row);\n        }\n      });\n      return;\n    }\n\n    // Arrays normales\n    obj.forEach((v, i) => {\n      if (typeof v === \"object\" && v !== null) {\n        flatten(v, `${prefix}[${i}]`);\n      } else {\n        pushKV(`${prefix}[${i}]`, v);\n      }\n    });\n    return;\n  }\n\n  if (typeof obj === \"object\" && obj !== null) {\n    for (const [k, v] of Object.entries(obj)) {\n      const key = prefix ? `${prefix}_${k}` : k;\n      if (Array.isArray(v) && isResultadosKey(k)) {\n        flatten(v, k);\n      } else if (typeof v === \"object\" && v !== null) {\n        flatten(v, key);\n      } else {\n        pushKV(key, v);\n      }\n    }\n    return;\n  }\n\n  // Primitivo\n  pushKV(prefix, obj);\n}\n\n// === 7) Ejecutar y devolver ===\nflatten(work);\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2560,
+        -624
+      ],
+      "id": "111f278b-ffe2-4e3f-a281-c96443dbbcf6",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2U4B6TREEJPNDLOOYHAPY4MHWX",
+          "mode": "list",
+          "cachedResultName": "Pruebas Muestras Correo",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B387DE054-8990-467B-B73B-0703F1C61ED7%7D&file=Pruebas%20Muestras%20Correo.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "HojaTABLALABTELLORESULTADOS",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B387DE054-8990-467B-B73B-0703F1C61ED7%7D&file=Pruebas%20Muestras%20Correo.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=HojaTABLALABTELLORESULTADOS!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{AC857C68-E7C3-4DF6-BBDE-1645220A146B}",
+          "mode": "list",
+          "cachedResultName": "TABLALABTELLORESULTADOS",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B387DE054-8990-467B-B73B-0703F1C61ED7%7D&file=Pruebas%20Muestras%20Correo.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=HojaTABLALABTELLORESULTADOS!A1:CE6"
+        },
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "referencia_laboratorio",
+              "fieldValue": "={{ $json.referencia_laboratorio }}"
+            },
+            {
+              "column": "fecha_recepcion",
+              "fieldValue": "={{ $json.fecha_recepcion }}"
+            },
+            {
+              "column": "matriz_a_ensayar",
+              "fieldValue": "={{ $json.matriz_a_ensayar }}"
+            },
+            {
+              "column": "referencia_muestra",
+              "fieldValue": "={{ $json.referencia_muestra }}"
+            },
+            {
+              "column": "tipo_de_envase",
+              "fieldValue": "={{ $json.tipo_envase }}"
+            },
+            {
+              "column": "cantidad",
+              "fieldValue": "={{ $json.cantidad }}"
+            },
+            {
+              "column": "frutado",
+              "fieldValue": "={{ $json.Frutado }}"
+            },
+            {
+              "column": "defecto",
+              "fieldValue": "={{ $json.Defecto }} "
+            },
+            {
+              "column": "amargo",
+              "fieldValue": "={{ $json.Amargo }}"
+            },
+            {
+              "column": "picor",
+              "fieldValue": "={{ $json.Picor }}"
+            },
+            {
+              "column": "categoria sensorial",
+              "fieldValue": "={{ $json['observacion sensorial'] }}"
+            },
+            {
+              "column": "Referencia Cliente",
+              "fieldValue": "={{ $json.referencia_cliente }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        3216,
+        -624
+      ],
+      "id": "a4841bfd-5130-4474-ba01-2e90a8821194",
+      "name": "Append rows to table1",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Modo del nodo: Run Once for All Items ===\n\n// Helpers\nconst clean = s => String(s ?? '').replace(/\\s+/g, ' ').trim();\nconst toNum = s => {\n  const m = String(s ?? '').match(/-?\\d+(?:[.,]\\d+)?/);\n  return m ? Number(m[0].replace(',', '.')) : null;\n};\nconst canonical = s => String(s ?? '')\n  .normalize('NFD').replace(/[\\u0300-\\u036f]/g, '')   // sin acentos\n  .toLowerCase()\n  .replace(/[_\\s]+/g, ' ')                            // _ y espacios → 1 espacio\n  .trim();\nconst sentenceCase = s => {\n  const t = String(s ?? '').toLowerCase();\n  return t ? t[0].toUpperCase() + t.slice(1) : t;\n};\n\n// 1) Unir todos los items en un objeto base\nconst base = {};\nfor (const it of $input.all()) {\n  const obj = it.json || {};\n  for (const [k, v] of Object.entries(obj)) base[k] = v;\n}\n\n// 2) Localizar claves de fila1/fila2 (tolerante a _ y acentos)\nlet fila1Key = null, fila2Key = null;\nfor (const k of Object.keys(base)) {\n  const c = canonical(k);\n  if (c === 'fila 1 estimacion sensorial') fila1Key = k;\n  if (c === 'fila 2 estimacion sensorial') fila2Key = k;\n}\n// Fallback por si solo hay \"estimacion sensorial\"\nif (!fila1Key) {\n  for (const k of Object.keys(base)) {\n    if (canonical(k) === 'estimacion sensorial') { fila1Key = k; break; }\n  }\n}\n\nconst fila1 = fila1Key ? String(base[fila1Key]) : null;\nconst fila2 = fila2Key ? String(base[fila2Key]) : null;\n\n// 3) Parsear Fila 1 (buscando en TODO el texto, no solo entre paréntesis)\nif (fila1) {\n  const txtFull = clean(String(fila1));\n\n  // regex tolerante: etiqueta + número (coma o punto) + nota opcional hasta coma o ')'\n  const grab = (label) => {\n    const re = new RegExp(\n      `${label}\\\\s*[:=]?\\\\s*(-?\\\\d+(?:[.,]\\\\d+)?)(?:\\\\s*([^,\\\\)]+))?`,\n      'i'\n    );\n    const m = txtFull.match(re);\n    if (!m) return null;\n    const num = toNum(m[1]);\n    const note = clean(m[2] || '');\n    return { num, note };\n  };\n\n  const fr = grab('frutado');\n  const de = grab('defecto');\n  const am = grab('amargo');\n  const pi = grab('picor');\n\n  if (fr) base['Frutado'] = fr.num;\n  if (de) base['Defecto'] = de.note ? `${de.num} ${de.note}` : String(de.num);\n  if (am) base['Amargo'] = am.num;\n  if (pi) base['Picor']  = pi.num;\n}\n\n// 4) Parsear Fila 2 → observación\nif (fila2) {\n  base['observacion sensorial'] = sentenceCase(fila2);\n}\n\n\n// 5) (Opcional) elimina las claves crudas\n// delete base[fila1Key];\n// delete base[fila2Key];\n\n// 6) Devolver UN SOLO item\nreturn [{ json: base }];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2848,
+        -624
+      ],
+      "id": "08a7594a-b34c-4c68-972d-0755746273f4",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        800,
+        -416
+      ],
+      "id": "9328e12b-1c6d-4001-9533-b9dd509cc285",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "name": "Replace Me",
+      "typeVersion": 1,
+      "position": [
+        3680,
+        -416
+      ],
+      "id": "1fddd0ec-8584-4f58-b34d-dc961983e584"
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Split de attachments binarios (solo PDFs) ===\nconst items = [];\n\nfor (const [key, value] of Object.entries($input.item.binary ?? {})) {\n  const fileName = value.fileName || '';\n  if (fileName.toLowerCase().endsWith('.pdf')) {\n    items.push({\n      json: { fileName },\n      binary: { data: value }\n    });\n  }\n}\n\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        112,
+        -304
+      ],
+      "id": "501dfe80-c12a-4cee-ba2b-0292bdd24610",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Split de attachments binarios (solo PDFs) ===\nconst items = [];\n\nfor (const [key, value] of Object.entries($input.item.binary ?? {})) {\n  const fileName = value.fileName || '';\n  if (fileName.toLowerCase().endsWith('.pdf')) {\n    items.push({\n      json: { fileName },\n      binary: { data: value }\n    });\n  }\n}\n\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        112,
+        -512
+      ],
+      "id": "f68ed8b4-4464-4bea-90e8-4e04dbb2053a",
+      "name": "Code in JavaScript1"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-09-30T09:42:43.047Z",
+      "updatedAt": "2025-09-30T09:42:43.047Z",
+      "role": "workflow:owner",
+      "workflowId": "pEwLCYm4QhpoIkkP",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": {
+    "node:Microsoft Outlook Trigger": {
+      "lastTimeChecked": "2025-10-15T12:02:14.004+02:00"
+    }
+  },
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-10-09T10:30:00.000Z",
+  "versionId": "708426df-96dd-4c8f-bbff-a2aa8131cb90"
+}
