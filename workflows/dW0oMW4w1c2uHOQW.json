@@ -1,0 +1,2074 @@
+{
+  "active": true,
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 365",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3653": {
+      "main": [
+        [
+          {
+            "node": "Code3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code3": {
+      "main": [
+        [
+          {
+            "node": "Obtener todos ids",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3651": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Gmail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gmail": {
+      "main": [
+        [
+          {
+            "node": "Obtener datos excel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code4": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3654",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Obtener todos ids": {
+      "main": [
+        [
+          {
+            "node": "Code4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Obtener datos excel": {
+      "main": [
+        [
+          {
+            "node": "Filtrado No enviado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtrado No enviado": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3652",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3655": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "Code14",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 36510": {
+      "main": [
+        [
+          {
+            "node": "Append or update a sheet3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 36511": {
+      "main": [
+        [
+          {
+            "node": "Code9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 36512": {
+      "main": [
+        [
+          {
+            "node": "Code7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 36513": {
+      "main": [
+        [
+          {
+            "node": "Code8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Code6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code8": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Code7": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Code9": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 36514": {
+      "main": [
+        [
+          {
+            "node": "Code10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 36515": {
+      "main": [
+        [
+          {
+            "node": "Code11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code10": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Code11": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 4
+          }
+        ]
+      ]
+    },
+    "Code6": {
+      "main": [
+        [
+          {
+            "node": "Send a message1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "codigos-aceite": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3658",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "subida-codigos-aceite": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3651",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "mandar-correo": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 36511",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Microsoft Excel 36512",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Microsoft Excel 36513",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Microsoft Excel 36514",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Microsoft Excel 36515",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Microsoft Excel 3659",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "reset-campos-aceite": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 36510",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code12": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3658": {
+      "main": [
+        [
+          {
+            "node": "Code12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code15": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Code15",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code13": {
+      "main": [
+        [
+          {
+            "node": "Append or update a sheet6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code14": {
+      "main": [
+        []
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Code13",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append or update a sheet6": {
+      "main": [
+        []
+      ]
+    },
+    "Microsoft Excel 3659": {
+      "main": [
+        [
+          {
+            "node": "Code16",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code16": {
+      "main": [
+        [
+          {
+            "node": "Code17",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code17": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Send a message2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-07-10T05:49:33.912Z",
+  "id": "dW0oMW4w1c2uHOQW",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "mosolive / arduino",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "mosolive10x10",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -640,
+        -544
+      ],
+      "id": "084587fa-077d-4ed7-9e5a-a5739d0cf01e",
+      "name": "Webhook",
+      "webhookId": "e7aba8b3-19e5-47c2-a596-d22c6049d924"
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH7H6CYFT7KRJNELY3AFDRD4PD3P",
+          "mode": "list",
+          "cachedResultName": "mosolive10x10FormularioWeb",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B59B0F0E7-51FD-484B-BC6C-051C47C78F6F%7D&file=mosolive10x10FormularioWeb.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Hoja1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B59B0F0E7-51FD-484B-BC6C-051C47C78F6F%7D&file=mosolive10x10FormularioWeb.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Hoja1!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{253C9478-68E0-4294-B0D8-3D36CAD1EBD6}",
+          "mode": "list",
+          "cachedResultName": "DatosWeb",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B59B0F0E7-51FD-484B-BC6C-051C47C78F6F%7D&file=mosolive10x10FormularioWeb.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Hoja1!A1:F2"
+        },
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "FechaEnvio",
+              "fieldValue": "={{ $json.body.fecha_envio }}"
+            },
+            {
+              "column": "Usuario",
+              "fieldValue": "={{ $json.body.usuario }}"
+            },
+            {
+              "column": "DiaDeRecoleccion",
+              "fieldValue": "={{ $json.body.fecha_inicio_recoleccion }}"
+            },
+            {
+              "column": "Maquinaria",
+              "fieldValue": "={{ $json.body.maquinaria }}"
+            },
+            {
+              "column": "Ubicación",
+              "fieldValue": "={{ $json.body.ubicacion }}"
+            },
+            {
+              "column": "Incidentes",
+              "fieldValue": "={{ $json.body.incidencias }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        -256,
+        -544
+      ],
+      "id": "44fa7c0b-294d-414f-a2e9-950adc0b84f1",
+      "name": "Microsoft Excel 365",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2K3FJTLTNIQJEZJAFBDX7NRLIU",
+          "mode": "list",
+          "cachedResultName": "IdentificadorLote",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B3553D94A-A8CD-4982-9480-A11DFED8AD14%7D&file=IdentificadorLote.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Hoja1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B3553D94A-A8CD-4982-9480-A11DFED8AD14%7D&file=IdentificadorLote.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Hoja1!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2256,
+        1008
+      ],
+      "id": "6365784e-6cef-4441-b2ab-9d71d051755c",
+      "name": "Microsoft Excel 3653",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHYNQEDO4AS6ANFKFFBWYSXS5YMX",
+          "mode": "list",
+          "cachedResultName": "BasculaN8N",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Hoja1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Hoja1!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{D0CC4EBD-54DA-4DBB-ABCE-7CF7CF1FDD8E}",
+          "mode": "list",
+          "cachedResultName": "TablaEnvBascN8N",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=EnvBascCSV!A1:D2"
+        },
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "DocEntry",
+              "fieldValue": "={{ $('Code3').first().json.filteredData[0]['abs entry'] }}"
+            },
+            {
+              "column": "Batch",
+              "fieldValue": "={{ $('Code3').first().json.filteredData[0]['Número de lote'] }}"
+            },
+            {
+              "column": "Cantidad",
+              "fieldValue": "={{ $('codigos-aceite').first().json.body.peso_g * 1 }}"
+            },
+            {
+              "column": "EnviadoBascula",
+              "fieldValue": "No enviado"
+            },
+            {
+              "column": "id",
+              "fieldValue": "={{ $json.highestId + 1}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        3760,
+        1008
+      ],
+      "id": "912dbdfb-d43e-4f03-9dfe-bdb75bf4b7f6",
+      "name": "Microsoft Excel 3654",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const excelData = $input.all().map((item) => item.json);\nconst codeData = $(\"Code2\")\n  .all()\n  .map((item) => item.json);\n\nconst filteredData = excelData.filter((item) => {\n  const matchingCode = codeData.find(\n    (code) => code.codigo_final === item[\"Número de lote\"],\n  );\n  return matchingCode && item[\"Número de artículo\"] === \"MAO\";\n});\n\nreturn { filteredData };\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2624,
+        1008
+      ],
+      "id": "e0f8827a-b189-4962-9f68-f4a4ef57d64b",
+      "name": "Code3"
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "operation": "getRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHYNQEDO4AS6ANFKFFBWYSXS5YMX",
+          "mode": "list",
+          "cachedResultName": "BasculaN8N",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "EnvBascCSV",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=EnvBascCSV!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{D0CC4EBD-54DA-4DBB-ABCE-7CF7CF1FDD8E}",
+          "mode": "list",
+          "cachedResultName": "TablaEnvBascN8N",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=EnvBascCSV!A1:D3"
+        },
+        "returnAll": true,
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        -128,
+        224
+      ],
+      "id": "ff5c04bc-4fd0-4162-8a10-4efc4f776d32",
+      "name": "Microsoft Excel 3651",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "miTexto",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        752,
+        224
+      ],
+      "id": "92e30fce-9fff-43da-afa6-9d374d09fdaf",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst filteredItems = items.filter(\n  (item) => item?.json?.EnviadoBascula === \"No enviado\",\n);\nreturn filteredItems.map((item) => item.json);\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        144,
+        224
+      ],
+      "id": "fa8f965c-e954-48e3-94ce-895939b35994",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "sendTo": "javier.logistica@interoleo.com",
+        "subject": "Datos muestras csv",
+        "emailType": "text",
+        "message": "Adjunto CSV con las muestras.",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {}
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1072,
+        224
+      ],
+      "id": "e61654ec-f6cd-4eb0-809a-6069480e09c4",
+      "name": "Gmail",
+      "webhookId": "83e66abb-eedd-43a6-95c0-93148176eb20",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "7p1RZAq3HfMxNPCn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const docEntry = $input.first().json.DocEntry;\nconst batch = $input.first().json.Batch;\nconst cantidad = $input.first().json.Cantidad;\n\n// Crea texto plano línea por línea\nconst textoPlano = \n`${docEntry}  ${batch}  ${cantidad}`;\n\n\n\nconst variablesName= \"DocEntry Batch Cantidad\\nDocEntry Batch Cantidad\\n\";\n\nconst enviar = variablesName + textoPlano;\n// Devuelve como propiedad para Convert to File\nreturn [\n  {\n    json: {\n      miTexto: enviar\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        432,
+        224
+      ],
+      "id": "e405695f-1708-4a36-8c63-a09a3a1739ee",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "content": "IdentificadorLote se guarda la fecha de creacion del pesaje de la muetsra\n",
+        "height": 80
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        848,
+        128
+      ],
+      "id": "8d44051a-8c48-4a69-a762-f4feca702ebd",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "Saco los datos del excel",
+        "height": 140,
+        "width": 150
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        384
+      ],
+      "id": "c1d04dcf-311c-4b2f-8276-b44e1d8442b4",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "Filtro por el campo \"EnviadoBascula\" que tenga el valor de \"No enviado\"",
+        "height": 140,
+        "width": 150
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        128,
+        384
+      ],
+      "id": "0c96e034-6837-4e27-ba1c-5fd238320731",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "Genero estructura del archivo txt para subir a SAP\n",
+        "height": 140,
+        "width": 150
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        400,
+        384
+      ],
+      "id": "7cb7f75e-ddd5-4dd5-94f9-9d807b0f17fc",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "Convierto el texto a txt",
+        "height": 140,
+        "width": 150
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        720,
+        384
+      ],
+      "id": "e0e8f496-5cb0-417c-bfaf-15e70a118fdc",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "Lo envio por correo\n",
+        "height": 140,
+        "width": 150
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1056,
+        384
+      ],
+      "id": "5e9269e3-f266-4949-a9f3-6ab56e7b7ebe",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "jsCode": "const ids = $input.all().map((item) => item.json.id);\nconst highestId = Math.max(...ids);\n\nreturn { highestId };\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3408,
+        1008
+      ],
+      "id": "fa2946cb-55d2-4082-804f-a0dc8d76a3a0",
+      "name": "Code4"
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "operation": "getRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHYNQEDO4AS6ANFKFFBWYSXS5YMX",
+          "mode": "list",
+          "cachedResultName": "BasculaN8N",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "EnvBascCSV",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=EnvBascCSV!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{D0CC4EBD-54DA-4DBB-ABCE-7CF7CF1FDD8E}",
+          "mode": "list",
+          "cachedResultName": "TablaEnvBascN8N",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=EnvBascCSV!A1:E11"
+        },
+        "returnAll": true,
+        "filters": {
+          "column": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        3024,
+        1008
+      ],
+      "id": "c9407676-7fbe-4215-baab-1559801f43ca",
+      "name": "Obtener todos ids",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "operation": "getRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHYNQEDO4AS6ANFKFFBWYSXS5YMX",
+          "mode": "list",
+          "cachedResultName": "BasculaN8N",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "EnvBascCSV",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=EnvBascCSV!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{D0CC4EBD-54DA-4DBB-ABCE-7CF7CF1FDD8E}",
+          "mode": "list",
+          "cachedResultName": "TablaEnvBascN8N",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=EnvBascCSV!A1:D3"
+        },
+        "returnAll": true,
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        1376,
+        224
+      ],
+      "id": "8894dca9-b41e-4e1d-bf96-54764675919c",
+      "name": "Obtener datos excel",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst filteredItems = items.filter(\n  (item) => item?.json?.EnviadoBascula === \"No enviado\",\n);\nreturn filteredItems.map((item) => item.json);\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1648,
+        224
+      ],
+      "id": "22a56df7-2bc3-4bb9-81c8-42367a984867",
+      "name": "Filtrado No enviado"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "update",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHYNQEDO4AS6ANFKFFBWYSXS5YMX",
+          "mode": "list",
+          "cachedResultName": "BasculaN8N",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "EnvBascCSV",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BEE06810D-5E02-4A03-A294-36C4AF2EE197%7D&file=BasculaN8N.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=EnvBascCSV!A1"
+        },
+        "columnToMatchOn": "id",
+        "valueToMatchOn": "={{$json.id}}",
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "EnviadoBascula",
+              "fieldValue": "Enviado"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        1872,
+        224
+      ],
+      "id": "97409f47-646b-4061-9270-47b42c4f08e3",
+      "name": "Microsoft Excel 3652",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "Saco los datos del excel",
+        "height": 140,
+        "width": 150
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1360,
+        384
+      ],
+      "id": "0e4f3de8-fafa-4c26-b39a-4f439ed4aca2",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "content": "Filtro por el campo \"EnviadoBascula\" que tenga el valor de \"No enviado\"",
+        "height": 140,
+        "width": 150
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1632,
+        384
+      ],
+      "id": "248067b2-6bd0-481a-904e-8237c56bf79c",
+      "name": "Sticky Note7"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{B4943917-BF3C-411D-94E1-F10B22EF37CA}",
+          "mode": "list",
+          "cachedResultName": "consulta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=consulta!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2608,
+        1328
+      ],
+      "id": "6b78c1ec-1deb-4d08-8c50-0b6d071bbb17",
+      "name": "Microsoft Excel 3655",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Todas las filas del Excel\nconst lotes = $items('Microsoft Excel 3655', 0, 0);\n\n// Código a buscar (desde Code2 o del propio item)\nlet codigo = $items('Code2', 0, 0)?.[0]?.json?.CodigoEjempl\n          ?? $json?.CodigoEjempl;\n\nif (!codigo) {\n  return [{\n    json: { error: \"Falta 'CodigoEjempl'.\" }\n  }];\n}\n\n// Normaliza espacios raros\nconst norm = v => String(v ?? '').replace(/\\u00A0/g, ' ').trim();\n\n// Convierte la primera parte antes del \"-\" a minúsculas\nconst normalizaCodigo = v => {\n  const str = norm(v);\n  const partes = str.split(\"-\");\n  if (partes.length > 1) {\n    return partes[0].toLowerCase() + \"-\" + partes.slice(1).join(\"-\");\n  }\n  return str.toLowerCase(); // si no hay \"-\", todo en minúsculas\n};\n\nconst target = normalizaCodigo(codigo);\n\n// Busca en la columna \"Número lote\" con normalización especial\nlet encontrado = lotes.find(it => normalizaCodigo(it.json[\"Número lote\"]) === target);\n\n// Si no encuentra, busca con todo en mayúsculas\nif (!encontrado) {\n  const upperTarget = norm(codigo).toUpperCase();\n  encontrado = lotes.find(it => norm(it.json[\"Número lote\"]).toUpperCase() === upperTarget);\n}\n\n// Si encuentra, devuelve la fila\nif (encontrado) return [encontrado];\n\n// Si no, devuelve aviso\nreturn [{\n  json: {\n    match: false,\n    target,\n    mensaje: \"No se encontró ninguna fila con ese Número lote (ni en minúscula ni en mayúscula).\"\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3280,
+        1328
+      ],
+      "id": "ccbed195-8a79-4487-9d39-929519bf11f5",
+      "name": "Code5"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b2077608-e807-411d-9508-c4ce5093a586",
+              "name": "=CodigoEjempl",
+              "value": "={{ $('Code2').first().json.codigo_final }}",
+              "type": "string"
+            },
+            {
+              "id": "94d7a87f-6c06-47b9-a665-2052cf201bc5",
+              "name": "PesoBascula",
+              "value": "={{ $item(0).$node[\"codigos-aceite\"].json.body.peso_g }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": "={{ false }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2944,
+        1328
+      ],
+      "id": "84a19f8e-fe2a-46e9-b4c7-7daed5cf59a4",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{AA7A52E5-E5A1-4343-8E27-B7569C9752DB}",
+          "mode": "list",
+          "cachedResultName": "pruebas consulta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=pruebas%20consulta!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        1536,
+        -144
+      ],
+      "id": "453fef96-9dcb-46ca-942c-35c2c957d46e",
+      "name": "Microsoft Excel 36510",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{16D3FACD-00D7-4A25-ADAC-5A387620C73B}",
+          "mode": "list",
+          "cachedResultName": "1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=1!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2608,
+        -720
+      ],
+      "id": "d6f64385-34df-46dc-b49d-df5554f50a65",
+      "name": "Microsoft Excel 36511",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{969A5B81-6841-4FE6-80BB-A3F5C27BCB3A}",
+          "mode": "list",
+          "cachedResultName": "2Issue",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=2Issue!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2608,
+        -512
+      ],
+      "id": "67f531ce-2d6c-4dbc-997c-76cfa7830659",
+      "name": "Microsoft Excel 36512",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{48A616CE-9256-49CC-88C1-D6D1F269030D}",
+          "mode": "list",
+          "cachedResultName": "3Issue",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=3Issue!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2608,
+        -320
+      ],
+      "id": "dd7b3291-397d-4661-b4ba-5091aff65b24",
+      "name": "Microsoft Excel 36513",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "javier.logistica@interoleo.com, calidad1@interoleo.com",
+        "subject": "Pesas archivos",
+        "message": "Pesas archivos",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {
+                "property": "cabezera,lineas,btach_numbers,lineas_2,btach_numbers_2"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        4608,
+        -400
+      ],
+      "id": "dd604028-362e-436d-9c64-709225fb419c",
+      "name": "Send a message1",
+      "webhookId": "59770538-5368-4b23-b25f-cde70724b16a",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "7p1RZAq3HfMxNPCn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "numberInputs": 5
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        3856,
+        -448
+      ],
+      "id": "0b4ba367-6d4b-4e92-a1fa-5bf9bee63270",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Utilidades ===\nconst items = $input.all();\n\nconst normalize = (val) => {\n  if (val === undefined || val === null) return null;\n  if (typeof val === 'number') return String(val); // conservar 0\n  let s = String(val)\n    .replace(/\\uFEFF/g, '')  // BOM\n    .replace(/\"/g, '')       // comillas sueltas\n    .replace(/\\s+/g, ' ')    // colapsar espacios\n    .trim();\n\n  // tratar como vacío\n  if (s === '' || s.toLowerCase() === 'empty' || s.toLowerCase() === '[empty]') return null;\n\n  // sanear para TSV (sin tabs ni saltos)\n  s = s.replace(/\\t/g, ' ').replace(/\\r?\\n/g, ' ');\n  return s;\n};\n\n// === Limpiar filas ===\nconst cleanedRows = items.map((it) => {\n  const rowIn = it.json || {};\n  const rowOut = {};\n  for (const k of Object.keys(rowIn)) {\n    const v = normalize(rowIn[k]);\n    if (v !== null) rowOut[k] = v;\n  }\n  return rowOut;\n}).filter(row => Object.keys(row).length > 0); // quitar filas vacías\n\n// === Selección de columnas (unión no vacía, orden según aparición) ===\n// Si quieres un orden fijo, sustituye 'columns' por un array fijo.\nconst columns = [];\nconst seen = new Set();\nfor (const row of cleanedRows) {\n  for (const k of Object.keys(row)) {\n    if (!seen.has(k)) { seen.add(k); columns.push(k); }\n  }\n}\n\n// === Construir TSV ===\nconst lines = [];\nlines.push(columns.join('\\t')); // encabezado\nfor (const row of cleanedRows) {\n  const line = columns.map(col => row[col] ?? '').join('\\t');\n  lines.push(line);\n}\nconst tsv = lines.join('\\n');\n\n// === Devolver archivo binario TSV ===\nreturn [{\n  binary: {\n    file3: {\n      data: Buffer.from(tsv, 'utf8').toString('base64'),\n      fileName: '3Issue.txt',\n      mimeType: 'text/tab-separated-values',\n    }\n  },\n  json: { rows: cleanedRows.length, cols: columns.length }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2864,
+        -320
+      ],
+      "id": "185742b4-b4cb-4faa-a721-d698de8d3f71",
+      "name": "Code8"
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Utilidades ===\nconst items = $input.all();\n\nconst normalize = (val) => {\n  if (val === undefined || val === null) return null;\n  if (typeof val === 'number') return String(val); // conservar 0\n  let s = String(val)\n    .replace(/\\uFEFF/g, '')  // BOM\n    .replace(/\"/g, '')       // comillas sueltas\n    .replace(/\\s+/g, ' ')    // colapsar espacios\n    .trim();\n\n  // tratar como vacío\n  if (s === '' || s.toLowerCase() === 'empty' || s.toLowerCase() === '[empty]') return null;\n\n  // sanear para TSV (sin tabs ni saltos)\n  s = s.replace(/\\t/g, ' ').replace(/\\r?\\n/g, ' ');\n  return s;\n};\n\n// === Limpiar filas ===\nconst cleanedRows = items.map((it) => {\n  const rowIn = it.json || {};\n  const rowOut = {};\n  for (const k of Object.keys(rowIn)) {\n    const v = normalize(rowIn[k]);\n    if (v !== null) rowOut[k] = v;\n  }\n  return rowOut;\n}).filter(row => Object.keys(row).length > 0); // quitar filas vacías\n\n// === Selección de columnas (unión no vacía, orden según aparición) ===\n// Si quieres un orden fijo, sustituye 'columns' por un array fijo.\nconst columns = [];\nconst seen = new Set();\nfor (const row of cleanedRows) {\n  for (const k of Object.keys(row)) {\n    if (!seen.has(k)) { seen.add(k); columns.push(k); }\n  }\n}\n\n// === Construir TSV ===\nconst lines = [];\nlines.push(columns.join('\\t')); // encabezado\nfor (const row of cleanedRows) {\n  const line = columns.map(col => row[col] ?? '').join('\\t');\n  lines.push(line);\n}\nconst tsv = lines.join('\\n');\n\n// === Devolver archivo binario TSV ===\nreturn [{\n  binary: {\n    file2: {\n      data: Buffer.from(tsv, 'utf8').toString('base64'),\n      fileName: '2Issue.txt',\n      mimeType: 'text/tab-separated-values',\n    }\n  },\n  json: { rows: cleanedRows.length, cols: columns.length }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2864,
+        -496
+      ],
+      "id": "38ac0239-50a9-42df-b06d-3ea505e2567a",
+      "name": "Code7"
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Utilidades ===\nconst items = $input.all();\n\nconst normalize = (val) => {\n  if (val === undefined || val === null) return null;\n  if (typeof val === 'number') return String(val); // conservar 0\n  let s = String(val)\n    .replace(/\\uFEFF/g, '')  // BOM\n    .replace(/\"/g, '')       // comillas sueltas\n    .replace(/\\s+/g, ' ')    // colapsar espacios\n    .trim();\n\n  // tratar como vacío\n  if (s === '' || s.toLowerCase() === 'empty' || s.toLowerCase() === '[empty]') return null;\n\n  // sanear para TSV (sin tabs ni saltos)\n  s = s.replace(/\\t/g, ' ').replace(/\\r?\\n/g, ' ');\n  return s;\n};\n\n// === Limpiar filas ===\nconst cleanedRows = items.map((it) => {\n  const rowIn = it.json || {};\n  const rowOut = {};\n  for (const k of Object.keys(rowIn)) {\n    const v = normalize(rowIn[k]);\n    if (v !== null) rowOut[k] = v;\n  }\n  return rowOut;\n}).filter(row => Object.keys(row).length > 0); // quitar filas vacías\n\n// === Selección de columnas (unión no vacía, orden según aparición) ===\n// Si quieres un orden fijo, sustituye 'columns' por un array fijo.\nconst columns = [];\nconst seen = new Set();\nfor (const row of cleanedRows) {\n  for (const k of Object.keys(row)) {\n    if (!seen.has(k)) { seen.add(k); columns.push(k); }\n  }\n}\n\n// === Construir TSV ===\nconst lines = [];\nlines.push(columns.join('\\t')); // encabezado\nfor (const row of cleanedRows) {\n  const line = columns.map(col => row[col] ?? '').join('\\t');\n  lines.push(line);\n}\nconst tsv = lines.join('\\n');\n\n// === Devolver archivo binario TSV ===\nreturn [{\n  binary: {\n    file1: {\n      data: Buffer.from(tsv, 'utf8').toString('base64'),\n      fileName: '1.txt',\n      mimeType: 'text/tab-separated-values',\n    }\n  },\n  json: { rows: cleanedRows.length, cols: columns.length }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2880,
+        -720
+      ],
+      "id": "bd4049ac-5b3f-493e-a41e-507d4e6c82d6",
+      "name": "Code9"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{737AF7F9-C37D-4CEA-977F-9C58A968A8BF}",
+          "mode": "list",
+          "cachedResultName": "2Receipt",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=2Receipt!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2608,
+        -128
+      ],
+      "id": "6be93013-05ca-4bdc-b020-7e1ec9485695",
+      "name": "Microsoft Excel 36514",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Utilidades ===\nconst items = $input.all();\n\nconst normalize = (val) => {\n  if (val === undefined || val === null) return null;\n  if (typeof val === 'number') return String(val); // conservar 0\n  let s = String(val)\n    .replace(/\\uFEFF/g, '')  // BOM\n    .replace(/\"/g, '')       // comillas sueltas\n    .replace(/\\s+/g, ' ')    // colapsar espacios\n    .trim();\n\n  // tratar como vacío\n  if (s === '' || s.toLowerCase() === 'empty' || s.toLowerCase() === '[empty]') return null;\n\n  // sanear para TSV (sin tabs ni saltos)\n  s = s.replace(/\\t/g, ' ').replace(/\\r?\\n/g, ' ');\n  return s;\n};\n\n// === Limpiar filas ===\nconst cleanedRows = items.map((it) => {\n  const rowIn = it.json || {};\n  const rowOut = {};\n  for (const k of Object.keys(rowIn)) {\n    const v = normalize(rowIn[k]);\n    if (v !== null) rowOut[k] = v;\n  }\n  return rowOut;\n}).filter(row => Object.keys(row).length > 0); // quitar filas vacías\n\n// === Selección de columnas (unión no vacía, orden según aparición) ===\n// Si quieres un orden fijo, sustituye 'columns' por un array fijo.\nconst columns = [];\nconst seen = new Set();\nfor (const row of cleanedRows) {\n  for (const k of Object.keys(row)) {\n    if (!seen.has(k)) { seen.add(k); columns.push(k); }\n  }\n}\n\n// === Construir TSV ===\nconst lines = [];\nlines.push(columns.join('\\t')); // encabezado\nfor (const row of cleanedRows) {\n  const line = columns.map(col => row[col] ?? '').join('\\t');\n  lines.push(line);\n}\nconst tsv = lines.join('\\n');\n\n// === Devolver archivo binario TSV ===\nreturn [{\n  binary: {\n    file2a: {\n      data: Buffer.from(tsv, 'utf8').toString('base64'),\n      fileName: '2Receipt.txt',\n      mimeType: 'text/tab-separated-values',\n    }\n  },\n  json: { rows: cleanedRows.length, cols: columns.length }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2848,
+        -112
+      ],
+      "id": "6e8e7c3e-35c4-469f-a79a-5fd57bca4786",
+      "name": "Code10"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{26DD6EEA-3B1E-4000-9051-9C6287641502}",
+          "mode": "list",
+          "cachedResultName": "3Receipt",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=3Receipt!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2608,
+        80
+      ],
+      "id": "b909bfc6-4154-4a72-9c8c-25758c484d52",
+      "name": "Microsoft Excel 36515",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Utilidades ===\nconst items = $input.all();\n\nconst normalize = (val) => {\n  if (val === undefined || val === null) return null;\n  if (typeof val === 'number') return String(val); // conservar 0\n  let s = String(val)\n    .replace(/\\uFEFF/g, '')  // BOM\n    .replace(/\"/g, '')       // comillas sueltas\n    .replace(/\\s+/g, ' ')    // colapsar espacios\n    .trim();\n\n  // tratar como vacío\n  if (s === '' || s.toLowerCase() === 'empty' || s.toLowerCase() === '[empty]') return null;\n\n  // sanear para TSV (sin tabs ni saltos)\n  s = s.replace(/\\t/g, ' ').replace(/\\r?\\n/g, ' ');\n  return s;\n};\n\n// === Limpiar filas ===\nconst cleanedRows = items.map((it) => {\n  const rowIn = it.json || {};\n  const rowOut = {};\n  for (const k of Object.keys(rowIn)) {\n    const v = normalize(rowIn[k]);\n    if (v !== null) rowOut[k] = v;\n  }\n  return rowOut;\n}).filter(row => Object.keys(row).length > 0); // quitar filas vacías\n\n// === Selección de columnas (unión no vacía, orden según aparición) ===\n// Si quieres un orden fijo, sustituye 'columns' por un array fijo.\nconst columns = [];\nconst seen = new Set();\nfor (const row of cleanedRows) {\n  for (const k of Object.keys(row)) {\n    if (!seen.has(k)) { seen.add(k); columns.push(k); }\n  }\n}\n\n// === Construir TSV ===\nconst lines = [];\nlines.push(columns.join('\\t')); // encabezado\nfor (const row of cleanedRows) {\n  const line = columns.map(col => row[col] ?? '').join('\\t');\n  lines.push(line);\n}\nconst tsv = lines.join('\\n');\n\n// === Devolver archivo binario TSV ===\nreturn [{\n  binary: {\n    file3a: {\n      data: Buffer.from(tsv, 'utf8').toString('base64'),\n      fileName: '3Receipt.txt',\n      mimeType: 'text/tab-separated-values',\n    }\n  },\n  json: { rows: cleanedRows.length, cols: columns.length }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2864,
+        96
+      ],
+      "id": "b6a51395-3c03-42ce-8f65-16fbb32c3b77",
+      "name": "Code11"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Combina los binarios que vienen del Merge en un solo item\nconst items = $input.all();\n\n// Mapeamos por nombre de propiedad binaria del item de entrada\nconst binMap = {};\nfor (const it of items) {\n  if (!it.binary) continue;\n  const key = Object.keys(it.binary)[0];   // p.ej. 'file1', 'file2', ...\n  if (key) binMap[key] = it.binary[key];\n}\n\n// Construimos la salida con nombres que usaremos en Gmail\nconst out = { json: {}, binary: {} };\n\n// 3 principales\nif (binMap.file1) {\n  out.binary.cabezera = { ...binMap.file1, fileName: '1.txt', mimeType: 'text/plain' };\n}\nif (binMap.file2) {\n  out.binary.lineas = { ...binMap.file2, fileName: '2.txt', mimeType: 'text/plain' };\n}\nif (binMap.file3) {\n  out.binary.btach_numbers = { ...binMap.file3, fileName: '3.txt', mimeType: 'text/plain' };\n}\n\n// Duplicados opcionales (si existen). Si no quieres adjuntarlos, borra estas dos secciones.\nif (binMap.file2a) {\n  out.binary.lineas_2 = { ...binMap.file2a, fileName: '4.txt', mimeType: 'text/plain' };\n}\nif (binMap.file3a) {\n  out.binary.btach_numbers_2 = { ...binMap.file3a, fileName: '5.txt', mimeType: 'text/plain' };\n}\n\nreturn [out];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4320,
+        -400
+      ],
+      "id": "7739626f-156a-475c-8b0c-ce75a589650c",
+      "name": "Code6"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "codigos-aceite",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        2208,
+        688
+      ],
+      "id": "062da1ab-6a83-4e9d-b043-0cd79111a0cc",
+      "name": "codigos-aceite",
+      "webhookId": "e7aba8b3-19e5-47c2-a596-d22c6049d924"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "subida-codigos-aceite",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -432,
+        224
+      ],
+      "id": "52e60f04-8ceb-4629-8b5c-7669033d93df",
+      "name": "subida-codigos-aceite",
+      "webhookId": "e7aba8b3-19e5-47c2-a596-d22c6049d924"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "mandar-correo",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        1728,
+        -496
+      ],
+      "id": "8447d15b-7382-44b6-a5bf-bb06eb19899b",
+      "name": "mandar-correo",
+      "webhookId": "c657ebab-1a61-4b60-af07-de49e45e50bf"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "reset-campos-aceite",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        1072,
+        -336
+      ],
+      "id": "34916c83-e324-42a2-97ac-f7010875d5ad",
+      "name": "reset-campos-aceite",
+      "webhookId": "e7aba8b3-19e5-47c2-a596-d22c6049d924"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "upsert",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{AA7A52E5-E5A1-4343-8E27-B7569C9752DB}",
+          "mode": "list",
+          "cachedResultName": "pruebas consulta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=pruebas%20consulta!A1"
+        },
+        "useRange": true,
+        "range": "A1:h5000",
+        "columnToMatchOn": "Número lote",
+        "valueToMatchOn": "={{ $json['Número lote'] }}",
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "Cantidad Entrada",
+              "fieldValue": "=a"
+            },
+            {
+              "column": "Código artículo",
+              "fieldValue": "={{ $json['Código artículo'] }}"
+            },
+            {
+              "column": "=Número lote",
+              "fieldValue": "={{ $json['Número lote'] }}"
+            },
+            {
+              "column": "Cantidad Salida",
+              "fieldValue": "a"
+            },
+            {
+              "column": "NeveraFinal"
+            },
+            {
+              "column": "CajonerasFinal"
+            }
+          ]
+        },
+        "options": {
+          "appendAfterSelectedRange": true,
+          "updateAll": true
+        }
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        1872,
+        -144
+      ],
+      "id": "0f85428c-8e37-48c7-9080-385960a3ac4d",
+      "name": "Append or update a sheet3",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obtener el valor original\nlet codigo = $('codigos-aceite').first().json.body.codigo;\n\n//let codigo = \"IPJG021.25.1\";\n\nif (codigo.includes(\"-\")) {\n    //El valor contiene un guion (-)\n   // Devolver en JSON para siguientes nodos\n  return [{ codigo_final: codigo }];\n} else {\n   //El valor NO contiene un guion (-)\n  \n  // Extraer la parte de letras del inicio\n  let letras = codigo.match(/^[A-Za-z]+/)[0];  // \"SIPA\"\n  \n  // Dividir en partes por el punto\n  let partes = codigo.split(\".\");\n  \n  // Rellenar con ceros la última parte hasta 3 dígitos\n  partes[partes.length - 1] = partes[partes.length - 1].padStart(3, \"0\");\n  \n  // Reconstruir el código\n  let codigoFinal = `${letras}-${partes.join(\".\")}`;\n  \n  // Devolver en JSON para siguientes nodos\n  return [{ codigo_final: codigoFinal }];\n\n}\n\n\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2752,
+        688
+      ],
+      "id": "adf07afa-0216-4b85-871b-ca3ad9c398ac",
+      "name": "Code12"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{AA7A52E5-E5A1-4343-8E27-B7569C9752DB}",
+          "mode": "list",
+          "cachedResultName": "pruebas consulta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=pruebas%20consulta!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2480,
+        688
+      ],
+      "id": "92c7d202-ef38-443b-b871-4a24dde42504",
+      "name": "Microsoft Excel 3658",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Entradas ===\n// Todas las filas del Excel\nconst lotes = $items('Microsoft Excel 3658', 0, 0);\n\n// Código a buscar (desde Code12 o del propio item)\nlet codigo =$input.first().json.CodigoEjempl;\n\nif (!codigo) {\n  return [{ json: { error: \"Falta 'CodigoEjempl'.\" } }];\n}\n\n// === Utilidades ===\n// Normaliza espacios raros (NBSP) y trim\nconst norm = (v) => String(v ?? '').replace(/\\u00A0/g, ' ').trim();\n\n// Convierte la primera parte antes del \"-\" a minúsculas\nconst normalizaCodigo = (v) => {\n  const str = norm(v);\n  const partes = str.split(\"-\");\n  if (partes.length > 1) {\n    return partes[0].toLowerCase() + \"-\" + partes.slice(1).join(\"-\");\n  }\n  // si no hay \"-\", todo en minúsculas\n  return str.toLowerCase();\n};\n\n// === Búsqueda ===\nconst target = normalizaCodigo(codigo);\n\n// Busca en la columna \"Número lote\" con normalización especial\nlet encontrado = lotes.find(\n  (it) => normalizaCodigo(it.json[\"Número lote\"]) === target\n);\n\n// Si no encuentra, busca con todo en mayúsculas (fallback)\nif (!encontrado) {\n  const upperTarget = norm(codigo).toUpperCase();\n  encontrado = lotes.find(\n    (it) => norm(it.json[\"Número lote\"]).toUpperCase() === upperTarget\n  );\n}\n\nif (encontrado) {\n  return [{ encontrado, match: false }];\n}\n\n// Si no encuentra, devuelve aviso\nreturn [{\n  json: {\n    match: false,\n    target,\n    mensaje:\n      \"No se encontró ninguna fila con ese Número lote (ni en minúscula ni en mayúscula).\",\n  },\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3184,
+        688
+      ],
+      "id": "acfda0ea-df63-4e20-a135-002ecf77dbb6",
+      "name": "Code15"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b2077608-e807-411d-9508-c4ce5093a586",
+              "name": "=CodigoEjempl",
+              "value": "={{ $('Code12').first().json.codigo_final }} ",
+              "type": "string"
+            },
+            {
+              "id": "94d7a87f-6c06-47b9-a665-2052cf201bc5",
+              "name": "PesoBascula",
+              "value": "={{ $('codigos-aceite').first().json.body.peso_g }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": "={{ false }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2976,
+        688
+      ],
+      "id": "a0bbb7ee-02a5-4e54-ad6d-a999f457434c",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Utilidades ===\nconst norm = v => String(v ?? '').replace(/\\u00A0/g, ' ').trim();\nconst normalizaCodigo = v => {\n  const s = norm(v);\n  const partes = s.split(\"-\");\n  if (partes.length > 1) return partes[0].toLowerCase() + \"-\" + partes.slice(1).join(\"-\");\n  return s.toLowerCase();\n};\nconst toNum = v => {\n  if (v == null) return 0;\n  let x = String(v).replace(/\\u00A0/g, ' ').trim().replace(/\\s+/g, '');\n  const hasComma = x.includes(',');\n  const hasDot   = x.includes('.');\n  if (hasComma && hasDot) {\n    if (x.lastIndexOf(',') > x.lastIndexOf('.')) x = x.replace(/\\./g, '').replace(',', '.');\n    else x = x.replace(/,/g, '');\n  } else if (hasComma) {\n    x = x.replace(',', '.');\n  }\n  const m = x.match(/-?\\d+(?:\\.\\d+)?/);\n  return m ? Number(m[0]) : 0;\n};\nconst fromNum = n => Number.isFinite(n) ? Number(n.toFixed(3)) : 0;\n\n// === Entradas ===\nconst lotes = $items('Microsoft Excel 3658', 0, 0);\nconst codigo = $items('Edit Fields1', 0, 0)?.[0]?.json?.CodigoEjempl ?? $json?.CodigoEjempl;\nif (!codigo) return [{ json: { error: \"Falta 'CodigoEjempl'.\" } }];\n\nconst pesoEntradaBruto = $items('Edit Fields1', 0, 0)?.[0]?.json?.PesoBascula ?? $json?.PesoBascula;\nlet pesoKg = toNum(pesoEntradaBruto);\nif (pesoKg > 5) pesoKg = pesoKg / 1000; // si viene en gramos\nif (!Number.isFinite(pesoKg) || pesoKg < 0) return [{ json: { error: \"PesoBascula inválido (< 0 o NaN).\" } }];\n\n// === Buscar fila del lote ===\nconst target = normalizaCodigo(codigo);\nconst encontrado = lotes.find(it => normalizaCodigo(it.json[\"Número lote\"]) === target);\nif (!encontrado) {\n  return [{ json: { match: false, target, mensaje: \"No se encontró ninguna fila con ese Número lote.\" } }];\n}\nconst row = { ...encontrado.json };\n\n// === Lógica ===\nconst BOTE_KG = 1.0;\nlet neveraIni = toNum(row[\"Nevera\"]);     // nº botes cerrados\nlet cajIni    = toNum(row[\"Cajoneras\"]);  // kg en cajonera (0..1)\n\nlet nevera    = neveraIni;\nlet caj       = cajIni;\nlet restante  = pesoKg;\nlet botesAbiertos = 0;\n\n// REGLA: si la cajonera está a 0 y hay botes, abrir 1 bote SIEMPRE\nif (caj <= 0 && nevera > 0) {\n  nevera -= 1;\n  caj = BOTE_KG;\n  botesAbiertos += 1;\n}\n\n// Consumir desde cajonera; abrir botes si no alcanza\nwhile (restante > 0) {\n  if (caj >= restante) {\n    caj -= restante;\n    restante = 0;\n  } else {\n    restante -= caj;\n    caj = 0;\n    if (nevera > 0) {\n      nevera -= 1;\n      caj = BOTE_KG;\n      botesAbiertos += 1;\n    } else {\n      break; // sin stock\n    }\n  }\n}\n\n// === Salidas ===\nrow[\"NeveraFinal\"]      = fromNum(nevera);\nrow[\"CajonerasFinal\"]   = fromNum(caj);\nrow[\"Cantidad Salida\"]  = fromNum(pesoKg);\n\n// Cantidad Entrada: solo cuando (Nevera + Cajoneras) < Peso requerido\nconst stockInicial = toNum(row[\"Nevera\"]) + toNum(row[\"Cajoneras\"]);\nrow[\"Cantidad Entrada\"] = (stockInicial < pesoKg) ? 1 : 0;\n\nrow[\"StockSuficiente\"]  = (restante <= 0);\n\nreturn [{ json: row }];\n\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4000,
+        704
+      ],
+      "id": "fc21aacb-39b1-48e5-b14e-6ec9c49574d5",
+      "name": "Code13"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "upsert",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{AA7A52E5-E5A1-4343-8E27-B7569C9752DB}",
+          "mode": "list",
+          "cachedResultName": "pruebas consulta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=pruebas%20consulta!A1"
+        },
+        "useRange": true,
+        "range": "A1:h5000",
+        "columnToMatchOn": "Número lote",
+        "valueToMatchOn": "={{ $json['Número lote'] }}",
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "Código artículo",
+              "fieldValue": "={{ $json['Código artículo'] }}"
+            },
+            {
+              "column": "Nevera",
+              "fieldValue": "={{ Number(String($json.Nevera).replace(/\\./g, '').replace(',', '.')) }}"
+            },
+            {
+              "column": "Cajoneras",
+              "fieldValue": "={{ Number(String($json.Cajoneras).replace(',', '.')) }}"
+            },
+            {
+              "column": "Cantidad Salida",
+              "fieldValue": "={{ Number($json['Cantidad Salida']) }}"
+            },
+            {
+              "column": "Cantidad Entrada",
+              "fieldValue": "={{ $json['Cantidad Entrada'] }}"
+            },
+            {
+              "column": "=Número lote",
+              "fieldValue": "={{ $json['Número lote'] }}"
+            },
+            {
+              "column": "NeveraFinal",
+              "fieldValue": "={{ Number($json.NeveraFinal)}}"
+            },
+            {
+              "column": "CajonerasFinal",
+              "fieldValue": "={{ Number($json.CajonerasFinal) }}"
+            }
+          ]
+        },
+        "options": {
+          "appendAfterSelectedRange": true,
+          "updateAll": true
+        }
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        4240,
+        704
+      ],
+      "id": "affa946c-a247-4f24-b772-c260fe81fc03",
+      "name": "Append or update a sheet6",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Utilidades ===\nconst norm = v => String(v ?? '').replace(/\\u00A0/g, ' ').trim();\n\nconst normalizaCodigo = v => {\n  const str = norm(v);\n  const partes = str.split(\"-\");\n  if (partes.length > 1) return partes[0].toLowerCase() + \"-\" + partes.slice(1).join(\"-\");\n  return str.toLowerCase();\n};\n\nconst toNum = (v) => {\n  if (v == null) return 0;\n  let x = String(v).replace(/\\u00A0/g, ' ').trim().replace(/\\s+/g, '');\n\n  const hasComma = x.includes(',');\n  const hasDot   = x.includes('.');\n\n  if (hasComma && hasDot) {\n    // El último símbolo (',' o '.') es el decimal; el otro son miles\n    if (x.lastIndexOf(',') > x.lastIndexOf('.')) {\n      x = x.replace(/\\./g, '').replace(',', '.'); // 1.234,56 -> 1234.56\n    } else {\n      x = x.replace(/,/g, '');                     // 1,234.56 -> 1234.56\n    }\n  } else if (hasComma) {\n    x = x.replace(',', '.');                       // 0,98 -> 0.98\n  } // si solo hay '.', lo dejamos tal cual\n\n  const m = x.match(/-?\\d+(?:\\.\\d+)?/);\n  return m ? Number(m[0]) : 0;\n};\n\nconst fromNum = n => Number.isFinite(n) ? Number(n.toFixed(3)) : 0;\n\n// === Entradas ===\n// Todas las filas del Excel\nconst lotes = $items('Microsoft Excel 3658', 0, 0);\n\n// Código a buscar\nconst codigo = $items('Edit Fields1', 0, 0)?.[0]?.json?.CodigoEjempl ?? $json?.CodigoEjempl;\nif (!codigo) return [{ json: { error: \"Falta 'CodigoEjempl'.\" } }];\n\n// PesoBascula\nconst pesoBascula = toNum($items('Edit Fields1', 0, 0)?.[0]?.json?.PesoBascula ?? $json?.PesoBascula);\nif (!(pesoBascula > 0)) return [{ json: { error: \"Falta 'PesoBascula' o no es un número > 0.\" } }];\n\n// === Búsqueda del lote ===\nconst target = normalizaCodigo(codigo);\nlet encontrado = lotes.find(it => normalizaCodigo(it.json[\"Número lote\"]) === target);\nif (!encontrado) {\n  return [{ json: { match: false, target, mensaje: \"No se encontró ninguna fila con ese Número lote.\" } }];\n}\n\n// === Operación: Cajoneras con reposición desde Nevera ===\nconst row = { ...encontrado.json };\n\nlet cajoneras = toNum(row[\"Cajoneras\"]);   // puede venir como \".34\" → toNum lo convierte a 0.34\nlet nevera    = toNum(row[\"Nevera\"]);\n\ncajoneras = cajoneras - pesoBascula;\n\n// Si se agota o queda por debajo de 0, reponer con Nevera\nif (cajoneras <= 0) {\n  cajoneras += nevera;  // repuesto\n  nevera = 0;\n  if (cajoneras < 0) cajoneras = 0; // por seguridad, no negativos\n}\n\n// Actualiza campos\nrow[\"Cajoneras\"]       = fromNum(Math.max(0, cajoneras));\nrow[\"Nevera\"]          = fromNum(Math.max(0, nevera));\nrow[\"Cantidad Salida\"] = fromNum(pesoBascula);\n\n// Devuelve la fila actualizada\nreturn [{ json: row }];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3488,
+        1328
+      ],
+      "id": "9d356b26-7101-4fbb-89db-181a7b291879",
+      "name": "Code14"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9c32a4f8-e0eb-40b4-8bf4-b45f0363f68c",
+              "name": "PesoTotal",
+              "value": "={{ Number ($json.encontrado.json.Cajoneras ) + Number($json.encontrado.json.Nevera)}}",
+              "type": "number"
+            },
+            {
+              "id": "3bb0afbb-7835-48a4-9daf-4353a8b5cbc5",
+              "name": "Muestras",
+              "value": "={{ \n  Number((\n    Number($json.encontrado.json.Nevera) +\n    Number($json.encontrado.json.Cajoneras ) -\n    (Number($('Edit Fields1').first().json.PesoBascula)/1000)\n  ).toFixed(3))\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3728,
+        704
+      ],
+      "id": "3ba09fa9-4dc8-4371-8919-1fcc1cd15f23",
+      "name": "Edit Fields2",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2GELEBWWFCBVAJARWXY7NMFM4N",
+          "mode": "list",
+          "cachedResultName": "SalidaSAP",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{AA7A52E5-E5A1-4343-8E27-B7569C9752DB}",
+          "mode": "list",
+          "cachedResultName": "pruebas consulta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B1BC82246-A258-400D-9046-D7C7DAC2B38D%7D&file=SalidaSAP.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=pruebas%20consulta!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2592,
+        -912
+      ],
+      "id": "bd58277a-a9f5-41b7-b6d8-9352ed3fb2ff",
+      "name": "Microsoft Excel 3659",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// === Utils ===\nconst norm = v => String(v ?? '').replace(/\\u00A0/g, ' ').trim();\nconst simplifyKey = (k) =>\n  String(k ?? '')\n    .normalize('NFD').replace(/[\\u0300-\\u036f]/g, '')\n    .replace(/\\u00A0/g, ' ')\n    .replace(/\\s+/g, ' ')\n    .trim()\n    .toLowerCase();\n\nconst findKey = (obj, candidates) => {\n  const map = new Map(Object.keys(obj).map(k => [simplifyKey(k), k]));\n  for (const cand of candidates) {\n    const hit = map.get(simplifyKey(cand));\n    if (hit) return hit;\n  }\n  return null;\n};\n\n// Convierte \"1.234,56\", \"0,98\", \"0.98\", etc. a Number\nconst toNum = (v) => {\n  if (v == null) return null; // ⬅️ devuelve null en lugar de 0 para poder filtrar\n  let x = String(v).replace(/\\u00A0/g, ' ').trim().replace(/\\s+/g, '');\n  if (x === '') return null; // ⬅️ vacío => null\n  const hasC = x.includes(','), hasD = x.includes('.');\n  if (hasC && hasD) {\n    x = (x.lastIndexOf(',') > x.lastIndexOf('.'))\n      ? x.replace(/\\./g, '').replace(',', '.')  // 1.234,56 -> 1234.56\n      : x.replace(/,/g, '');                    // 1,234.56 -> 1234.56\n  } else if (hasC) {\n    x = x.replace(',', '.');                    // 0,98 -> 0.98\n  }\n  const n = Number(x);\n  return Number.isFinite(n) ? n : null; // ⬅️ null si no es numérico\n};\n\nconst fromNum = n => Number.isFinite(n) ? Number(n.toFixed(3)) : 0;\n\nconst normalizaCodigo = v => {\n  const s = norm(v);\n  const p = s.split(\"-\");\n  return p.length > 1 ? p[0].toLowerCase() + \"-\" + p.slice(1).join(\"-\") : s.toUpperCase();\n};\n\n// === Entrada ===\nconst items = $input.all();\n\n// === Agrupar por lote, quedándonos con la ÚLTIMA fila de cada lote ===\nconst groups = new Map();\n\nfor (const it of items) {\n  const row = it.json;\n\n  const kNumLote = findKey(row, [\n    'Número lote','Numero lote','Nº lote','num lote','num. lote','número lote'\n  ]);\n  if (!kNumLote) continue;\n\n  const loteVal = row[kNumLote];\n  if (loteVal == null || loteVal === '') continue;\n\n  const key = normalizaCodigo(loteVal);\n\n  groups.set(key, { row, kNumLote });\n}\n\n// === Seleccionar solo los que cumplen ===\nconst TOL = 1e-6;\nconst out = [];\n\nfor (const [key, { row, kNumLote }] of groups.entries()) {\n  const kNeveraF    = findKey(row, ['NeveraFinal','Nevera Final','Nevera_final']) ?? findKey(row, ['Nevera']);\n  const kCajonerasF = findKey(row, ['CajonerasFinal','Cajoneras Final','Cajoneras_final']) ?? findKey(row, ['Cajoneras']);\n\n  if (!kNeveraF || !kCajonerasF) continue;\n\n  const neveraFinal    = toNum(row[kNeveraF]);\n  const cajonerasFinal = toNum(row[kCajonerasF]);\n\n  // 🔴 FILTRO NUEVO → descartar si alguno es nulo\n  if (neveraFinal == null || cajonerasFinal == null) continue;\n\n  const condNevera  = Math.abs(neveraFinal) <= TOL;   // == 0 con tolerancia\n  const condCaj     = cajonerasFinal < 0.5 + TOL;     // < 0.5\n\n  if (condNevera && condCaj) {\n    out.push({\n      json: {\n        'Número lote': row[kNumLote],\n        NeveraFinal: fromNum(neveraFinal),\n        CajonerasFinal: fromNum(cajonerasFinal),\n      }\n    });\n  }\n}\n\nreturn out;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2880,
+        -912
+      ],
+      "id": "bf1d0022-b94d-4117-8afd-3681370a72e9",
+      "name": "Code16"
+    },
+    {
+      "parameters": {
+        "sendTo": "javiparra86@gmail.com, calidad1@interoleo.com",
+        "subject": "Muestras pedir",
+        "message": "={{ $json.messageHtml }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        3408,
+        -912
+      ],
+      "id": "58b1ab00-f463-4de3-bc21-c10229cdf6fc",
+      "name": "Send a message",
+      "webhookId": "85b4857a-a14a-4ac2-b003-2d17c827dbfc",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "7p1RZAq3HfMxNPCn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// BuildTable (Function / Code node)\n// Junta todos los items en UNA sola tabla HTML y devuelve UN único item\n\nconst items = $input.all();\n\n// utilidades pequeñitas para robustez\nconst esc = (s) => String(s ?? '')\n  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');\n\nconst simplifyKey = (k) => String(k ?? '')\n  .normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')\n  .replace(/\\u00A0/g,' ').replace(/\\s+/g,' ').trim().toLowerCase();\n\nconst findKey = (obj, candidates) => {\n  const map = new Map(Object.keys(obj).map(k => [simplifyKey(k), k]));\n  for (const c of candidates) {\n    const hit = map.get(simplifyKey(c));\n    if (hit) return hit;\n  }\n  return null;\n};\n\n// detecta claves reales de tus columnas (soporta variaciones)\nlet kLote, kNev, kCaj;\nfor (const it of items) {\n  const row = it.json;\n  kLote ||= findKey(row, ['Número lote','Numero lote','Nº lote','num lote','num. lote','número lote']);\n  kNev  ||= findKey(row, ['NeveraFinal','Nevera Final','Nevera_final','Nevera']);\n  kCaj  ||= findKey(row, ['CajonerasFinal','Cajoneras Final','Cajoneras_final','Cajoneras']);\n  if (kLote && kNev && kCaj) break;\n}\n\n// cabecera + filas\nlet html = `\n<p>Hola,</p>\n<p>Estos son los datos de las muestras:</p>\n<table border=\"1\" cellspacing=\"0\" cellpadding=\"6\" style=\"border-collapse:collapse;\">\n  <thead>\n    <tr>\n      <th>Número lote</th>\n      <th>NeveraFinal</th>\n      <th>CajonerasFinal</th>\n    </tr>\n  </thead>\n  <tbody>\n`;\n\nfor (const it of items) {\n  const r = it.json;\n  html += `\n    <tr>\n      <td>${esc(kLote ? r[kLote] : '')}</td>\n      <td>${esc(kNev  ? r[kNev]  : '')}</td>\n      <td>${esc(kCaj  ? r[kCaj]  : '')}</td>\n    </tr>\n  `;\n}\n\nhtml += `\n  </tbody>\n</table>\n<p>Saludos,</p>\n`;\n\n// devolvemos UN SOLO item con el HTML y (opcional) el asunto\nreturn [{\n  json: {\n    subject: 'Muestras pedir',\n    messageHtml: html\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3152,
+        -912
+      ],
+      "id": "23712473-b4d1-4e46-87cd-c8739d94873d",
+      "name": "Code17"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ed891122-d14b-4a39-aa62-b425be0cfe87",
+              "leftValue": "={{ $json.match }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        3392,
+        688
+      ],
+      "id": "b6e92e8d-2058-4e64-b513-82d0ccf9e545",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "toRecipients": "calidad1@interoleo.com",
+        "subject": "Muestra no dada de alta",
+        "bodyContent": "=La muestra con el codigo {{ $('Code12').first().json.codigo_final}} con el peso de {{ $('codigos-aceite').first().json.body.peso_g }} gramos no esta dada de alta.\nEn el caso de haber un error ponente en contacto el administrador.",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 2,
+      "position": [
+        3728,
+        496
+      ],
+      "id": "73e60dc7-9457-4ea6-ae17-ad8753a3f266",
+      "name": "Send a message2",
+      "webhookId": "13888db2-9e50-4be4-aec2-88a69adcf4cd",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "ydIgIRhlWf3iUfJ6",
+          "name": "Microsoft Outlook account"
+        }
+      }
+    }
+  ],
+  "pinData": {
+    "codigos-aceite": [
+      {
+        "json": {
+          "headers": {
+            "host": "micky22.app.n8n.cloud",
+            "user-agent": "Python-urllib/3.11",
+            "content-length": "78",
+            "accept-encoding": "gzip, br",
+            "cdn-loop": "cloudflare; loops=1; subreqs=1",
+            "cf-connecting-ip": "84.77.147.17",
+            "cf-ew-via": "15",
+            "cf-ipcountry": "ES",
+            "cf-ray": "98ae527527916689-MAD",
+            "cf-visitor": "{\"scheme\":\"https\"}",
+            "cf-worker": "n8n.cloud",
+            "content-type": "application/json",
+            "x-forwarded-for": "84.77.147.17, 172.64.238.133",
+            "x-forwarded-host": "micky22.app.n8n.cloud",
+            "x-forwarded-port": "443",
+            "x-forwarded-proto": "https",
+            "x-forwarded-server": "traefik-prod-users-gwc-5-6fbf5bdbfc-9t625",
+            "x-is-trusted": "yes",
+            "x-real-ip": "84.77.147.17"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "fecha_hora": "2025-10-07 17:09:52",
+            "peso_g": 727,
+            "codigo": "CL053.25.2"
+          },
+          "webhookUrl": "https://micky22.app.n8n.cloud/webhook/codigos-aceite",
+          "executionMode": "production"
+        }
+      }
+    ]
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-07-10T05:49:33.916Z",
+      "updatedAt": "2025-07-10T05:49:33.916Z",
+      "role": "workflow:owner",
+      "workflowId": "dW0oMW4w1c2uHOQW",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 5,
+  "updatedAt": "2025-10-07T15:28:17.000Z",
+  "versionId": "af14233a-bd60-41d3-b9e2-7b215b26bd2e"
+}
