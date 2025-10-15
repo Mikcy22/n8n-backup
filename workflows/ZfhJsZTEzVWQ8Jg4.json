@@ -1,0 +1,642 @@
+{
+  "active": false,
+  "connections": {
+    "Switch2": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Microsoft Excel 3655",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI1": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3656",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "Telegram10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code11": {
+      "main": [
+        [
+          {
+            "node": "Telegram11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code12": {
+      "main": [
+        [
+          {
+            "node": "Code11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3656": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code2": {
+      "main": [
+        [
+          {
+            "node": "OpenAI1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "ID con permisos3",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Switch2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If2": {
+      "main": [
+        [
+          {
+            "node": "Switch2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "ID sin permiso2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ID con permisos3": {
+      "main": [
+        [
+          {
+            "node": "If2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3655": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3651",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3651": {
+      "main": [
+        [
+          {
+            "node": "Code12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-09-01T07:30:10.574Z",
+  "id": "ZfhJsZTEzVWQ8Jg4",
+  "isArchived": true,
+  "meta": {
+    "templateId": "PT1i+zU92Ii5O2XCObkhfHJR5h9rNJTpiCIkYJk9jHU=",
+    "templateCredsSetupCompleted": true
+  },
+  "name": "InterOleo Bot copy 2",
+  "nodes": [
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ (!!$items(\"Telegram Trigger\")[0].json.message.photo && $items(\"ID con permisos3\")[0].json.autorizados.includes($json.message.chat.id)).toBoolean() }}",
+                    "rightValue": "true",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true",
+                      "singleValue": true
+                    },
+                    "id": "07a98717-a3c7-47e8-adfc-17f54e47a217"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "ecb02250-bf17-42da-8407-5d2fb8d58957",
+                    "leftValue": "={{ (!!$items(\"Telegram Trigger\")[0].json.message.text && $items(\"ID con permisos3\")[0].json.autorizados.includes($json.message.chat.id)).toBoolean() }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "6e8a4cdf-42ab-4339-aacd-e9a3f4218de7",
+                    "leftValue": "={{ (!!$items(\"Telegram Trigger\")[0].json.message.document && $items(\"ID con permisos3\")[0].json.autorizados.includes($json.message.chat.id)).toBoolean() }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -48,
+        -720
+      ],
+      "id": "5c6f475d-245f-4ada-b607-943773eca5ea",
+      "name": "Switch2"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "chatgpt-4o-latest",
+          "mode": "list",
+          "cachedResultName": "CHATGPT-4O-LATEST"
+        },
+        "text": "Eres un asistente administrativo experto en reconocimiento óptico de caracteres (OCR). Tu tarea es extraer información clave de una imagen que contiene etiquetas adheridas a botellas de aceite. Cada etiqueta incluye los siguientes campos:\n\n\t•\tREF.\n\nInstrucciones específicas:\n\t1.\tExtraer únicamente la información del campo REF. para cada botella visible en la imagen.\n\t2.\tFormato de salida: Organiza la información en una tabla, donde cada fila represente una muestra y las columnas correspondan a los campos mencionados anteriormente.\n\t3.\tPrecisión y revisión: Si el OCR no puede extraer algún dato o hay baja confianza en la extracción, indica “No legible” en ese campo. Además, realiza una revisión visual adicional de la imagen para corregir o confirmar los datos extraídos si la calidad lo permite.\n\t4.\tContexto adicional: Ten en cuenta que las etiquetas están adheridas a botellas de aceite y pueden presentar curvaturas, zonas desenfocadas, textos parcialmente ocultos por otras botellas, o reflejos que dificulten la lectura. Ajusta el reconocimiento teniendo en cuenta estas distorsiones.\n\t5.\tReconocimiento contextual: Si el texto está parcialmente cubierto o borroso, intenta deducir el contenido usando el formato esperado del campo (por ejemplo, REF. tiene el formato \"25-XXXX\", siendo XXXX un número de 4 cifras).\n\t6.\tOrden de procesamiento: Procesa de izquierda a derecha visualmente. Si una botella muestra más de una etiqueta, procesa solo la etiqueta visible más completa.\n\t7.\tSin repeticiones: Asegúrate de que cada valor REF. se registre una sola vez, incluso si aparece parcialmente repetido en la imagen por la perspectiva.\n\t8.\tNo incluyas ninguna explicación adicional, comentarios, advertencias, ni encabezados. Solo muestra la tabla limpia como salida.\n\nImportante: Mantén una actitud profesional y enfocada en la precisión de los datos. Aplica sentido lógico cuando el OCR automático no sea suficiente.",
+        "inputType": "base64",
+        "options": {
+          "detail": "auto"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        464,
+        -864
+      ],
+      "id": "6999b601-19cc-488b-8b23-d5ddda016da6",
+      "name": "OpenAI1",
+      "alwaysOutputData": true,
+      "credentials": {
+        "openAiApi": {
+          "id": "p8ABJFUF9JXWABZs",
+          "name": "n8n agent wsp"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const texto = $('OpenAI1').first().json.content;\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        -864
+      ],
+      "id": "b3d1d3ab-9c7b-47be-b756-68eda13f8fbf",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "jsCode": "const excelData = $(\"Microsoft Excel 3656\").all();\n\nconst references = $input.first().json.referencias;\nconst filteredData = excelData.filter((item) =>\n  references.includes(item?.json[\"REF.\"]),\n);\nreturn filteredData;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1424,
+        -864
+      ],
+      "id": "f1961fa6-3477-406a-bf36-398e08eacb70",
+      "name": "Code5",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').all()[0].json.message.from.id }}\n",
+        "text": "=Los datos son:\nNumero REF: {{ $json['REF.'] }}\nLOTE: {{ $json.LOTE }}\nClasific. Bodega:{{ $json['Clas Bod'] }}\nCata:{{ $json.CATA || \"Pendiente de carga\"}}\nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }}\nObservaciones: {{ $json.OBSERVACIONES }}\nCorredor:{{ $json.CORREDOR }}\nCliente:{{ $json.CLIENTE || 'Sin cliente' }}\nQTY.DISP:{{ $json['QTY.DISP'] }}\nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }}\nFecha de envio:{{ $json['Fecha Envío'] }}\nAcidez: {{ $json.ACIDEZ }}\nEtilicos:{{ $json.ETILICOS }}\nFecha de cata:{{ $json['FECHA C'] || 'Sin fecha de cata' }}\n",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1744,
+        -864
+      ],
+      "id": "83851483-5036-4d1c-923b-86ec91b87ed8",
+      "name": "Telegram10",
+      "webhookId": "ea687ca3-efc5-4622-b0a6-066cef2b980a",
+      "credentials": {
+        "telegramApi": {
+          "id": "ktaJczNVT9r8QZ4A",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').all()[0].json.message.from.id }}",
+        "text": "=Los datos son:\nNumero REF: {{ $json['REF.'] }}\nLOTE: {{ $json.LOTE }}\nClasific. Bodega:{{ $json['Clas Bod'] }}\nCata:{{ $json.CATA || \"Pendiente de carga\"}}\nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }}\nObservaciones: {{ $json.OBSERVACIONES }}\nCorredor:{{ $json.CORREDOR }}\nCliente:{{ $json.CLIENTE || 'Sin cliente' }}\nQTY.DISP:{{ $json['QTY.DISP'] }}\nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }}\nFecha de envio:{{ $json['Fecha Envío'] }}\nAcidez: {{ $json.ACIDEZ }}\nEtilicos:{{ $json.ETILICOS }}\nFecha de cata:{{ $json['FECHA C'] || 'Sin fecha de cata' }}\n",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1664,
+        -544
+      ],
+      "id": "7086b1a5-f880-41e0-b786-6cadec66421e",
+      "name": "Telegram11",
+      "webhookId": "bd360653-b432-4168-a0a3-bf34ecfacdbe",
+      "credentials": {
+        "telegramApi": {
+          "id": "ktaJczNVT9r8QZ4A",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const excelData = $(\"Microsoft Excel 3651\").all();\n\nconst references = $input.all()[0]?.json?.referencias;\n\nconst filteredData = excelData.filter((item) =>\n  references.includes(item?.json[\"REF.\"]),\n);\nreturn filteredData;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1232,
+        -544
+      ],
+      "id": "f055c92c-af28-427b-a0f5-6fba8c67ace2",
+      "name": "Code11",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const texto = $('Telegram Trigger').first().json.message.text;\n\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        848,
+        -544
+      ],
+      "id": "90edc45d-c760-49cd-b6b6-bf2970074c26",
+      "name": "Code12"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHZ2TNISB733WRB3NMVUYV77ME7C",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B20519B3A-7BFF-43B4-B6B2-B4C57FF613E2%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B20519B3A-7BFF-43B4-B6B2-B4C57FF613E2%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O20000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        720,
+        -864
+      ],
+      "id": "eacf09e8-c4e4-41c8-8025-81dd26c26107",
+      "name": "Microsoft Excel 3656",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// === ACCESO SEGURO AL PRIMER ITEM ===\nconst item = $input.first();\n\n// === VALIDACIÓN ===\nif (!item.binary?.data?.data) {\n  throw new Error(\"⚠️ No se recibió imagen binaria válida\");\n}\n\n// === FUNCIONES AUXILIARES ===\n// No tenemos Buffer ni Sharp, pero podemos simular conversión básica\n// Si tu entorno tiene Node.js extendido, puedes usar Sharp o Jimp para realzar la calidad\n\n// === SIMULAMOS MEJORA: Cambiamos mimeType a PNG (mejor para OCR) ===\nconst nuevoBinario = { ...item.binary };\nnuevoBinario.data = { ...item.binary.data };\n\n// Aquí normalmente deberías procesar la imagen con Sharp o una API externa.\n// En este ejemplo asumimos que ya es buena y simplemente la marcamos como PNG.\nnuevoBinario.data.mimeType = 'image/png';\nnuevoBinario.data.fileName = 'mejorada.png';\n\n// === RETORNAMOS LA NUEVA IMAGEN CON FORMATO PNG ===\nreturn [\n  {\n    binary: nuevoBinario,\n    json: item.json,\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        208,
+        -864
+      ],
+      "id": "126b698f-c707-4a21-aebd-619164afaa4d",
+      "name": "Code2"
+    },
+    {
+      "parameters": {
+        "updates": [
+          "message",
+          "*"
+        ],
+        "additionalFields": {
+          "download": true
+        }
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -944,
+        -1264
+      ],
+      "id": "da5923d4-760e-4080-8e2c-29d171802c8a",
+      "name": "Telegram Trigger",
+      "webhookId": "d432c1e8-7861-4f60-afad-8970c690bf32",
+      "credentials": {
+        "telegramApi": {
+          "id": "ktaJczNVT9r8QZ4A",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "7e2f81c9-d78f-419a-ab53-7e59f2e00475",
+              "leftValue": "={{ $json.autorizados }}",
+              "rightValue": "={{ $(\"Telegram Trigger\").item.json.message.from.id }}",
+              "operator": {
+                "type": "array",
+                "operation": "contains",
+                "rightType": "any"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -608,
+        -720
+      ],
+      "id": "dcb99608-75c7-4a55-8eac-c997008a7b63",
+      "name": "If2"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"autorizados\": [\n   702261042,\n    273338613,\n    7773756172,\n    6735037156,\n1745267799\n  ]\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1008,
+        -720
+      ],
+      "id": "9f42b70f-bfb0-4b66-8d2d-264b41880a6a",
+      "name": "ID con permisos3"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=No tienes permiso de uso para el BOT. Por favor contacta con el siguiente número:\n+34 607 37 38 21\n\nTu id: {{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -48,
+        -288
+      ],
+      "id": "3d336287-6e1f-4e38-9b38-3bbe8be03c17",
+      "name": "ID sin permiso2",
+      "webhookId": "1ee0e04e-e9c7-445d-b643-3937e25c6604",
+      "credentials": {
+        "telegramApi": {
+          "id": "ktaJczNVT9r8QZ4A",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2R6WSIIAQX2RCKN7J2Z6IWTKVD",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B84A4F551-1702-44D4-A6FD-3ACF9169AAA3%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B20519B3A-7BFF-43B4-B6B2-B4C57FF613E2%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O20000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        208,
+        -544
+      ],
+      "id": "a7c7bb38-25d2-4c8b-837c-95963b8c79b6",
+      "name": "Microsoft Excel 3655",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2CWI3JGE3OXVFZG4QLLBEFU7OT",
+          "mode": "list",
+          "cachedResultName": "TeleMuBot1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B9336B242-6E13-4BBD-9372-0B58485A7DD3%7D&file=TeleMuBot1.xlsm&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{4592B1AD-E3E7-4284-9967-E2159681203D}",
+          "mode": "list",
+          "cachedResultName": "Sheet2",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B9336B242-6E13-4BBD-9372-0B58485A7DD3%7D&file=TeleMuBot1.xlsm&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet2!A1"
+        },
+        "useRange": true,
+        "range": "A1:Z25000",
+        "keyRow": 2,
+        "dataStartRow": 3,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        544,
+        -544
+      ],
+      "id": "d2a2132a-0c62-4a97-8d8a-02ef5b3148c5",
+      "name": "Microsoft Excel 3651",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      },
+      "disabled": true
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-09-01T07:30:10.581Z",
+      "updatedAt": "2025-09-01T07:30:10.581Z",
+      "role": "workflow:owner",
+      "workflowId": "ZfhJsZTEzVWQ8Jg4",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-09-04T11:49:41.000Z",
+  "versionId": "9cd06f2c-ec9c-41f0-baf5-6238fca470f2"
+}
