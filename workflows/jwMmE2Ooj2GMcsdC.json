@@ -1,0 +1,1273 @@
+{
+  "active": true,
+  "connections": {
+    "Code8": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3652",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "recibir-tarjetn": {
+      "main": [
+        [
+          {
+            "node": "Code8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "mandar-correo": {
+      "main": [
+        [
+          {
+            "node": "Gmail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 365": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "obtener_datos_tarjetones": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 365",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "actualizar_muestra": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3652": {
+      "main": [
+        []
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replace Me": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3654": {
+      "main": [
+        [
+          {
+            "node": "Replace Me",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "borrar_socio": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3655",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Code9",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Microsoft Excel 3656",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code9": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3654",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3656": {
+      "main": [
+        [
+          {
+            "node": "Replace Me",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "obtener_id_socio": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3653",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3653": {
+      "main": [
+        [
+          {
+            "node": "Code6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code6": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscar Archivos en Carpeta": {
+      "main": [
+        [
+          {
+            "node": "¿Archivo existe?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Archivo existe?": {
+      "main": [
+        [
+          {
+            "node": "Date & Time",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Renombrar PDF Antiguo": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Subir nuevo PDF": {
+      "main": [
+        [
+          {
+            "node": "Confirmación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GENERAR NOMBRE MOD1": {
+      "main": [
+        [
+          {
+            "node": "Renombrar PDF Antiguo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge2": {
+      "main": [
+        [
+          {
+            "node": "Subir nuevo PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "mandar-tarjeton": {
+      "main": [
+        [
+          {
+            "node": "Buscar Archivos en Carpeta",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Buscar Archivos en Carpeta1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time": {
+      "main": [
+        [
+          {
+            "node": "GENERAR NOMBRE MOD1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-05-28T10:09:46.637Z",
+  "id": "jwMmE2Ooj2GMcsdC",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "tarjeton",
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json.body;\nconst fechaCreacion = new Date().toLocaleString('es-ES');\n\nconst filas = data.socios.map((socio, i) => {\n  const depositoOriginal = socio.deposito || \"\";\n  const anioCampaña = String(data.campaña).slice(-2);\n  const llenada = socio.llenada || \"\";\n\n  // Extraer solo letras iniciales del depósito (hasta que aparezca un número)\n  const letrasDeposito = depositoOriginal.match(/^[A-Za-z]+/)[0];\n\n  let codigoFinal = \"\";\n  let prefijo = letrasDeposito;\n  let cuerpo = depositoOriginal;\n\n  // ⚙️ Regla 1: SI → FR\n  if (/^SI\\d+/.test(depositoOriginal)) {\n    prefijo = \"FR\";\n  }\n\n  // ⚙️ Regla 2: OC-\n  const especialesOC = [\"LC\", \"SB\", \"LU\", \"SC\"];\n  if (especialesOC.includes(letrasDeposito)) {\n    codigoFinal = `OC-${cuerpo}.${anioCampaña}.${llenada}`;\n  } else {\n    codigoFinal = `${prefijo}-${cuerpo}.${anioCampaña}.${llenada}`;\n  }\n\n  return {\n    json: {\n      Fecha: data.fecha,\n      FechaCr: fechaCreacion,\n      \"Tipo CTO\": data.tipo_cto,\n      \"Nº CTO\": data.numero_cto,\n      Cliente: data.cliente,\n      Intermediario: data.intermediario,\n      Cantidad: data.cantidad,\n      Calidad: data.calidad,\n      Retirada: data.retirada,\n      Precio: data.precio,\n      Observaciones: data.observaciones,\n      Socios: `Partida ${i + 1}: ${depositoOriginal} | Llenada: ${llenada} | Tn: ${socio.toneladas} | Ref: ${socio.referencia}`,\n      Destinatarios: data.destinatarios?.join(', ') || '',\n      Toneladas: socio.toneladas,\n      Referencia: socio.referencia,\n      Deposito: socio.deposito,\nLlenada: socio.llenada,\n      bol_inter: data.bol_inter,\n      CodigoRef: codigoFinal,\n      Campaña:$input.first().json.body['campaña']\n    }\n  };\n});\n\nreturn filas;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -2256,
+        -960
+      ],
+      "id": "81242193-99c4-4b1b-a252-ef661c631625",
+      "name": "Code8"
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH6UU6DLVL6GMBG2OTFYS5PIOD3Q",
+          "mode": "list",
+          "cachedResultName": "CtoVenta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BBA86A7D4-C6AF-4D60-A74C-B8975E870F70%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{607355E0-0559-4B45-BB67-3A356FD23547}",
+          "mode": "list",
+          "cachedResultName": "TARJETON",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BBA86A7D4-C6AF-4D60-A74C-B8975E870F70%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=TARJETON!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{B1269E57-F471-430F-B416-FEC5AC04885A}",
+          "mode": "list",
+          "cachedResultName": "TarjetonData",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BBA86A7D4-C6AF-4D60-A74C-B8975E870F70%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=TARJETON!A1:W15"
+        },
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "Fecha",
+              "fieldValue": "={{ $json.Fecha }}"
+            },
+            {
+              "column": "Tipo Cto",
+              "fieldValue": "={{ $json['Tipo CTO'] }}"
+            },
+            {
+              "column": "Nº Cto",
+              "fieldValue": "={{ Number($json[\"Nº CTO\"]) }}"
+            },
+            {
+              "column": "Cliente",
+              "fieldValue": "={{ $json.Cliente }}"
+            },
+            {
+              "column": "intermediario",
+              "fieldValue": "={{ $json.Intermediario }}"
+            },
+            {
+              "column": "Cantidad",
+              "fieldValue": "={{  $json.Cantidad }}"
+            },
+            {
+              "column": "Calidad",
+              "fieldValue": "={{ $json.Calidad }}"
+            },
+            {
+              "column": "Retirada",
+              "fieldValue": "={{ $json.Retirada }}"
+            },
+            {
+              "column": "Precio",
+              "fieldValue": "={{ $json.Precio }}"
+            },
+            {
+              "column": "Observaciones",
+              "fieldValue": "={{ $json.Observaciones }}"
+            },
+            {
+              "column": "Socios",
+              "fieldValue": "={{ $json.Socios }}"
+            },
+            {
+              "column": "Destinatarios",
+              "fieldValue": "={{ $json.Destinatarios }}"
+            },
+            {
+              "column": "Toneladas",
+              "fieldValue": "={{ $json.Toneladas }}"
+            },
+            {
+              "column": "Referencia",
+              "fieldValue": "={{ $json.Referencia }}"
+            },
+            {
+              "column": "FechaCreacion",
+              "fieldValue": "={{ $json.FechaCr }}"
+            },
+            {
+              "column": "Codigo",
+              "fieldValue": "={{ $json.CodigoRef }}"
+            },
+            {
+              "column": "Llenada",
+              "fieldValue": "={{ $json.Llenada }}"
+            },
+            {
+              "column": "Deposito",
+              "fieldValue": "={{ $json.Deposito }}"
+            },
+            {
+              "column": "boletin",
+              "fieldValue": "={{ $json.bol_inter }}"
+            },
+            {
+              "column": "Campaña",
+              "fieldValue": "={{ $json['Campaña'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        -1888,
+        -960
+      ],
+      "id": "4f9c5572-261a-4943-91a4-3691607a987f",
+      "name": "Microsoft Excel 3652",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "=javier.logistica@interoleo.com, sonia.calidad@interoleo.com, gerencia@interoleo.com",
+        "subject": "Nuevo Tarjetón generado",
+        "message": "Se adjunta el tarjetón generado desde la app.",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {
+                "property": "file"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        -2256,
+        -1168
+      ],
+      "id": "e0dc78ee-032a-4943-a2c0-eb67079d26c0",
+      "name": "Gmail",
+      "webhookId": "e69fbd46-95d6-4bd5-bd56-5f9da7dcac59",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "7p1RZAq3HfMxNPCn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "recibir-tarjeton",
+        "options": {
+          "allowedOrigins": "https://www.interoleo.com"
+        }
+      },
+      "id": "a02c7ac5-2ef4-480b-9390-7921e4a66987",
+      "name": "recibir-tarjetn",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -2640,
+        -960
+      ],
+      "webhookId": "6db92ab0-dc9f-487e-b2d0-45ef4ae228d2"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "mandar-correo-tarjeton",
+        "responseMode": "responseNode",
+        "options": {
+          "binaryData": false
+        }
+      },
+      "id": "cc2fa507-60db-4626-91f4-7f2f1925b3fa",
+      "name": "mandar-correo",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -2640,
+        -1168
+      ],
+      "webhookId": "6db92ab0-dc9f-487e-b2d0-45ef4ae228d2"
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "operation": "getRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHZQMZRYP5HQHVFIT7QBL6A3UAYS",
+          "mode": "list",
+          "cachedResultName": "CtoVenta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{607355E0-0559-4B45-BB67-3A356FD23547}",
+          "mode": "list",
+          "cachedResultName": "TARJETON",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=TARJETON!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{B1269E57-F471-430F-B416-FEC5AC04885A}",
+          "mode": "list",
+          "cachedResultName": "TarjetonData",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=TARJETON!A1:U7"
+        },
+        "returnAll": true,
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        -2400,
+        -1744
+      ],
+      "id": "221e78c8-d0cb-43b6-8b19-80ae6a051ef5",
+      "name": "Microsoft Excel 365",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "allIncomingItems",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -1904,
+        -1744
+      ],
+      "id": "d100f01a-46bd-43a6-ab61-544cb6741403",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "path": "obtener_datos_tarjetones",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "https://www.interoleo.com"
+        }
+      },
+      "id": "a330ce32-3f32-4fa5-a5c7-7ab9aab2bc9d",
+      "name": "obtener_datos_tarjetones",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -2640,
+        -1744
+      ],
+      "webhookId": "6db92ab0-dc9f-487e-b2d0-45ef4ae228d2"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => ({ json: item.json }));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -2160,
+        -1744
+      ],
+      "id": "57664079-9199-40c3-8237-2409e3281d19",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "actualizar_muestra",
+        "responseMode": "responseNode",
+        "options": {
+          "binaryData": false
+        }
+      },
+      "id": "2460e235-2ae7-4493-9c83-a556f3850c0d",
+      "name": "actualizar_muestra",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -944,
+        -1184
+      ],
+      "webhookId": "6db92ab0-dc9f-487e-b2d0-45ef4ae228d2"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "upsert",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHZQMZRYP5HQHVFIT7QBL6A3UAYS",
+          "mode": "list",
+          "cachedResultName": "CtoVenta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{607355E0-0559-4B45-BB67-3A356FD23547}",
+          "mode": "list",
+          "cachedResultName": "TARJETON",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=TARJETON!A1"
+        },
+        "dataMode": "autoMap",
+        "columnToMatchOn": "ID",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        848,
+        -1184
+      ],
+      "id": "944437ba-5bd5-4e23-a76f-d26c2835d70a",
+      "name": "Microsoft Excel 3654",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst bodies = items.flatMap((item) => item.json.body);\n\n// Devuelve cada objeto como un item separado\nreturn bodies.map((body) => ({ json: body }));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -640,
+        -1184
+      ],
+      "id": "47443696-7d55-41bc-b102-5f08dc58653b",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -320,
+        -1184
+      ],
+      "id": "366ad23e-6c78-4e3e-b51b-f66a5742e578",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "name": "Replace Me",
+      "typeVersion": 1,
+      "position": [
+        960,
+        -800
+      ],
+      "id": "eb380a92-a7af-4513-b1ad-ed2c2244f943"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "borrar_socio",
+        "responseMode": "responseNode",
+        "options": {
+          "binaryData": false
+        }
+      },
+      "id": "073e51b8-9602-4a09-a92f-50c2751e5424",
+      "name": "borrar_socio",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -2640,
+        -1360
+      ],
+      "webhookId": "6db92ab0-dc9f-487e-b2d0-45ef4ae228d2"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "update",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHZQMZRYP5HQHVFIT7QBL6A3UAYS",
+          "mode": "list",
+          "cachedResultName": "CtoVenta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{607355E0-0559-4B45-BB67-3A356FD23547}",
+          "mode": "list",
+          "cachedResultName": "TARJETON",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=TARJETON!A1"
+        },
+        "columnToMatchOn": "ID",
+        "valueToMatchOn": "={{ $json.body.comunes.ID }}",
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "Eliminado",
+              "fieldValue": "BorrarlineaTarjeton"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        -2368,
+        -1360
+      ],
+      "id": "5957ff09-89b1-499f-b0ca-d74ed153020f",
+      "name": "Microsoft Excel 3655",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $json;\n\n// Obtener campo 'Deposito' y extraer letras\nconst deposito = item.Deposito || \"\";\nconst letras = deposito.match(/^[A-Z]+/i)?.[0] || \"XX\";\nconst letrasMayus = letras.toUpperCase();\n\n// Obtener campaña a partir del campo \"Fecha\"\nlet campania = \"XX\";\nif (item.Fecha) {\n  const matchFecha = item.Fecha.match(/\\d{4}/);\n  if (matchFecha) {\n    campania = matchFecha[0].slice(-2);\n  }\n}\n\n// Obtener número de contrato\nconst numeroCto = (item[\"Nº Cto\"] || \"SINCTO\").toString().replace(/\\s+/g, \"\");\n\n// Aplicar lógica de prefijos especiales\nlet prefijo = \"\";\nif ([\"LC\", \"SB\", \"LU\", \"SC\"].some(pref => letrasMayus.startsWith(pref))) {\n  prefijo = `OC-${deposito}`;\n} else if (letrasMayus.startsWith(\"SI\")) {\n  prefijo = `FR-${deposito}`;\n} else {\n  prefijo = `${letras}-${deposito}`;\n}\n\n// Construir el código final\nconst codigo = `${prefijo}.${campania}.${numeroCto}`;\n\nconst socios = \"Partida: \"+ $input.first().json.Deposito\n + \"| Llenada:\"+ $input.first().json.Llenada\n + \"  | Tn: \"+ $input.first().json.Toneladas\n + \" | Ref: \"+ $input.first().json.Referencia\n ;\n\n// Retornar el nuevo objeto con el campo 'Codigo' actualizado\nreturn [\n  {\n    json: {\n      ...item,\n      Codigo: codigo,\n      Socios: socios\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        352,
+        -1184
+      ],
+      "id": "3907a024-7078-47b2-b1a1-0d6ab9eacc3a",
+      "name": "Code9"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9aad3d7d-d5b8-4182-8857-6ab053baca8a",
+              "leftValue": "={{ $json.Codigo }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "empty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        32,
+        -1168
+      ],
+      "id": "4df5b3f6-087e-4ebf-b6d7-725e956cfdc3",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "update",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHZQMZRYP5HQHVFIT7QBL6A3UAYS",
+          "mode": "list",
+          "cachedResultName": "CtoVenta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{607355E0-0559-4B45-BB67-3A356FD23547}",
+          "mode": "list",
+          "cachedResultName": "TARJETON",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=TARJETON!A1"
+        },
+        "columnToMatchOn": "ID",
+        "valueToMatchOn": "={{ $json.ID }}",
+        "fieldsUi": {
+          "values": [
+            {
+              "column": "Fecha",
+              "fieldValue": "={{ $json.FechaCreacion }}"
+            },
+            {
+              "column": "Tipo Cto",
+              "fieldValue": "={{ $json['Tipo Cto'] }}"
+            },
+            {
+              "column": "Nº Cto",
+              "fieldValue": "={{ $json['Nº Cto'] }}"
+            },
+            {
+              "column": "Cliente",
+              "fieldValue": "={{ $json.Cliente }}"
+            },
+            {
+              "column": "intermediario",
+              "fieldValue": "={{ $json.intermediario }}"
+            },
+            {
+              "column": "Cantidad",
+              "fieldValue": "={{ $json.Cantidad }}"
+            },
+            {
+              "column": "Calidad",
+              "fieldValue": "={{ $json.Calidad }}"
+            },
+            {
+              "column": "Retirada",
+              "fieldValue": "={{ $json.Retirada }}"
+            },
+            {
+              "column": "Precio",
+              "fieldValue": "={{ $json.Precio }}"
+            },
+            {
+              "column": "Observaciones",
+              "fieldValue": "={{ $json.Observaciones }}"
+            },
+            {
+              "column": "Socios",
+              "fieldValue": "=Partida: {{ $json.Deposito }} | Llenada:{{ $json.Llenada }}  | Tn: {{ $json.Toneladas }} | Ref: {{ $json.Referencia }}"
+            },
+            {
+              "column": "Destinatarios",
+              "fieldValue": "={{ $json.Destinatarios }}"
+            },
+            {
+              "column": "Toneladas",
+              "fieldValue": "={{ $json.Toneladas }}"
+            },
+            {
+              "column": "Referencia",
+              "fieldValue": "={{ $json.Referencia }}"
+            },
+            {
+              "column": "Llenada",
+              "fieldValue": "={{ $json.Llenada }}"
+            },
+            {
+              "column": "Deposito",
+              "fieldValue": "={{ $json.Deposito }}"
+            },
+            {
+              "column": "boletin",
+              "fieldValue": "={{ $json.boletin }}"
+            },
+            {
+              "column": "Modificaciones",
+              "fieldValue": "={{ $json.Modificaciones}}"
+            },
+            {
+              "column": "Codigo",
+              "fieldValue": "={{ $json.Codigo }}"
+            },
+            {
+              "column": "FechaCreacion",
+              "fieldValue": "={{ $json.FechaCreacion }}"
+            },
+            {
+              "column": "Campaña",
+              "fieldValue": "={{ $json['Campaña'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        144,
+        -800
+      ],
+      "id": "54838366-5bf5-4910-92b3-0f0039e4951a",
+      "name": "Microsoft Excel 3656",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "path": "obtener_id_socio",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "6c610abb-50d1-46e5-ba55-8627927ce7a9",
+      "name": "obtener_id_socio",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -2640,
+        -1536
+      ],
+      "webhookId": "6db92ab0-dc9f-487e-b2d0-45ef4ae228d2"
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "operation": "getRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMHZQMZRYP5HQHVFIT7QBL6A3UAYS",
+          "mode": "list",
+          "cachedResultName": "CtoVenta",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{607355E0-0559-4B45-BB67-3A356FD23547}",
+          "mode": "list",
+          "cachedResultName": "TARJETON",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=TARJETON!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{B1269E57-F471-430F-B416-FEC5AC04885A}",
+          "mode": "list",
+          "cachedResultName": "TarjetonData",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B87636630-F0F4-4A3D-89FE-015F81BA0312%7D&file=CtoVenta.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=TARJETON!A1:U7"
+        },
+        "returnAll": true,
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        -2336,
+        -1536
+      ],
+      "id": "c5219133-595f-487c-8e02-d795dc291f4f",
+      "name": "Microsoft Excel 3653",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst lastItem = items[items.length - 1]?.json?.ID;\n\nreturn { lastID: lastItem };\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -2016,
+        -1536
+      ],
+      "id": "cfcc9a44-ba6c-4b09-a9ab-11fdb920ea2e",
+      "name": "Code6"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\n  \"lastID\":  {{ $json.lastID }}\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -1744,
+        -1536
+      ],
+      "id": "730ba8e8-c2ed-41b2-95d3-9b38757671d4",
+      "name": "Respond to Webhook1"
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "query": "={{ $json.body.fileNames }}"
+      },
+      "id": "93b6d27f-57e5-4c43-a3c3-362300f99cd8",
+      "name": "Buscar Archivos en Carpeta",
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        -2736,
+        -496
+      ],
+      "alwaysOutputData": true,
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json[\"name\"] || \"Sin busqueda\" }}",
+              "operation": "contains",
+              "value2": "={{ $item(0).$node[\"mandar-tarjeton\"].json.query.fileName || $item(0).$node[\"mandar-tarjeton\"].json.body.fileNames }}"
+            }
+          ]
+        }
+      },
+      "id": "89825bab-7956-4555-ab43-b8fb26b3337a",
+      "name": "¿Archivo existe?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -2416,
+        -496
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "rename",
+        "itemId": "={{ $('¿Archivo existe?').item.json.id }}",
+        "newName": "={{ $json.modifiedName }}"
+      },
+      "id": "60df90df-88ed-42f3-b794-d2971f2f8863",
+      "name": "Renombrar PDF Antiguo",
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        -1376,
+        -528
+      ],
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fileName": "={{$('mandar-tarjeton').item.json.body.fileNames }}",
+        "parentId": "01CGHIMHYHTG4VU6URQRB3ASO5PFL46RY5",
+        "binaryData": true,
+        "binaryPropertyName": "file"
+      },
+      "id": "1a6c2401-7c46-4569-977f-f20b1dd5beb6",
+      "name": "Subir nuevo PDF",
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        -1008,
+        0
+      ],
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "return [{ json: { resultado: 'PDF procesado correctamente' } }];"
+      },
+      "id": "b63c1433-3fe6-4a00-9990-1b9927435a98",
+      "name": "Confirmación",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        -688,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obtenemos el nombre original del archivo desde el nodo 'mandar-tarjeton1'\nconst originalName = $('mandar-tarjeton').first().json.body.fileNames;\n\n// Separar nombre y extensión\nconst lastDot = originalName.lastIndexOf('.');\nconst nameWithoutExt = originalName.substring(0, lastDot);\nconst ext = originalName.substring(lastDot);\n\n// Añadir la 'M' antes de la extensión\nconst modifiedName = `${nameWithoutExt}`+\"M\"+$input.first().json.formattedDate+`${ext}`\n ;\n// Retornar el nuevo nombre\nreturn [\n  {\n    json: {\n      originalName,\n      modifiedName\n    },\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1728,
+        -528
+      ],
+      "id": "15e661f9-2c0e-48e6-9c7c-18051e351adc",
+      "name": "GENERAR NOMBRE MOD1"
+    },
+    {
+      "parameters": {
+        "mode": "chooseBranch",
+        "useDataOfInput": 2
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        -1776,
+        0
+      ],
+      "id": "1d661ea1-7221-4e38-bb79-6c106c4b999d",
+      "name": "Merge2"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "mandar-tarjeton",
+        "options": {
+          "binaryData": false
+        }
+      },
+      "id": "1904e326-634a-406e-8e9b-398d4d3665aa",
+      "name": "mandar-tarjeton",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -3088,
+        -336
+      ],
+      "webhookId": "subir-pdf"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -3104,
+        160
+      ],
+      "id": "5d17452d-4c36-45aa-a1ec-8f45cd27f506",
+      "name": "Schedule Trigger",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "query": "={{ $json.query.fileName || $json.body.fileNames }}"
+      },
+      "id": "ba101bd1-532b-4aae-bb80-c4939bc1eecf",
+      "name": "Buscar Archivos en Carpeta1",
+      "type": "n8n-nodes-base.microsoftOneDrive",
+      "typeVersion": 1,
+      "position": [
+        -2816,
+        160
+      ],
+      "alwaysOutputData": true,
+      "credentials": {
+        "microsoftOneDriveOAuth2Api": {
+          "id": "YH7Ik9Fo592wY3Ef",
+          "name": "Microsoft Drive account"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "operation": "formatDate",
+        "date": "={{ $json.fileSystemInfo.createdDateTime }}",
+        "format": "X",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        -2064,
+        -608
+      ],
+      "id": "5a59439a-8aae-43d3-8953-3d61739acaf4",
+      "name": "Date & Time"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-05-28T10:09:46.641Z",
+      "updatedAt": "2025-05-28T10:09:46.641Z",
+      "role": "workflow:owner",
+      "workflowId": "jwMmE2Ooj2GMcsdC",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": {
+    "node:Lanzador 1 pm": {
+      "recurrenceRules": []
+    },
+    "node:Lanzador 8 am": {
+      "recurrenceRules": []
+    },
+    "node:Schedule Trigger": {
+      "recurrenceRules": []
+    }
+  },
+  "tags": [],
+  "triggerCount": 7,
+  "updatedAt": "2025-09-09T08:53:41.000Z",
+  "versionId": "f69f575a-81aa-4946-b721-16e916c85d50"
+}
