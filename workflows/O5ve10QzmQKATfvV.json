@@ -1,0 +1,2305 @@
+{
+  "active": true,
+  "connections": {
+    "Switch2": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3655",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get Media UR",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get Media UR1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI1": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3656",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "Send message2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code11": {
+      "main": [
+        [
+          {
+            "node": "Send message1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code12": {
+      "main": [
+        [
+          {
+            "node": "Code11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3656": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code2": {
+      "main": [
+        [
+          {
+            "node": "OpenAI1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ID con permisos3": {
+      "main": [
+        [
+          {
+            "node": "PERMISOSCOMANDOS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3655": {
+      "main": [
+        [
+          {
+            "node": "Code12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Code6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code6": {
+      "main": [
+        [
+          {
+            "node": "Send message3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 365": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code3": {
+      "main": [
+        [
+          {
+            "node": "Code7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code7": {
+      "main": [
+        [
+          {
+            "node": "Send message5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3651": {
+      "main": [
+        [
+          {
+            "node": "Code3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "opendocument.text": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3651",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "pdf": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 365",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code4": {
+      "main": [
+        [
+          {
+            "node": "Code8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code8": {
+      "main": [
+        [
+          {
+            "node": "Send message6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3652": {
+      "main": [
+        [
+          {
+            "node": "Code4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "xlsx": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3652",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code9": {
+      "main": [
+        [
+          {
+            "node": "Code10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code10": {
+      "main": [
+        [
+          {
+            "node": "Send message4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft Excel 3653": {
+      "main": [
+        [
+          {
+            "node": "Code9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DocsPal DOCX→TXT": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel 3653",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download Media": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Media UR": {
+      "main": [
+        [
+          {
+            "node": "Download Media",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Media UR1": {
+      "main": [
+        [
+          {
+            "node": "Download Media1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download Media1": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "pdf",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "DocsPal DOCX→TXT",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "opendocument.text",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "xlsx",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch3": {
+      "main": [
+        [
+          {
+            "node": "ID con permisos3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "ID con permisos",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "ID con permisos1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Switch2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send message7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ID con permisos": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Date & Time",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send message8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ID con permisos1": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "PERMISOSCOMANDOS": {
+      "main": [
+        [
+          {
+            "node": "InteroleoPermisos",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "InteroleoPermisos": {
+      "main": [
+        [
+          {
+            "node": "Send message9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "WhatsApp Trigger": {
+      "main": [
+        [
+          {
+            "node": "Switch3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time": {
+      "main": [
+        [
+          {
+            "node": "KilosCargados",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "KilosCargados": {
+      "main": [
+        [
+          {
+            "node": "FiltroFecha",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FiltroFecha": {
+      "main": [
+        [
+          {
+            "node": "Code15",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code15": {
+      "main": [
+        [
+          {
+            "node": "Code13",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code13": {
+      "main": [
+        [
+          {
+            "node": "Send message12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "enviaFlowMuestras",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviaFlowMuestras": {
+      "main": [
+        []
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "wsp-webhook": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-08-28T11:59:30.776Z",
+  "id": "O5ve10QzmQKATfvV",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "wsp bot",
+  "nodes": [
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "ecb02250-bf17-42da-8407-5d2fb8d58957",
+                    "leftValue": "={{ $('WhatsApp Trigger').item.json.messages[0].type }}",
+                    "rightValue": "text",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "37724e4b-261b-43b3-ab2c-37be9e3e478e",
+                    "leftValue": "={{ $('WhatsApp Trigger').item.json.messages[0].type }}",
+                    "rightValue": "image",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "bc0ca905-093b-4adc-bcb6-fe71cc7f5e4e",
+                    "leftValue": "={{ $('WhatsApp Trigger').item.json.messages[0].type }}",
+                    "rightValue": "document",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        848,
+        1152
+      ],
+      "id": "14576441-f517-4a10-b5a9-6685bc4d736e",
+      "name": "Switch2"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "chatgpt-4o-latest",
+          "mode": "list",
+          "cachedResultName": "CHATGPT-4O-LATEST"
+        },
+        "text": "Eres un asistente administrativo experto en reconocimiento óptico de caracteres (OCR). Tu tarea es extraer información clave de una imagen que contiene etiquetas adheridas a botellas de aceite. Cada etiqueta incluye los siguientes campos:\n\n\t•\tREF.\n\nInstrucciones específicas:\n\t1.\tExtraer únicamente la información del campo REF. para cada botella visible en la imagen.\n\t2.\tFormato de salida: Organiza la información en una tabla, donde cada fila represente una muestra y las columnas correspondan a los campos mencionados anteriormente.\n\t3.\tPrecisión y revisión: Si el OCR no puede extraer algún dato o hay baja confianza en la extracción, indica “No legible” en ese campo. Además, realiza una revisión visual adicional de la imagen para corregir o confirmar los datos extraídos si la calidad lo permite.\n\t4.\tContexto adicional: Ten en cuenta que las etiquetas están adheridas a botellas de aceite y pueden presentar curvaturas, zonas desenfocadas, textos parcialmente ocultos por otras botellas, o reflejos que dificulten la lectura. Ajusta el reconocimiento teniendo en cuenta estas distorsiones.\n\t5.\tReconocimiento contextual: Si el texto está parcialmente cubierto o borroso, intenta deducir el contenido usando el formato esperado del campo (por ejemplo, REF. tiene el formato \"25-XXXX\", siendo XXXX un número de 4 cifras).\n\t6.\tOrden de procesamiento: Procesa de izquierda a derecha visualmente. Si una botella muestra más de una etiqueta, procesa solo la etiqueta visible más completa.\n\t7.\tSin repeticiones: Asegúrate de que cada valor REF. se registre una sola vez, incluso si aparece parcialmente repetido en la imagen por la perspectiva.\n\t8.\tNo incluyas ninguna explicación adicional, comentarios, advertencias, ni encabezados. Solo muestra la tabla limpia como salida.\n\nImportante: Mantén una actitud profesional y enfocada en la precisión de los datos. Aplica sentido lógico cuando el OCR automático no sea suficiente.",
+        "inputType": "base64",
+        "options": {
+          "detail": "auto"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        2128,
+        1296
+      ],
+      "id": "b3c1c709-bc5a-47e0-9228-3a30a9d3bdbc",
+      "name": "OpenAI1",
+      "alwaysOutputData": true,
+      "credentials": {
+        "openAiApi": {
+          "id": "p8ABJFUF9JXWABZs",
+          "name": "n8n agent wsp"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const texto = $('OpenAI1').first().json.content;\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2512,
+        1296
+      ],
+      "id": "ab9c7169-02dc-473d-97a8-d7c98133ae1a",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "jsCode": "const excelData = $(\"Microsoft Excel 3656\").all();\n\nconst references = $input.first().json.referencias;\nconst filteredData = excelData.filter((item) =>\n  references.includes(item?.json[\"REF.\"]),\n);\nreturn filteredData;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2704,
+        1296
+      ],
+      "id": "95dce287-1e88-4efd-a5ef-03b82b173295",
+      "name": "Code5",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const excelData = $(\"Microsoft Excel 3655\").all();\n\nconst references = $input.all()[0]?.json?.referencias;\n\nconst filteredData = excelData.filter((item) =>\n  references.includes(item?.json[\"REF.\"]),\n);\nreturn filteredData;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2704,
+        1136
+      ],
+      "id": "ff120e73-271b-487a-b904-4514045b064d",
+      "name": "Code11",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const texto = $('WhatsApp Trigger').first().json.messages[0].text.body;\n\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2512,
+        1136
+      ],
+      "id": "3dbae0cb-74e2-4b9f-b351-392338589ef2",
+      "name": "Code12"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2R6WSIIAQX2RCKN7J2Z6IWTKVD",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B84A4F551-1702-44D4-A6FD-3ACF9169AAA3%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BFF224EC9-9AC7-4837-B0B9-BEA697CE206B%7D&file=TeleListadoMuestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O20000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2336,
+        1296
+      ],
+      "id": "bc91bb1e-8e56-49c7-99e4-392636b9afbd",
+      "name": "Microsoft Excel 3656",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// === ACCESO SEGURO AL PRIMER ITEM ===\nconst item = $input.first();\n\n// === VALIDACIÓN ===\nif (!item.binary?.data?.data) {\n  throw new Error(\"⚠️ No se recibió imagen binaria válida\");\n}\n\n// === FUNCIONES AUXILIARES ===\n// No tenemos Buffer ni Sharp, pero podemos simular conversión básica\n// Si tu entorno tiene Node.js extendido, puedes usar Sharp o Jimp para realzar la calidad\n\n// === SIMULAMOS MEJORA: Cambiamos mimeType a PNG (mejor para OCR) ===\nconst nuevoBinario = { ...item.binary };\nnuevoBinario.data = { ...item.binary.data };\n\n// Aquí normalmente deberías procesar la imagen con Sharp o una API externa.\n// En este ejemplo asumimos que ya es buena y simplemente la marcamos como PNG.\nnuevoBinario.data.mimeType = 'image/png';\nnuevoBinario.data.fileName = 'mejorada.png';\n\n// === RETORNAMOS LA NUEVA IMAGEN CON FORMATO PNG ===\nreturn [\n  {\n    binary: nuevoBinario,\n    json: item.json,\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1936,
+        1296
+      ],
+      "id": "a38fff82-25bb-455c-8181-1a08451ea185",
+      "name": "Code2"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"autorizados\": [34607373821],\n  \"sendPhoneNumber\": \"{{ String($json.sendPhoneNumber ?? $json.metadata?.phone_number_id) }}\",\n  \"wa_id\": \"{{ String($json.wa_id ?? $json.messages?.[0]?.from).replace(/\\\\D/g, '') }}\",\n\"Interoleo\":[34640067736,34607373821],\n\"PedroPascal\":[34607373821]\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -832,
+        672
+      ],
+      "id": "8d18e453-54ab-426d-b0f3-7066aac39720",
+      "name": "ID con permisos3"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2R6WSIIAQX2RCKN7J2Z6IWTKVD",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B84A4F551-1702-44D4-A6FD-3ACF9169AAA3%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BFF224EC9-9AC7-4837-B0B9-BEA697CE206B%7D&file=TeleListadoMuestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O20000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2336,
+        1136
+      ],
+      "id": "8e0daf00-5d99-44cf-b916-e8f1c63df299",
+      "name": "Microsoft Excel 3655",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const texto = $('pdf').first().json.text;\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2512,
+        1456
+      ],
+      "id": "aea39a42-32e9-442a-b028-e714e26d3eca",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "jsCode": "const excelData = $(\"Microsoft Excel 365\").all();\n\nconst references = $input.first().json.referencias;\nconst filteredData = excelData.filter((item) =>\n  references.includes(item?.json[\"REF.\"]),\n);\nreturn filteredData;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2704,
+        1456
+      ],
+      "id": "a1530944-937e-497d-a50e-c1788a18910c",
+      "name": "Code6",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2R6WSIIAQX2RCKN7J2Z6IWTKVD",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B84A4F551-1702-44D4-A6FD-3ACF9169AAA3%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BFF224EC9-9AC7-4837-B0B9-BEA697CE206B%7D&file=TeleListadoMuestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O20000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2336,
+        1456
+      ],
+      "id": "33254c12-990c-49eb-82a6-ff975981347f",
+      "name": "Microsoft Excel 365",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const texto = $('opendocument.text').first().json.text;\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2512,
+        1776
+      ],
+      "id": "13d19221-987f-4e94-99f0-b23a96c8d8d7",
+      "name": "Code3"
+    },
+    {
+      "parameters": {
+        "jsCode": "const excelData = $(\"Microsoft Excel 3651\").all();\n\nconst references = $input.first().json.referencias;\nconst filteredData = excelData.filter((item) =>\n  references.includes(item?.json[\"REF.\"]),\n);\nreturn filteredData;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2704,
+        1776
+      ],
+      "id": "d89f60a4-b3f6-4f33-be86-570986f7c3c3",
+      "name": "Code7",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2R6WSIIAQX2RCKN7J2Z6IWTKVD",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B84A4F551-1702-44D4-A6FD-3ACF9169AAA3%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BFF224EC9-9AC7-4837-B0B9-BEA697CE206B%7D&file=TeleListadoMuestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O20000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2336,
+        1776
+      ],
+      "id": "eaf7edc8-0bd5-444b-b9e5-ceb9284a5c87",
+      "name": "Microsoft Excel 3651",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "ods",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        2128,
+        1776
+      ],
+      "id": "6b1ef286-cba4-433e-b85a-148afe5aec15",
+      "name": "opendocument.text"
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        2128,
+        1456
+      ],
+      "id": "f1e31ac0-a4b8-459a-8268-afdd2624dab8",
+      "name": "pdf"
+    },
+    {
+      "parameters": {
+        "jsCode": "const filas = $items('xlsx', 0, 0);            // todos los items del nodo \"xlsx\"\nconst texto = filas\n  .map(it => String(it.json['25-5633'] ?? '')) // coge el campo de cada fila\n  .filter(s => s.trim() !== '')                // quita vacíos\n  .join(' ');                                  // únelos (cámbialo por '\\n' si prefieres líneas)\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2512,
+        1952
+      ],
+      "id": "9b218266-bc90-48ea-b8e8-19baa819cea6",
+      "name": "Code4"
+    },
+    {
+      "parameters": {
+        "jsCode": "const excelData = $(\"Microsoft Excel 3652\").all();\nconst referencias = new Set(($input.first().json.referencias || [])\n  .map(r => String(r).trim().toLowerCase()));\n\nconst filteredData = excelData.filter(it =>\n  referencias.has(String(it.json[\"REF.\"] ?? \"\").trim().toLowerCase())\n);\n\n// dedupe por REF_ (primera)\nconst seen = new Set();\nconst unique = [];\nfor (const it of filteredData) {\n  const key = String(it.json[\"REF.\"] ?? \"\").trim().toLowerCase();\n  if (seen.has(key)) continue;\n  seen.add(key);\n  unique.push(it);\n}\nreturn unique;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2704,
+        1952
+      ],
+      "id": "07c2e0de-13c2-4e57-b26c-306e889757bf",
+      "name": "Code8",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2R6WSIIAQX2RCKN7J2Z6IWTKVD",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B84A4F551-1702-44D4-A6FD-3ACF9169AAA3%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BFF224EC9-9AC7-4837-B0B9-BEA697CE206B%7D&file=TeleListadoMuestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O2000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2336,
+        1952
+      ],
+      "id": "4a9d134d-3727-42e6-befe-e932e00eb8c8",
+      "name": "Microsoft Excel 3652",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "xlsx",
+        "options": {
+          "readAsString": false
+        }
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        2128,
+        1952
+      ],
+      "id": "6b54fa48-bf76-4576-a1d9-f5ff25b5f692",
+      "name": "xlsx"
+    },
+    {
+      "parameters": {
+        "jsCode": "const texto =$('HTTP Request').first().json.data;\n\n// Captura referencias completas tipo \"25-123\" o \"25-1234\"\nconst completas = texto.match(/\\b25-\\d{3,4}\\b/g) || [];\n\n// Captura números sueltos de 4 cifras que NO estén precedidos por \"25-\"\nconst sueltas = Array.from(texto.matchAll(/\\b(?<!25-)\\d{4}\\b/g)).map(m => `25-${m[0]}`);\n\n// Unimos ambas listas y eliminamos duplicados por si acaso\nconst referencias = Array.from(new Set([...completas, ...sueltas]));\n\nif (referencias.length > 0) {\n  return [{\n    json: {\n      referencias\n    }\n  }];\n} else {\n  return [{\n    json: {\n      error: \"No se encontraron referencias válidas en el mensaje.\"\n    }\n  }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2512,
+        1616
+      ],
+      "id": "420584af-7367-4b8a-a9c2-154e483cc985",
+      "name": "Code9"
+    },
+    {
+      "parameters": {
+        "jsCode": "const excelData = $(\"Microsoft Excel 3653\").all();\n\nconst references = $input.first().json.referencias;\nconst filteredData = excelData.filter((item) =>\n  references.includes(item?.json[\"REF.\"]),\n);\nreturn filteredData;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2704,
+        1616
+      ],
+      "id": "7fbc3606-c897-49f7-ae69-bba1521928a5",
+      "name": "Code10",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH2R6WSIIAQX2RCKN7J2Z6IWTKVD",
+          "mode": "list",
+          "cachedResultName": "Informe Gestión de muestras",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B84A4F551-1702-44D4-A6FD-3ACF9169AAA3%7D&file=Informe%20Gesti%C3%B3n%20de%20muestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{00000000-0001-0000-0000-000000000000}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7BFF224EC9-9AC7-4837-B0B9-BEA697CE206B%7D&file=TeleListadoMuestras.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "useRange": true,
+        "range": "A1:O20000",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        2336,
+        1616
+      ],
+      "id": "200d0851-063c-4aa0-8b27-cc317e687812",
+      "name": "Microsoft Excel 3653",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.docspal.com/api/convert",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "key",
+              "value": "f2f5f23b22037e63a4fd0326681e8b7008b0426c76bfcc7898599b3f62476636"
+            },
+            {
+              "name": "to-format",
+              "value": "txt"
+            },
+            {
+              "parameterType": "formBinaryData",
+              "name": "file",
+              "inputDataFieldName": "data"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "id": "7c48bb86-3ee6-43f4-9bee-4cc02ad993e3",
+      "name": "DocsPal DOCX→TXT",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1936,
+        1616
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{ ( $json.output ? $json : JSON.parse($json.data) ).output.url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2128,
+        1616
+      ],
+      "id": "ae501aab-b758-4cba-a6bd-6d4c86eb5a8d",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "725681833972924",
+        "recipientPhoneNumber": "={{ String(\n  ($items(\"ID con permisos\", 0, 0)[0]?.json?.wa_id) ??\n  ($items(\"WhatsApp Trigger\", 0, 0)[0]?.json?.messages?.[0]?.from)\n).replace(/\\D/g,'') }}",
+        "textBody": "=Los datos son: Numero \nREF: {{ $json['REF.'] }} \nLOTE: {{ $json.LOTE }} \nClasific. Bodega: {{ $json['Clas Bod'] }} \nCata: {{ $json.CATA || \"Pendiente de carga\"}} \nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }} \nObservaciones: {{ $json.OBSERVACIONES }} \nCorredor: {{ $json.CORREDOR }} \nCliente: {{ $json.CLIENTE || 'Sin cliente' }} \nQTY.DISP: {{ $json['QTY.DISP'] }} \nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }} \nFecha de envio:{{ $json['Fecha Envío'] }} \nAcidez: {{ $json.ACIDEZ }} \nEtilicos: {{ $json.ETILICOS }} \nFecha de cata: {{ $json['FECHA C'] || 'Sin fecha de cata' }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        2896,
+        1136
+      ],
+      "id": "351875ae-a2e9-47ed-91cd-54bfba435188",
+      "name": "Send message1",
+      "webhookId": "507acfb6-2241-456a-97b5-0c758607a6a0",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.body.url }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer EAAOqwf1QF8QBPsKkyrzAQKyx9G7jivdPLpKITmSRYtvyHKYVFvVFoWyuOAA36voCdLNNj4H3FBV34XeZCWOXJfrNYeKfmF3uRSf07d3eniKwk1dQ35sM2SU6R9F8YyBO1LmkyjcdxylZCjBNQdMobhuoxdjF6c8ZCebMOm7SRZBZCymvLUDDfzz5aDJxxcHpIPQZDZD"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1536,
+        1296
+      ],
+      "id": "5aa4bff3-a6b6-42eb-955d-7f952ed19909",
+      "name": "Download Media"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "725681833972924",
+        "recipientPhoneNumber": "={{ String(\n  ($items(\"ID con permisos\", 0, 0)[0]?.json?.wa_id) ??\n  ($items(\"WhatsApp Trigger\", 0, 0)[0]?.json?.messages?.[0]?.from)\n).replace(/\\D/g,'') }}",
+        "textBody": "=Los datos son: \nNumero REF: {{ $json['REF.'] }} \nLOTE: {{ $json.LOTE }} \nClasific. Bodega: {{ $json['Clas Bod'] }} \nCata: {{ $json.CATA || \"Pendiente de carga\"}} \nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }} \nObservaciones: {{ $json.OBSERVACIONES }} \nCorredor: {{ $json.CORREDOR }} \nCliente: {{ $json.CLIENTE || 'Sin cliente' }} \nQTY.DISP: {{ $json['QTY.DISP'] }} \nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }} \nFecha de envio:{{ $json['Fecha Envío'] }} \nAcidez: {{ $json.ACIDEZ }} \nEtilicos: {{ $json.ETILICOS }} \nFecha de cata: {{ $json['FECHA C'] || 'Sin fecha de cata' }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        2896,
+        1296
+      ],
+      "id": "2e8838c2-ec2e-4774-b027-873f16e72e5c",
+      "name": "Send message2",
+      "webhookId": "507acfb6-2241-456a-97b5-0c758607a6a0",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v20.0/{{$node[\"WhatsApp Trigger\"].json.messages[0].image.id}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer EAAOqwf1QF8QBPsKkyrzAQKyx9G7jivdPLpKITmSRYtvyHKYVFvVFoWyuOAA36voCdLNNj4H3FBV34XeZCWOXJfrNYeKfmF3uRSf07d3eniKwk1dQ35sM2SU6R9F8YyBO1LmkyjcdxylZCjBNQdMobhuoxdjF6c8ZCebMOm7SRZBZCymvLUDDfzz5aDJxxcHpIPQZDZD"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1360,
+        1296
+      ],
+      "id": "6181a982-b3cc-4855-86b2-c77b6a15eecf",
+      "name": "Get Media UR"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.body.url }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer EAAOqwf1QF8QBPsKkyrzAQKyx9G7jivdPLpKITmSRYtvyHKYVFvVFoWyuOAA36voCdLNNj4H3FBV34XeZCWOXJfrNYeKfmF3uRSf07d3eniKwk1dQ35sM2SU6R9F8YyBO1LmkyjcdxylZCjBNQdMobhuoxdjF6c8ZCebMOm7SRZBZCymvLUDDfzz5aDJxxcHpIPQZDZD"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1360,
+        1568
+      ],
+      "id": "d4a9b325-f093-48b9-a8bd-00eb2c9ac688",
+      "name": "Download Media1"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v20.0/{{$node[\"WhatsApp Trigger\"].json.messages[0].document.id}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer EAAOqwf1QF8QBPsKkyrzAQKyx9G7jivdPLpKITmSRYtvyHKYVFvVFoWyuOAA36voCdLNNj4H3FBV34XeZCWOXJfrNYeKfmF3uRSf07d3eniKwk1dQ35sM2SU6R9F8YyBO1LmkyjcdxylZCjBNQdMobhuoxdjF6c8ZCebMOm7SRZBZCymvLUDDfzz5aDJxxcHpIPQZDZD"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1184,
+        1568
+      ],
+      "id": "87a6109c-dd60-4ccc-ade1-63c7a5f2095e",
+      "name": "Get Media UR1"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "725681833972924",
+        "recipientPhoneNumber": "={{ String(\n  ($items(\"ID con permisos\", 0, 0)[0]?.json?.wa_id) ??\n  ($items(\"WhatsApp Trigger\", 0, 0)[0]?.json?.messages?.[0]?.from)\n).replace(/\\D/g,'') }}",
+        "textBody": "=Los datos son: \nNumero REF: {{ $json['REF.'] }} \nLOTE: {{ $json.LOTE }} \nClasific. Bodega: {{ $json['Clas Bod'] }} \nCata: {{ $json.CATA || \"Pendiente de carga\"}} \nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }} \nObservaciones: {{ $json.OBSERVACIONES }} \nCorredor: {{ $json.CORREDOR }} \nCliente: {{ $json.CLIENTE || 'Sin cliente' }} \nQTY.DISP: {{ $json['QTY.DISP'] }} \nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }} \nFecha de envio:{{ $json['Fecha Envío'] }} \nAcidez: {{ $json.ACIDEZ }} \nEtilicos: {{ $json.ETILICOS }} \nFecha de cata: {{ $json['FECHA C'] || 'Sin fecha de cata' }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        2896,
+        1456
+      ],
+      "id": "2d36dda7-84cb-47dd-b166-78655e0233cf",
+      "name": "Send message3",
+      "webhookId": "507acfb6-2241-456a-97b5-0c758607a6a0",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "bda08492-0bbf-4b4b-b5fe-ae4372beef80",
+                    "leftValue": "={{ $json.body.mime_type }}",
+                    "rightValue": "application/pdf",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "063d00e7-8d1c-4572-8b27-35bb324b7d1a",
+                    "leftValue": "={{ $json.body.mime_type }}",
+                    "rightValue": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "5c46f4cd-88b9-4484-a8cf-1c9b70f2a1d0",
+                    "leftValue": "={{ $json.body.mime_type }}",
+                    "rightValue": "application/vnd.oasis.opendocument.text",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "5fc6ec97-9fe2-44cc-96ce-495580b7806a",
+                    "leftValue": "={{ $json.body.mime_type }}",
+                    "rightValue": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        1536,
+        1600
+      ],
+      "id": "8c24d8ac-d955-4923-9a5d-1540d9f257a4",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "725681833972924",
+        "recipientPhoneNumber": "={{ String(\n  ($items(\"ID con permisos\", 0, 0)[0]?.json?.wa_id) ??\n  ($items(\"WhatsApp Trigger\", 0, 0)[0]?.json?.messages?.[0]?.from)\n).replace(/\\D/g,'') }}",
+        "textBody": "=Los datos son: \nNumero REF: {{ $json['REF.'] }} \nLOTE: {{ $json.LOTE }} \nClasific. Bodega: {{ $json['Clas Bod'] }} \nCata: {{ $json.CATA || \"Pendiente de carga\"}} \nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }} \nObservaciones: {{ $json.OBSERVACIONES }} \nCorredor: {{ $json.CORREDOR }} \nCliente: {{ $json.CLIENTE || 'Sin cliente' }} \nQTY.DISP: {{ $json['QTY.DISP'] }} \nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }} \nFecha de envio:{{ $json['Fecha Envío'] }} \nAcidez: {{ $json.ACIDEZ }} \nEtilicos: {{ $json.ETILICOS }} \nFecha de cata: {{ $json['FECHA C'] || 'Sin fecha de cata' }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        2896,
+        1616
+      ],
+      "id": "33f622fa-a4b4-4866-920f-ba4ab0fb22c2",
+      "name": "Send message4",
+      "webhookId": "507acfb6-2241-456a-97b5-0c758607a6a0",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "725681833972924",
+        "recipientPhoneNumber": "={{ String(\n  ($items(\"ID con permisos\", 0, 0)[0]?.json?.wa_id) ??\n  ($items(\"WhatsApp Trigger\", 0, 0)[0]?.json?.messages?.[0]?.from)\n).replace(/\\D/g,'') }}",
+        "textBody": "=Los datos son: \nNumero REF: {{ $json['REF.'] }} \nLOTE: {{ $json.LOTE }} \nClasific. Bodega: {{ $json['Clas Bod'] }} \nCata: {{ $json.CATA || \"Pendiente de carga\"}} \nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }} \nObservaciones: {{ $json.OBSERVACIONES }} \nCorredor: {{ $json.CORREDOR }} \nCliente: {{ $json.CLIENTE || 'Sin cliente' }} \nQTY.DISP: {{ $json['QTY.DISP'] }} \nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }} \nFecha de envio:{{ $json['Fecha Envío'] }} \nAcidez: {{ $json.ACIDEZ }} \nEtilicos: {{ $json.ETILICOS }} \nFecha de cata: {{ $json['FECHA C'] || 'Sin fecha de cata' }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        2896,
+        1776
+      ],
+      "id": "52b315d9-97ff-4fde-bfb1-6a93dd9bb7fb",
+      "name": "Send message5",
+      "webhookId": "507acfb6-2241-456a-97b5-0c758607a6a0",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "725681833972924",
+        "recipientPhoneNumber": "={{ String(\n  ($items(\"ID con permisos\", 0, 0)[0]?.json?.wa_id) ??\n  ($items(\"WhatsApp Trigger\", 0, 0)[0]?.json?.messages?.[0]?.from)\n).replace(/\\D/g,'') }}",
+        "textBody": "=Los datos son: \nNumero REF: {{ $json['REF.'] }} \nLOTE: {{ $json.LOTE }} \nClasific. Bodega: {{ $json['Clas Bod'] }} \nCata: {{ $json.CATA || \"Pendiente de carga\"}} \nEsta vendido: {{ $json.VENDIDO || 'Pendiente' }} \nObservaciones: {{ $json.OBSERVACIONES }} \nCorredor: {{ $json.CORREDOR }} \nCliente: {{ $json.CLIENTE || 'Sin cliente' }} \nQTY.DISP: {{ $json['QTY.DISP'] }} \nEsta filtrado = {{ $json.Filt  == '1' ? 'Sí' : 'No' }} \nFecha de envio:{{ $json['Fecha Envío'] }} \nAcidez: {{ $json.ACIDEZ }} \nEtilicos: {{ $json.ETILICOS }} \nFecha de cata: {{ $json['FECHA C'] || 'Sin fecha de cata' }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        2896,
+        1952
+      ],
+      "id": "a58a7faa-8e60-4f6b-88b4-4f31062cec09",
+      "name": "Send message6",
+      "webhookId": "507acfb6-2241-456a-97b5-0c758607a6a0",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.messages[0].text?.body || $json.messages[0].image?.caption }}",
+                    "rightValue": "/",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notStartsWith"
+                    },
+                    "id": "b7d4a8ee-372c-4c10-862e-c2e0581d3271"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "69746886-8ec0-4353-8005-75195e45ab7c",
+                    "leftValue": "={{ $json.messages[0].text?.body || $json.messages[0].image?.caption }}",
+                    "rightValue": "/Muestras",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "9f4adbf8-9abd-4f31-b9fc-7ade5539408b",
+                    "leftValue": "={{ $json.messages[0].text?.body || $json.messages[0].image?.caption }}",
+                    "rightValue": "/KilosCargados",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -1472,
+        832
+      ],
+      "id": "8d201317-5444-41b9-8379-e8ff705ac9a5",
+      "name": "Switch3"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "={{ String($json.sendPhoneNumber ?? $json.metadata?.phone_number_id) }}",
+        "recipientPhoneNumber": "={{ String($json.wa_id ?? $json.messages?.[0]?.from).replace(/\\D/g, '') }}",
+        "textBody": "No estas solicitado para el uso del bot , porfavor ponte en contacto con el administrador.",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        304,
+        1360
+      ],
+      "id": "34a397bf-234b-474f-913c-e3b7b3b4efae",
+      "name": "Send message7",
+      "webhookId": "507acfb6-2241-456a-97b5-0c758607a6a0",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "48495bd1-ade2-4a9e-800b-ccb2d0bc3950",
+              "leftValue": "={{ ($json.autorizados || []).map(v => String(v).replace(/\\D/g,'')) }}",
+              "rightValue": "={{ String($('WhatsApp Trigger').item.json.messages[0].from || $json.wa_id).replace(/\\D/g,'') }}",
+              "operator": {
+                "type": "array",
+                "operation": "contains",
+                "rightType": "any"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -416,
+        1184
+      ],
+      "id": "26e73a90-b22b-4b02-b89e-6d6ed2e53c27",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"autorizados\": [34640067736, 34607373821],\n  \"sendPhoneNumber\": \"{{ String($json.sendPhoneNumber ?? $json.metadata?.phone_number_id) }}\",\n  \"wa_id\": \"{{ String($json.wa_id ?? $json.messages?.[0]?.from).replace(/\\\\D/g, '') }}\"\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -816,
+        1184
+      ],
+      "id": "15c5d24a-792c-452b-9a04-5ac0de64e1fa",
+      "name": "ID con permisos"
+    },
+    {
+      "parameters": {
+        "content": "## SIN COMANDO\n\nasiganacion de roles\n",
+        "height": 128
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -672,
+        512
+      ],
+      "typeVersion": 1,
+      "id": "97563326-7ca5-4ef3-ad76-7cb9f0e46e8a",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## /Muestras\n\n"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -672,
+        960
+      ],
+      "typeVersion": 1,
+      "id": "bec18f4f-f6ae-41ad-b957-54747db54b62",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "725681833972924",
+        "recipientPhoneNumber": "={{ String($json.wa_id ?? $json.messages?.[0]?.from).replace(/\\D/g, '') }}",
+        "textBody": "No estas solicitado para el uso del bot , porfavor ponte en contacto con el administrador.",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        -256,
+        1968
+      ],
+      "id": "41c03975-0ad2-49b8-8f78-d8cafdaee538",
+      "name": "Send message8",
+      "webhookId": "507acfb6-2241-456a-97b5-0c758607a6a0",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "48495bd1-ade2-4a9e-800b-ccb2d0bc3950",
+              "leftValue": "={{ ($json.autorizados || []).map(v => String(v).replace(/\\D/g,'')) }}",
+              "rightValue": "={{ String($('WhatsApp Trigger').item.json.messages[0].from || $json.wa_id).replace(/\\D/g,'') }}",
+              "operator": {
+                "type": "array",
+                "operation": "contains",
+                "rightType": "any"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -768,
+        1808
+      ],
+      "id": "9c44c5e4-9f74-4b36-811d-5f42b63bcf03",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"autorizados\": [34640067736, 34607373821],\n  \"sendPhoneNumber\": \"{{ String($json.sendPhoneNumber ?? $json.metadata?.phone_number_id) }}\",\n  \"wa_id\": \"{{ String($json.wa_id ?? $json.messages?.[0]?.from).replace(/\\\\D/g, '') }}\"\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -976,
+        1808
+      ],
+      "id": "bfbc4ba4-4df1-4065-9349-bf12b37cd03f",
+      "name": "ID con permisos1"
+    },
+    {
+      "parameters": {
+        "content": "## /KilosCargados\n\n"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -688,
+        1536
+      ],
+      "typeVersion": 1,
+      "id": "e5ed5634-7ba2-443c-9ecd-90777d5e8f35",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{    ($json.Interoleo).map(v => String(v).replace(/\\D/g,'')).includes(String($json.wa_id ?? '').replace(/\\D/g,''))  }}",
+                    "rightValue": "={{ $json.wa_id }}",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true",
+                      "singleValue": true
+                    },
+                    "id": "c3f10afc-646c-4b2b-badd-0b6678a4c053"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "51164573-15cc-4125-b11c-3e8969ce0349",
+                    "leftValue": "={{    ($json.PedroPascal).map(v => String(v).replace(/\\D/g,'')).includes(String($json.wa_id ?? '').replace(/\\D/g,''))  }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -320,
+        656
+      ],
+      "id": "9d1c838d-4fd0-4ea6-8ef2-36f0c9bde1ba",
+      "name": "PERMISOSCOMANDOS",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "725681833972924",
+        "recipientPhoneNumber": "={{ $('WhatsApp Trigger').item.json.messages[0].from }}",
+        "textBody": "Vuelve a escribir y comprueba tus permisos . Los comandos los puedes ver poniendo solo \"/\"",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        560,
+        560
+      ],
+      "id": "9bab683b-ba55-4977-af3f-6d260b2a121b",
+      "name": "Send message9",
+      "webhookId": "507acfb6-2241-456a-97b5-0c758607a6a0",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v20.0/{{$('WhatsApp Trigger').item.json.metadata.phone_number_id}}/conversational_automation",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer EAAOqwf1QF8QBPsKkyrzAQKyx9G7jivdPLpKITmSRYtvyHKYVFvVFoWyuOAA36voCdLNNj4H3FBV34XeZCWOXJfrNYeKfmF3uRSf07d3eniKwk1dQ35sM2SU6R9F8YyBO1LmkyjcdxylZCjBNQdMobhuoxdjF6c8ZCebMOm7SRZBZCymvLUDDfzz5aDJxxcHpIPQZDZD"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"enable_welcome_message\": true,\n  \"commands\": [\n    {\n      \"command_name\": \"Muestras\",\n      \"command_description\": \"Busca segun la REF de las muestras\"\n    },{\n      \"command_name\": \"KilosCargados\",\n      \"command_description\": \"Busca los kilos cargados en los ultimos 3 meses\"\n    }\n  ],\n  \"prompts\": [\n    \"Busca segun la REF de las muestras\",\n    \"Busca los kilos cargados en los ultimos 3 meses\"\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        272,
+        560
+      ],
+      "id": "dec8aeaa-0dca-46e7-b374-d79c224166ad",
+      "name": "InteroleoPermisos"
+    },
+    {
+      "parameters": {
+        "updates": [
+          "messages"
+        ],
+        "options": {
+          "messageStatusUpdates": [
+            "all"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.whatsAppTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1952,
+        848
+      ],
+      "id": "64c2785a-df87-4a33-b232-125a001da2da",
+      "name": "WhatsApp Trigger",
+      "webhookId": "0b9959bc-5562-43cc-ad1b-8be8129d7d3f",
+      "alwaysOutputData": true,
+      "credentials": {
+        "whatsAppTriggerApi": {
+          "id": "2OMEASwNwRnWeYIT",
+          "name": "WhatsApp OAuth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "includeTime": false,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        -256,
+        1760
+      ],
+      "id": "a003a712-2579-41f4-9c0f-0a2416e25f9d",
+      "name": "Date & Time"
+    },
+    {
+      "parameters": {
+        "resource": "worksheet",
+        "operation": "readRows",
+        "workbook": {
+          "__rl": true,
+          "value": "01CGHIMH7ONR2ARXZOQZFZ5Z3ZBMRYXPME",
+          "mode": "list",
+          "cachedResultName": "KILOS CARGADOS",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B08746CEE-2EDF-4B86-9EE7-790B238BBD84%7D&file=KILOS%20CARGADOS.xlsm&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{597A314C-28CE-4061-B3E3-37EE415DBC0D}",
+          "mode": "list",
+          "cachedResultName": "Consulta1",
+          "cachedResultUrl": "https://interoleopj-my.sharepoint.com/personal/javier_logistica_interoleo_com/_layouts/15/Doc.aspx?sourcedoc=%7B08746CEE-2EDF-4B86-9EE7-790B238BBD84%7D&file=KILOS%20CARGADOS.xlsm&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Consulta1!A1"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        1760
+      ],
+      "id": "569aa97b-74b8-44fc-8e01-4eceb6b10585",
+      "name": "KilosCargados",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "t3fnVjLzsPpg77lr",
+          "name": "Microsoft Excel account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lee todos los items del nodo KilosCargados\nconst rows = $items('KilosCargados', 0, 0);\nif (!rows.length) return [];\n\n// --- Utils ---\nconst simplifyKey = k => String(k ?? '')\n  .normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')\n  .replace(/\\u00A0/g,' ').replace(/\\s+/g,' ')\n  .replace(/_/g,' ').trim().toLowerCase();\n\nconst findKey = (obj, candidates) => {\n  const map = new Map(Object.keys(obj).map(k => [simplifyKey(k), k]));\n  for (const c of candidates) {\n    const hit = map.get(simplifyKey(c));\n    if (hit) return hit;\n  }\n  return null;\n};\n\n// Convierte número Excel (serial) a Date\nconst fromExcelSerial = n => {\n  const ms = (Number(n) - 25569) * 86400 * 1000; // Windows Excel\n  const d = new Date(ms);\n  return isNaN(d) ? null : d;\n};\n\n// Parseo robusto de fechas: dd/mm/yyyy, dd-mm-yyyy, yyyy-mm-dd, serial Excel\nfunction parseDateSmart(v) {\n  if (v == null || v === '') return null;\n\n  if (typeof v === 'number') return fromExcelSerial(v);\n\n  const s = String(v).trim();\n\n  // ISO (yyyy-mm-dd ...): deja que Date lo resuelva\n  if (/^\\d{4}-\\d{1,2}-\\d{1,2}/.test(s)) {\n    const d = new Date(s);\n    return isNaN(d) ? null : d;\n  }\n\n  // dd/mm/yyyy o dd-mm-yyyy (con hora opcional)\n  const m = s.match(/^(\\d{1,2})[\\/\\-](\\d{1,2})[\\/\\-](\\d{2,4})(?:[ T](\\d{1,2}):(\\d{2})(?::(\\d{2}))?)?$/);\n  if (m) {\n    let [ , dd, MM, yyyy, hh='0', mm='0', ss='0' ] = m;\n    dd = Number(dd); MM = Number(MM); yyyy = Number(yyyy.length === 2 ? '20'+yyyy : yyyy);\n    const d = new Date(yyyy, MM-1, dd, Number(hh), Number(mm), Number(ss), 0);\n    return isNaN(d) ? null : d;\n  }\n\n  // Intento genérico final\n  const d = new Date(s);\n  return isNaN(d) ? null : d;\n}\n\n// --- Ventana de 3 meses (incluye mes actual) ---\n// Ej.: si hoy es 29/09 -> inicio 01/07 00:00:00, fin ahora\nconst now = new Date();\nconst start = new Date(now.getFullYear(), now.getMonth() - 2, 1, 0, 0, 0, 0);\nconst end = now; // o: new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23,59,59,999);\n\n// Ubica la columna de fecha (tolerante a variantes)\nconst fechaKey = findKey(rows[0].json, [\n  'Fecha_Entrega','Fecha Entrega','fecha_entrega','FechaEntrega','fecha entrega','fechaentrega'\n]);\n\nif (!fechaKey) {\n  // Si no encontramos la clave, devolvemos vacío con aviso\n  return [{ json: { error: \"No se encontró el campo 'Fecha_Entrega' (o variante) en los datos.\" } }];\n}\n\n// --- Filtrado ---\nconst out = [];\nfor (const it of rows) {\n  const raw = it.json[fechaKey];\n  const d = parseDateSmart(raw);\n  if (!d) continue;\n  if (d >= start && d <= end) out.push(it);\n}\n\n// (Opcional) Log de la ventana usada\n// console.log({ start: start.toISOString(), end: end.toISOString(), total: rows.length, filtrados: out.length });\n\nreturn out;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        208,
+        1760
+      ],
+      "id": "2c4f8bfa-d507-4465-bf42-f1069ffc32b4",
+      "name": "FiltroFecha"
+    },
+    {
+      "parameters": {
+        "jsCode": "const rows = $input.all();\nif (!rows.length) return [];\n\n// --- Utils ---\nconst simplifyKey = k => String(k ?? '')\n  .normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')\n  .replace(/\\u00A0/g,' ').replace(/\\s+/g,' ')\n  .replace(/_/g,' ').trim().toLowerCase();\n\nconst findKey = (obj, candidates) => {\n  const map = new Map(Object.keys(obj).map(k => [simplifyKey(k), k]));\n  for (const c of candidates) {\n    const hit = map.get(simplifyKey(c));\n    if (hit) return hit;\n  }\n  return null;\n};\n\nconst fromExcelSerial = n => {\n  const d = new Date((Number(n) - 25569) * 86400 * 1000);\n  return isNaN(d) ? null : d;\n};\n\nfunction parseDateSmart(v) {\n  if (v == null || v === '') return null;\n  if (typeof v === 'number') return fromExcelSerial(v);\n  const s = String(v).trim();\n  if (/^\\d{4}-\\d{1,2}-\\d{1,2}/.test(s)) {\n    const d = new Date(s); return isNaN(d) ? null : d;\n  }\n  const m = s.match(/^(\\d{1,2})[\\/\\-](\\d{1,2})[\\/\\-](\\d{2,4})(?:[ T](\\d{1,2}):(\\d{2})(?::(\\d{2}))?)?$/);\n  if (m) {\n    let [ , dd, MM, yyyy, hh='0', mm='0', ss='0' ] = m;\n    dd=+dd; MM=+MM; yyyy = yyyy.length===2 ? +('20'+yyyy) : +yyyy;\n    const d = new Date(yyyy, MM-1, dd, +hh, +mm, +ss, 0);\n    return isNaN(d) ? null : d;\n  }\n  const d = new Date(s);\n  return isNaN(d) ? null : d;\n}\n\nfunction toNum(v) {\n  if (v == null || v === '') return 0;\n  if (typeof v === 'number') return v;\n  let x = String(v).replace(/\\u00A0/g,' ').trim();\n  const hasComma = x.includes(','), hasDot = x.includes('.');\n  if (hasComma && hasDot) {\n    if (x.lastIndexOf(',') > x.lastIndexOf('.')) x = x.replace(/\\./g,'').replace(',', '.');\n    else x = x.replace(/,/g,'');\n  } else if (hasComma) x = x.replace(',', '.');\n  const m = x.match(/-?\\d+(?:\\.\\d+)?/);\n  return m ? Number(m[0]) : 0;\n}\n\nconst r3 = n => Math.round(n * 1000) / 1000;\nconst meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];\n\nfunction bucketTipo(v) {\n  const s = String(v ?? '')\n    .normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')\n    .replace(/\\u00A0/g,' ').trim().toLowerCase();\n  if (s === '') return 'ipj';\n  if (s.includes('vta') && s.includes('indiv')) return 'vta_indiv';\n  if (s.includes('bodega') && s.includes('unica')) return 'bodega_unica';\n  return 'ipj';\n}\n\n// Normaliza TIENE_CMR a booleano (true = tiene CMR)\nfunction cmrBool(v) {\n  const s = String(v ?? '')\n    .normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')\n    .replace(/\\u00A0/g,' ').trim().toLowerCase();\n  if (s === '' || s === 'no' || s === '0' || s === 'false' || s === 'n') return false;\n  if (s === 'si' || s === 'sí' || s === '1' || s === 'true' || s === 'y' || s === 'yes' || s === 'x') return true;\n  return false; // por defecto\n}\n\n// --- Localiza columnas ---\nconst sample = rows[0].json;\nconst fechaKey = findKey(sample, ['Fecha_Entrega','Fecha Entrega','fecha_entrega','FechaEntrega']);\nconst cantKey  = findKey(sample, ['Cantidad_Entrega','Cantidad Entrega','cantidad_entrega','CantidadEntrega']);\nconst tipoKey  = findKey(sample, ['Tipo Venta_Lote','Tipo Venta Lote','tipo_venta_lote','TipoVentaLote','Tipo de Venta']);\nconst cmrKey   = findKey(sample, ['TIENE_CMR','Tiene CMR','tiene_cmr','cmr','tiene cmr']);\n\nif (!fechaKey || !cantKey || !tipoKey || !cmrKey) {\n  return [{\n    json: {\n      error: \"Faltan columnas: 'Fecha_Entrega', 'Cantidad_Entrega', 'Tipo Venta_Lote' y/o 'TIENE_CMR'.\",\n      disponibles: Object.keys(sample)\n    }\n  }];\n}\n\n// --- Agrupar por mes y CMR -> tipos ---\nconst acc = new Map(); // periodo -> { si:{vta_indiv,bodega_unica,ipj}, no:{...} }\nfor (const it of rows) {\n  const d = parseDateSmart(it.json[fechaKey]);\n  const qty = toNum(it.json[cantKey]);\n  if (!d || !Number.isFinite(qty)) continue;\n\n  const periodo = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;\n  const tipo = bucketTipo(it.json[tipoKey]);\n  const hasCMR = cmrBool(it.json[cmrKey]) ? 'si' : 'no';\n\n  if (!acc.has(periodo)) {\n    acc.set(periodo, {\n      si: { vta_indiv: 0, bodega_unica: 0, ipj: 0 },\n      no: { vta_indiv: 0, bodega_unica: 0, ipj: 0 },\n    });\n  }\n  acc.get(periodo)[hasCMR][tipo] += qty; // negativos restan\n}\n\n// --- Salida plana: un item por mes ---\nconst out = Array.from(acc.entries())\n  .sort((a,b) => a[0].localeCompare(b[0]))\n  .map(([periodo, grp]) => {\n    const [yy, mm] = periodo.split('-').map(Number);\n\n    const si_vi = r3(grp.si.vta_indiv || 0);\n    const si_bu = r3(grp.si.bodega_unica || 0);\n    const si_ip = r3(grp.si.ipj || 0);\n    const no_vi = r3(grp.no.vta_indiv || 0);\n    const no_bu = r3(grp.no.bodega_unica || 0);\n    const no_ip = r3(grp.no.ipj || 0);\n\n    const total_si = r3(si_vi + si_bu + si_ip);\n    const total_no = r3(no_vi + no_bu + no_ip);\n    const total_mes = r3(total_si + total_no);\n\n    return {\n      json: {\n        periodo, anio: yy, mes: mm, mes_nombre: meses[mm-1],\n\n        // Con CMR\n        vta_indiv_cmr_si: si_vi,\n        bodega_unica_cmr_si: si_bu,\n        ipj_cmr_si: si_ip,\n        total_cmr_si: total_si,\n\n        // Sin CMR\n        vta_indiv_cmr_no: no_vi,\n        bodega_unica_cmr_no: no_bu,\n        ipj_cmr_no: no_ip,\n        total_cmr_no: total_no,\n\n        // Totales\n        total_kilos_mes: total_mes\n      }\n    };\n  });\n\nreturn out;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        464,
+        1760
+      ],
+      "id": "54bf6575-30af-458c-83dc-2a8b20ccabe5",
+      "name": "Code15"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "725681833972924",
+        "recipientPhoneNumber": "={{\n  String(\n    $item(0).$node[\"WhatsApp Trigger\"].json.messages[0].from\n      ?? $item(0).$node[\"WhatsApp Trigger\"].json.contacts[0].wa_id\n      ?? ''\n  ).replace(/\\D/g,'')   // deja solo dígitos: 3464...\n}}\n",
+        "textBody": "=*KGS {{ $json.rows[0].mes_nombre }}*\n\n_EXPORTACIÓN_\n- VI: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].vta_indiv_cmr_si ?? 0)) }}\n- BU:  {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].bodega_unica_cmr_si ?? 0)) }}\n- IPJ: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].ipj_cmr_si ?? 0)) }}\n\n_NACIONAL_\n- VI: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].vta_indiv_cmr_no ?? 0)) }}\n- BU:  {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].bodega_unica_cmr_no ?? 0)) }}\n- IPJ: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].ipj_cmr_no ?? 0)) }}\n\n_TOTAL_\n- VI: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].vta_indiv_cmr_si ?? 0) +Number($json.vta_indiv_cmr_no ?? 0))}}\n- BU: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].bodega_unica_cmr_si ?? 0) +Number($json.bodega_unica_cmr_no ?? 0))}}\n- IPJ: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].ipj_cmr_si ?? 0) +Number($json.ipj_cmr_no ?? 0))}}\n- Total: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[0].total_kilos_mes ?? 0) +Number($json.vta_indiv_cmr_no ?? 0))}}\n\n\n*KGS {{ $json.rows[1].mes_nombre }}*\n\n_EXPORTACIÓN_\n- VI: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].vta_indiv_cmr_si ?? 0)) }}\n- BU:  {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].bodega_unica_cmr_si ?? 0)) }}\n- IPJ: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].ipj_cmr_si ?? 0)) }}\n\n_NACIONAL_\n- VI: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].vta_indiv_cmr_no ?? 0)) }}\n- BU:  {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].bodega_unica_cmr_no ?? 0)) }}\n- IPJ: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].ipj_cmr_no ?? 0)) }}\n\n_TOTAL_\n- VI: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].vta_indiv_cmr_si ?? 0) +Number($json.vta_indiv_cmr_no ?? 0))}}\n- BU: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].bodega_unica_cmr_si ?? 0) +Number($json.bodega_unica_cmr_no ?? 0))}}\n- IPJ: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].ipj_cmr_si ?? 0) +Number($json.ipj_cmr_no ?? 0))}}\n- Total: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[1].total_kilos_mes ?? 0) +Number($json.vta_indiv_cmr_no ?? 0))}}\n\n\n*KGS {{ $json.rows[2].mes_nombre }}*\n\n_EXPORTACIÓN_\n- VI: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].vta_indiv_cmr_si ?? 0)) }}\n- BU:  {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].bodega_unica_cmr_si ?? 0)) }}\n- IPJ: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].ipj_cmr_si ?? 0)) }}\n\n_NACIONAL_\n- VI: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].vta_indiv_cmr_no ?? 0)) }}\n- BU:  {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].bodega_unica_cmr_no ?? 0)) }}\n- IPJ: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].ipj_cmr_no ?? 0)) }}\n\n_TOTAL_\n- VI: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].vta_indiv_cmr_si ?? 0) +Number($json.vta_indiv_cmr_no ?? 0))}}\n- BU: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].bodega_unica_cmr_si ?? 0) +Number($json.bodega_unica_cmr_no ?? 0))}}\n- IPJ: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].ipj_cmr_si ?? 0) +Number($json.ipj_cmr_no ?? 0))}}\n- Total: {{ new Intl.NumberFormat('es-ES', { maximumFractionDigits: 3 }).format(Number($json.rows[2].total_kilos_mes ?? 0) +Number($json.vta_indiv_cmr_no ?? 0))}}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        976,
+        1760
+      ],
+      "id": "8482133f-07d0-484a-9a1a-e66771fa59b8",
+      "name": "Send message12",
+      "webhookId": "1ea98f88-1a35-4140-ac8f-023e01178759",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "cxUon6DFTYBDktnq",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { rows: items.map(i => i.json) } }];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        1760
+      ],
+      "id": "06e3a08d-4b34-41cf-a3d0-611aec34e79e",
+      "name": "Code13"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -3120,
+        960
+      ],
+      "id": "9453e618-8238-4dc4-ba08-e4b2e492366b",
+      "name": "When clicking ‘Execute workflow’",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.challenge }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        -2656,
+        1184
+      ],
+      "id": "3042d167-db33-4a23-8780-fda139d05211",
+      "name": "Respond to Webhook",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v21.0/725681833972924/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer EAAOqwf1QF8QBPsKkyrzAQKyx9G7jivdPLpKITmSRYtvyHKYVFvVFoWyuOAA36voCdLNNj4H3FBV34XeZCWOXJfrNYeKfmF3uRSf07d3eniKwk1dQ35sM2SU6R9F8YyBO1LmkyjcdxylZCjBNQdMobhuoxdjF6c8ZCebMOm7SRZBZCymvLUDDfzz5aDJxxcHpIPQZDZD"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"messaging_product\": \"whatsapp\",\n  \"to\": \"34640067736\",\n  \"type\": \"template\",\n  \"template\": {\n    \"name\": \"muestras_servicio\",\n    \"language\": { \"code\": \"es\" },\n    \"components\": [\n      { \"type\": \"button\", \"sub_type\": \"flow\", \"index\": \"0\" }\n    ]\n  }\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -2752,
+        960
+      ],
+      "id": "f023ce50-95e6-47e7-9f0e-9c924c09b66c",
+      "name": "enviaFlowMuestras",
+      "executeOnce": true,
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "updates": [
+          "messages"
+        ],
+        "options": {
+          "messageStatusUpdates": [
+            "all"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.whatsAppTrigger",
+      "typeVersion": 1,
+      "position": [
+        -3120,
+        752
+      ],
+      "id": "899ec83c-ca88-4b96-ab18-cbdfc3353d4a",
+      "name": "enviaFlowMuestras1",
+      "webhookId": "0b9959bc-5562-43cc-ad1b-8be8129d7d3f",
+      "alwaysOutputData": true,
+      "credentials": {
+        "whatsAppTriggerApi": {
+          "id": "2OMEASwNwRnWeYIT",
+          "name": "WhatsApp OAuth account"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const q = $json.query || {};\nconst mode = q['hub.mode'];\nconst token = q['hub.verify_token'];\nconst challenge = q['hub.challenge'];\n\nconst MY_TOKEN = 'interoleo1234'; // <-- el mismo que en Meta\n\nif (mode === 'subscribe' && token === MY_TOKEN && challenge) {\n  return [{ json: { challenge } }];\n} else {\n  // Si no coincide, devolvemos un error legible\n  return [{ json: { error: 'Invalid verify_token' } }];\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -2880,
+        1184
+      ],
+      "id": "5ad4f027-c3ea-4e74-8ee8-af46fb9bb5db",
+      "name": "Code in JavaScript",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "multipleMethods": true,
+        "path": "wsp-webhook",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -3136,
+        1184
+      ],
+      "id": "fb6e4f7c-f016-4390-9bf6-6433429929b0",
+      "name": "wsp-webhook",
+      "webhookId": "e9344ddd-6f8e-4c4e-bf8d-01eef77b4426",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "content": "Interoleo Permisos\n",
+        "height": 80,
+        "width": 150
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        384,
+        528
+      ],
+      "typeVersion": 1,
+      "id": "94df1785-bed0-4a05-80af-146089b587d7",
+      "name": "Sticky Note3"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-08-28T11:59:30.781Z",
+      "updatedAt": "2025-08-28T11:59:30.781Z",
+      "role": "workflow:owner",
+      "workflowId": "O5ve10QzmQKATfvV",
+      "projectId": "OXbhDgBzx3ttiAxZ"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-10-14T08:26:16.000Z",
+  "versionId": "0102c4aa-2a6a-403d-ab53-30edf09d586e"
+}
